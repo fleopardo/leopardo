@@ -1,0 +1,199 @@
+.jcarousel-container {
+}
+
+.jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-container-horizontal {
+	width: 375px;
+}
+
+.productos .jcarousel-container-horizontal {
+	width: 502px;
+}
+
+.jcarousel-container-vertical {
+}
+
+.jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-clip-horizontal {
+}
+
+.jcarousel-clip-vertical {
+}
+
+.jcarousel-item {
+	width: 118px;
+	background: url(../img/fd_carousel-items.png) center top no-repeat;
+	margin-right: 15px;
+}
+
+.jcarousel-item img{
+}
+
+.jcarousel-item-horizontal {
+	   margin-left: 0;
+    margin-right: 10px;
+}
+
+.jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+ .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+ .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+
+ .jcarousel-prev-horizontal,
+  .jcarousel-next-horizontal{
+  	background:url(../img/sp_iconos-arrows.png) no-repeat;
+  	position: absolute;
+  	z-index:100;
+  	cursor: pointer;
+  }
+  
+ .jcarousel-next-horizontal {
+    background-position: -35px 0;
+	width: 55px;
+	height: 59px;
+	left: 443px;
+	top: 29px;
+}
+
+.productos .jcarousel-next-horizontal {
+	left: 555px;
+}
+
+ .jcarousel-direction-rtl .jcarousel-next-horizontal {
+}
+
+ .jcarousel-next-horizontal:hover,
+ .jcarousel-next-horizontal:focus {
+    background-position: -35px 0;
+}
+
+ .jcarousel-next-horizontal:active {
+    background-position: -35px 0;
+}
+
+ .jcarousel-next-disabled-horizontal,
+ .jcarousel-next-disabled-horizontal:hover,
+ .jcarousel-next-disabled-horizontal:focus,
+ .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -35px -320px;
+}
+
+ .jcarousel-prev-horizontal {
+    background-position:0 -11px;
+	width: 35px;
+	height: 39px;
+	left: 408px;
+	top: 40px;
+}
+
+.productos .jcarousel-prev-horizontal {
+	left: 520px;
+}
+
+ .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(next-horizontal.png);
+}
+
+ .jcarousel-prev-horizontal:hover, 
+ .jcarousel-prev-horizontal:focus {
+   background-position: 0 -11px;
+}
+
+ .jcarousel-prev-horizontal:active {
+    background-position: 0 -11px;
+}
+
+ .jcarousel-prev-disabled-horizontal,
+ .jcarousel-prev-disabled-horizontal:hover,
+ .jcarousel-prev-disabled-horizontal:focus,
+ .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: 0 -331px;
+}
+
+
+/******** CAROUSEL MATERIAL TECNICO GRANDE **********/
+
+.cont-carousel-grande .jcarousel-container-horizontal,
+.carousel-grande .jcarousel-item{
+	height:410px;
+	width:378px;
+}
+
+.carousel-grande .jcarousel-item{
+	background:url(../img/fd_carousel-grande-sombra.png) center bottom no-repeat;
+}
+
+.carousel-grande .jcarousel-item img{
+	width:378px;
+	height:284px;
+	float:left;
+}
+
+.carousel-grande .jcarousel-item p{
+	padding:20px 15px;
+	height:46px;
+	background:#ececec;
+	color:#707070;
+	line-height:14px;
+	clear:left;
+}
+
+.cont-carousel-grande .jcarousel-prev-horizontal,
+.cont-carousel-grande .jcarousel-next-horizontal{
+  	background:url(../img/sp_carousel-grande-arrows.png) no-repeat;
+  	width:34px;
+  	height:52px;
+  	position: absolute;
+  	z-index:50;
+  	cursor: pointer;
+  	top:110px;
+ }
+
+.cont-carousel-grande .jcarousel-prev-horizontal {
+    left: -46px;
+    background-position:0 0;
+}
+
+.cont-carousel-grande .jcarousel-next-horizontal {
+    right: -46px;
+    background-position:0 -52px;
+}
+
+.cont-carousel-grande  .jcarousel-next-disabled-horizontal,
+.cont-carousel-grande  .jcarousel-next-disabled-horizontal:hover,
+.cont-carousel-grande  .jcarousel-next-disabled-horizontal:focus,
+.cont-carousel-grande  .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+
+.cont-carousel-grande  .jcarousel-prev-disabled-horizontal,
+.cont-carousel-grande  .jcarousel-prev-disabled-horizontal:hover,
+.cont-carousel-grande  .jcarousel-prev-disabled-horizontal:focus,
+.cont-carousel-grande  .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}

@@ -1,0 +1,689 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	text-decoration:none;
+	outline: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+li{list-style:none;}
+
+strong{
+	font-weight:bold;
+}
+
+/*CLEARFIX*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+.DN{display:none;}
+
+
+
+html,body{
+	overflow-y: hidden;
+}
+
+body{
+	font: 12px/18px Tahoma, arial, helvetica, sans-serif;
+	color: #fff;
+	min-height: 700px;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.left-col{
+	float: left;
+}
+
+.right-col{
+	float: right;
+}
+
+.content p.destacado{
+	font: 14px/16px georgia, 'Times New Roman', serif;
+	color: #7ebed6;
+}
+
+/*HEADER*/
+
+header{
+	width: 356px;
+	height: 280px;
+	background: url(../img/fd_header.png) no-repeat;
+	position: absolute;
+	top: 0;
+	right: -15px;
+	z-index: 50;
+}
+
+header h1 a{
+	display: block;
+	width: 250px;
+	height: 64px;
+	background: url(../img/fd_logo2.png) no-repeat;
+	top: 73px;
+	left: 50px;
+	position: absolute;
+}
+
+nav ul{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+nav li{
+	float: left;
+	margin-right:12px;
+}
+
+nav li.last{
+	margin-right: 0;
+}
+
+nav li a{
+	display: block;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 63px;
+	height: 91px;
+	width: 104px;
+	color: #095074;
+	text-align: center;
+}
+
+nav li a.current{
+	background: url(../img/sp_nav-current.png) no-repeat;
+}
+
+
+/* FIN HEADER */
+
+
+/* FOOTER */
+
+footer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background: url(../img/fd_footer.jpg) center top no-repeat;
+	border-top: 1px solid #25667e;
+	z-index: 1000;
+	box-shadow: 0px -4px 32px #222;
+    -webkit-box-shadow: 0px -4px 32px #222;
+    -moz-box-shadow: 0px -4px 32px #222;
+}
+
+footer p{
+	float: right;
+	color: #515050;
+	font-size: 11px;
+	line-height: 76px;
+}
+
+footer p.copy{
+	float: left;
+}
+
+footer a{
+	color: #12bcfa;
+}
+
+/* FIN FOOTER */
+
+
+section.content h1{
+	color: #12bcfa;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+section.content p{
+	margin-bottom: 12px;
+}
+
+.home .left-col a,
+.jspDrag,
+ul.accordion-menu > li > h2,
+.contacto address{
+	background: url(../img/sp_iconos-arrows.png) no-repeat;
+}
+
+
+/*HOME*/
+body.home{
+	background: #084565 url(../img/fd_body-home.jpg) center top no-repeat;
+}
+
+.home h2{
+	position: absolute;
+	z-index: 50;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: bold;
+	top: 320px;
+	left: 525px;
+}
+
+.home h2 span{
+	font: 20px Georgia, serif;
+	text-transform: none;
+	top: 5px;
+	position: relative;
+}
+
+#slider-dest{
+	position: absolute;
+	top: 0;
+	left: -67px;
+	z-index: 0;
+}
+
+.home .content{
+	padding-top: 400px;
+}
+
+
+.home .left-col{
+	width: 375px;
+	background: url(../img/fd_home-txt-empresa.png) right top no-repeat;
+	padding-right: 55px
+}
+
+.home .right-col{
+	margin-right: 128px;
+}
+
+.home .sombra-btn{
+	background: url(../img/fd_home-sombrat-btn-empresa.png) center bottom no-repeat;
+	width: 67px;
+	padding-bottom: 8px;
+	margin-left: -15px;
+}
+
+.home .left-col a{
+	display: block;
+	width: 35px;
+	height: 35px;
+	background-position: 0 -69px;
+	margin: 0 auto;
+}
+
+
+.carousel-productos li{
+	position: relative;
+	z-index: 200;
+}
+
+.carousel-productos li a,
+.carousel-productos li img{
+	display: block;
+}
+
+.carousel-productos li img{
+	margin: 21px auto;
+}
+
+.carousel-productos li a{
+	color: #fff;
+	font-size: 11px;
+	display: block;
+	padding: 0 12px;
+	text-align: center;
+}
+
+
+
+/* Mask para carouseles antes de que se inicialicen */
+
+.carousel-productos.mask{
+	width: 384px;
+	height: 170px;
+	overflow: hidden;
+	position: relative;
+	left: 10px;
+}
+
+.productos .carousel-productos.mask{
+	width: 512px;
+	left: 0px;
+}
+
+.carousel-productos.mask li{
+	width: 118px;
+	background: url(../img/fd_carousel-items.png) center top no-repeat;
+	margin-left: 0;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+/* END HOME */
+
+
+
+/*EMPRESA*/
+body.empresa{
+	background: #084565 url(../img/fd_body-empresa.jpg) center top no-repeat;
+}
+
+.empresa .content{
+	width: 612px;
+	float: right;
+	position: relative;
+	top: 285px;
+}
+
+div.scroll-content{
+	height: 200px;
+	padding-right: 45px;
+	overflow: auto;
+}
+
+.jspPane{
+	position: relative;
+}
+
+.jspVerticalBar{
+	height: 100%;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 7px;
+	background: #011a26;
+	
+}
+
+.jspTrack{
+	position: relative;
+	width: 7px;
+	border: 1px solid #0f4059;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.jspDrag{
+	background-position: 0 -260px;
+	width: 17px;
+	height: 45px;
+	right: 5px;
+	position: relative;
+}
+
+
+/* PRODUCTOS */
+
+body.productos{
+	background: #084565 url(../img/fd_body-productos.jpg) center top no-repeat;
+}
+
+.productos .content{
+	width: 100%;
+	padding-top: 105px;
+	float: right;
+}
+
+.productos .left-col,
+.productos .right-col .txt{
+	padding-top: 24px;
+}
+
+.productos .left-col{
+	width: 230px;
+	position: relative;
+	left: -15px;
+}
+
+ul.accordion-menu > li{
+	margin-bottom: 3px;
+}
+
+ul.accordion-menu > li > h2{
+	color: #fff;
+	font: 13px/21px Georgia, 'Times new Roman', serif;
+	background-position: 0 -114px;
+	display: block;
+	padding-left: 27px;
+	cursor: pointer;
+}
+
+ul.accordion-menu > li > h2.selected{
+	background-position: 0 -135px;
+}
+
+ul.accordion-menu > li > ul{
+	margin-left: 34px;
+}
+
+ul.accordion-menu > li > ul > li a{
+	color: #7cdbff;
+	font-size: 11px;
+	line-height: 20px;
+	background: url(../img/fd_submenu-subitem.png) left no-repeat;
+	padding-left: 10px;
+}
+
+.productos .right-col{
+	width: 700px;
+}
+
+.productos .right-col .txt{
+	background: url(../img/fd_prod-content-border.jpg) top repeat-x;
+	width: 388px;
+}
+
+.productos .content p.destacado,
+.productos .content h1{
+	color: #a3a2a2;
+}
+
+/* SERVICIOS */
+
+.cont-servicios{
+	position: absolute;
+	top: 474px;
+	left: 488px;
+	text-align: center;
+	width: 186px;
+}
+
+.cont-servicios h2{
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 20px;
+	color: #12bcfa;
+	
+}
+
+#openServicio{
+	display: block;
+	background: url(../img/fd_ver-servicios.png) center bottom no-repeat;
+	padding-bottom: 18px;
+	font: 12x/15px Georgia, 'Times new Roman', serif;
+	color: #fff;
+}
+
+#servicios{
+	width: 500px;
+	padding: 50px;
+}
+
+#servicios, #producto{
+	display: none;
+}
+
+#servicios p, #producto h3{
+	color: #18BFF6;
+	font-size: 14px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+#servicios li{
+	list-style: disc inside;
+	margin-bottom: 2px;
+}
+
+
+#producto .colIzq{
+	float: left;
+	width: 300px;
+	margin-top: 35px;
+	height: 280px;
+	overflow: auto;
+	padding-right: 15px;
+	position: relative;
+}
+
+#producto .jspVerticalBar{
+	right: 10px;
+}
+
+#producto img{
+	float: left;
+	display: block;
+	background: url(../img/fd_prod_modal.png) no-repeat;
+	padding: 56px;
+	width: 210px;
+	height: 210px;
+	margin-left: 15px;
+}
+
+/* CONTACTO */
+
+.contacto{
+	background: #084565 url(../img/fd_body-contacto.jpg) center top no-repeat;
+}
+
+.contacto .content{
+	width: 550px;
+	float: right;
+	margin-right: 96px;
+	padding-top: 268px;
+}
+
+input[type=text],
+input[type=submit],
+textarea{
+	display: block;
+	border: none;
+	background: url(../img/sp_contact.png) no-repeat;
+	padding: 0;
+	outline: none;
+}
+
+input[type=text]{
+	width: 211px;
+	height: 38px;
+	padding: 0 14px;
+	background-position: 0 0;
+	margin-bottom: 4px;
+	font: 13px/38px Georgia, 'Times New Roman', serif;
+	color: #5e5e5e;
+}
+
+input[type=text].error{
+	background-position: -300px 0;
+}
+
+textarea{
+	width: 261px;
+	height: 103px;
+	padding: 10px 14px;
+	background-position: 0 -38px;
+	resize: none;
+	margin-bottom: 10px;
+	font: 13px/18px Georgia, 'Times New Roman', serif;
+	color: #5e5e5e;
+	overflow: hidden;
+}
+
+textarea.error{
+	background-position: -300px -38px;
+}
+
+input[type=submit]{
+	background-position: 0 -161px;
+	width: 132px;
+	height: 44px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-align: left;
+	padding-left: 20px;
+	float: right;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.contacto address{
+	padding-left: 85px;
+	padding-top: 2px;
+	min-height: 76px;
+	background-position: 0 -166px;
+}
+
+.contacto address a{
+	color: #12bcfa;
+	font-weight: bold;
+	display: inline-block;
+	padding-right: 12px;
+	background: url(../img/ic_maps.png) right 8px no-repeat;
+	font-size: 15px;
+	margin-top: 2px;
+}
+
+#mensajeError, #mensajeExito{
+	font-size: 12px;
+	color: #E22;
+	margin: 0 0 5px 1px;
+	font-weight: bold;
+	position:relative;
+	top: -4px;
+}
+
+#mensajeExito{
+	color: #093;
+}
+
+/* Necesario para darle padding al mapa. 
+Si se lo doy al mismo div que se inicializa el mapa no me lo toma. */
+/* Si lo oculto con display:none el mapa no inicializa 
+Al abrir el modal saco el visibility hidden */
+.contentMap{
+	padding: 30px 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+#map{
+	width: 500px;
+	height:350px;
+}
+
+/* Simple Modal */
+
+#simplemodal-overlay {
+	background-color:#000;
+}
+
+#simplemodal-container {
+	color:#fff; 
+	padding:12px;
+}
+
+#simplemodal-container a.modalCloseImg {
+	background: url(../img/cerrar.png) no-repeat;
+	width: 112px;
+	height: 50px;
+	display: inline;
+	z-index: 3200;
+	position: absolute;
+	top: 15px;
+	right: -9px;
+	cursor: pointer;
+}
+
+#simplemodal-container #basic-modal-content {padding:8px;}
