@@ -1,0 +1,84 @@
+.eventos .cuerpo{
+	background: url("./assets/eventos/bg.png") no-repeat top left;
+}
+
+.eventos .cuerpo h3{
+	background: url("./assets/eventos/titulo.png") no-repeat top left;
+	width: 461px;
+	height: 71px;
+	margin-bottom: 0;
+	position: relative;
+	top: 10px;
+}
+
+.eventos .cuerpo article{
+	float: left;
+	margin-right: 15px;
+}
+
+.eventos .cuerpo h4{
+	font-weight: bold;
+	color: #65397b;
+}
+
+.eventos .cuerpo ul{
+	float: left;
+	margin-right: 8px;
+}
+
+.eventos .cuerpo ul li:before{
+	content: "-";
+	margin-right: 5px;
+}
+
+
+/* Slider */
+.eventos .content-slide{
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.eventos .content-slide,
+.eventos .slider{
+	height: 206px;
+	width: 440px;
+}
+
+.eventos .plusslider-pagination-wrapper{
+	position: absolute;
+	right: 0;
+	width: auto;
+	top: 0;
+}
+
+.eventos .plusslider-pagination-wrapper .plusslider-pagination{
+	float: right;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+.eventos .plusslider-pagination li{
+	background: #320e47;
+	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	box-shadow: 0px 1px 15px #fff;
+}
+
+.eventos .plusslider-pagination li.current{
+	background: #edceff;
+}
+
+.eventos .cuerpo .deco{
+	background: url("./assets/eventos/copas.png") no-repeat top left;
+	width: 270px;
+	height: 235px;
+	display: block;
+	position: absolute;
+	top: 82px;
+	right: -70px;
+	z-index: 20;
+}
+

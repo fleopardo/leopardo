@@ -1,0 +1,311 @@
+/* http://html5doctor.com/html-5-reset-stylesheet/ */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,images,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none;outline:0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}li{list-style:none}strong{font-weight:bold}
+
+body, html{
+	overflow: hidden;
+}
+
+body{
+	font-family: tahoma, arial, helvetica, sans-serif;
+	position: relative;
+	min-width: 960px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke: 1px transparent;
+	text-rendering:optimizeLegibility;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+	font-size: 11px;
+	line-height: 18px;
+	color: #935ab2;
+	background-image: url("./assets/bg.jpg");
+	background-color: #000;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.hide{
+	display: none;
+}
+
+
+/*
+ * Clearfix
+*/
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/* PLACEHOLDERS */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #935ab2;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #935ab2;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #935ab2;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #935ab2;
+}
+
+/*
+ * FONTS
+*/
+
+@font-face {
+    font-family: 'scriptina';
+    src: url('../fonts/scriptin-webfont.eot');
+    src: url('../fonts/scriptin-webfont.svg#scriptinaregular') format('svg'),
+    	 url('../fonts/scriptin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/scriptin-webfont.woff') format('woff'),
+         url('scriptin-webfont.ttf') format('truetype');
+         ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'trajanpro';
+	src: url('../fonts/TrajanPro-Regular.eot');
+	src: url('../fonts/TrajanPro-Regular.svg') format('svg'),
+		 url('../fonts/TrajanPro-Regular.ttf') format('truetype'),
+		 url('../fonts/TrajanPro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+.contenedor{
+	width: 960px;
+	margin: 0 auto;
+	padding: 180px 0 180px 0;
+}
+
+
+/*
+ * header principal
+*/
+
+.header-principal{
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.header-principal h1{
+	float: right;
+}
+
+.header-principal h1,
+.header-principal h1 a{
+	margin: 0;
+	display: block;
+	width: 260px;
+	height: 87px;
+}
+
+.header-principal h1 a{
+	text-indent: -9999px;
+	background: url("./assets/logo.png") no-repeat;
+}
+
+/*
+ * navegacion principal
+*/
+
+.nav-principal{
+	background: #20062d url("./assets/brillo-nav.png") no-repeat bottom right;
+	border-top-left-radius: 40px;
+	margin: 0 15px;
+}
+
+.nav-principal ul{
+	margin: 0 20px;
+	overflow: hidden;
+}
+
+.nav-principal li{
+	float: left;
+	list-style-type: none;
+}
+
+.nav-principal li a{
+	position: relative;
+	display: block;
+	text-decoration: none;
+	font-family: "trajanpro";
+	font-size: 14px;
+	line-height: 58px;
+	font-weight: normal;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 4px #111;
+	padding: 0 20px;
+	-webkit-transition:color 0.2s ease-out;  /* Chrome y Safari */
+	-o-transition:color 0.2s ease-out;  /* Opera */
+	-moz-transition:color 0.2s ease-out;  /* Mozilla Firefox */
+	-ms-transition:color 0.2s ease-out;   /* Internet Explorer */
+	transition:color 0.2s ease-out;  /* W3C */
+}
+
+.nav-principal li a:hover,
+.nav-principal li a.active{
+	color: #bc65eb;
+	background: url("./assets/bg-nav-hover.jpg") center bottom no-repeat;
+}
+
+.nav-principal li a:before{
+	content: " ";
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	background: url("./assets/separador-nav.png") no-repeat;
+	top: 25px;
+	right: -1px;
+}
+
+/* Cuerpo de secciones */
+
+.cuerpo{
+	height: 215px;
+	position: relative;
+}
+
+.interna .cuerpo{
+	padding-left: 50px;
+	padding-right: 450px;
+}
+
+/*
+ * Footer
+*/
+
+footer{
+	margin-top: 20px;
+	overflow: auto;
+}
+
+footer .social{
+	position: relative;
+	height: 100px;
+	width: 200px;
+	background: url("./assets/sombra-social.png") no-repeat bottom center;
+	float: left;
+}
+
+footer .social a{
+	position: absolute;
+	background: url("./assets/social.png") no-repeat;
+	display: block;
+}
+
+	/* Contacto */
+	footer .social .mail{
+		background-position: -103px 0px;
+		width: 64px;
+		height: 64px;
+		left: 72px;
+		z-index: 2;
+	}
+
+		footer .social .mail:hover{
+			background-position: -166px 0px;
+		}
+
+	/* Facebook */
+	footer .social .fb{
+		background-position: 0px 0px;
+		width: 44px;
+		height: 44px;
+		z-index: 1;
+		top: 11px;
+		left: 40px;
+	}
+
+		footer .social .fb:hover{
+			background-position: 0 -50px;
+		}
+
+	/* Twitter */
+	footer .social .tw{
+		background-position: -50px 0px;
+		width: 44px;
+		height: 44px;
+		z-index: 1;
+		top: 11px;
+		left: 122px;
+	}
+
+		footer .social .tw:hover{
+			background-position: -50px -50px;
+		}
+
+footer .copy{
+	font-size: 11px;
+	float: left;
+	line-height: 68px;
+}
+
+footer .copy a{
+	color: #935ab2;
+}
+
+footer strong{
+	font-weight: normal;
+}
+
+footer p span{
+	color: #fff;
+}
+
+
+/* Estilos para onepage */
+
+.onepage .contenedor{
+	margin-bottom: 400px;
+}
+
+/* Only for IPAD */
+
+	/* Contacto */
+	.ipad footer .social .mail{
+		left: 83px;
+	}
+
+	/* Facebook */
+	.ipad footer .social .fb{
+		left: 40px;
+	}
+
+	/* Twitter */
+	.ipad footer .social .tw{
+		left: 145px;
+	}
+
+
+
+/* Mediaquerys */
+@media screen and (max-height: 750px) {
+	.contenedor {
+	    padding: 90px 0 90px 0;
+	}
+}
+
+@media screen and (max-height: 650px) {
+	.contenedor {
+	    padding: 30px 0 30px 0;
+	}
+}

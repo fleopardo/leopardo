@@ -1,0 +1,12 @@
+.home .cuerpo{
+	background: url("./assets/home/bg.png") no-repeat top left;
+}
+
+.home .cuerpo h3{
+	width: 229px;
+	height: 147px;
+	background: url("./assets/home/txt-magico.png") no-repeat top left;
+	position: absolute;
+	top: 30px;
+	left: 50px;
+}

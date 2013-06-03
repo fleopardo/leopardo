@@ -1,0 +1,22 @@
+.quienes-somos .cuerpo{
+	background: url("./assets/quienes-somos/bg.png") no-repeat top left;
+}
+
+.quienes-somos .cuerpo h3{
+	background: url("./assets/quienes-somos/titulo.png") no-repeat top left;
+	width: 478px;
+	height: 63px;
+	margin-bottom: 35px;
+	position: relative;
+	top: 20px;
+}
+
+.quienes-somos .cuerpo .deco{
+	background: url("./assets/quienes-somos/roseton.png") no-repeat top left;
+	width: 370px;
+	height: 215px;
+	display: block;
+	position: absolute;
+	top: 110px;
+	right: -36px;
+}
