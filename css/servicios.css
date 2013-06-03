@@ -1,0 +1,158 @@
+.servicios{
+	background-image: url("./assets/servicios/bg-completo.png");
+	min-height: 625px;
+	padding-top: 150px;
+	background-repeat: no-repeat;
+	background-position: center -25px;
+}
+
+.lt-ie10 .servicios{
+	filter: none;
+}
+
+.servicios .contenedor{
+	padding-top: 80px;
+}
+
+.servicios h3{
+	width: 255px;
+	position: absolute;
+	right: 15px;
+	top: 0;
+	text-align: right;
+	color: #8a8a8a;
+	text-shadow: none;
+	background: url("./assets/borde-titulos.png") no-repeat bottom left;
+	padding-left: 39px;
+	line-height: 100px;
+}
+
+.servicios article ul{
+	margin: 0 auto;
+	width: 980px;
+}
+
+.servicios article li{
+	width: 235px;
+	float: left;
+	padding-top: 315px;
+	background: url("./assets/servicios/sprite.png") no-repeat;
+	margin-right: 10px;
+}
+
+.servicios article li.last{
+	margin-right: 0;
+}
+
+	.servicios article li.diseno{
+		background-position: -30px -492px;
+	}
+
+	.servicios article li.frontend{
+		background-position: -264px -492px;
+	}
+
+	.servicios article li.backend{
+		background-position: -508px -492px;
+	}
+
+	.servicios article li.seo{
+		background-position: -752px -492px;
+	}
+
+	/* hovers */
+	.servicios article li.diseno:hover,
+	.ipad .servicios article li.diseno{
+		background-position: -30px -4px;
+	}
+
+	.servicios article li.frontend:hover,
+	.ipad .servicios article li.frontend{
+		background-position: -264px -4px;
+	}
+
+	.servicios article li.backend:hover,
+	.ipad .servicios article li.backend{
+		background-position: -508px -4px;
+	}
+
+	.servicios article li.seo:hover,
+	.ipad .servicios article li.seo{
+		background-position: -752px -4px;
+	}
+
+
+.servicios article li h4{
+	font-family: "archive";
+	font-weight: normal;
+	font-size: 24px;
+	color: #3d3d3d;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 5px;
+	opacity: 0;
+}
+
+.servicios article li p{
+	color: #7e7e7e;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	opacity: 0;
+}
+
+.servicios article li h4,
+.servicios article li p{
+	-webkit-transition: all 0.4s ease-out;  /* Chrome y Safari */
+	-o-transition: all 0.4s ease-out;  /* Opera */
+	-moz-transition: all 0.4s ease-out;  /* Mozilla Firefox */
+	-ms-transition: all 0.4s ease-out;   /* Internet Explorer */
+	transition: all 0.4s ease-out;  /* W3C */
+}
+
+	.servicios article li.diseno:hover h4,
+	.servicios article li.diseno:hover p,
+	.servicios article li.frontend:hover h4,
+	.servicios article li.frontend:hover p,
+	.servicios article li.backend:hover h4,
+	.servicios article li.backend:hover p,
+	.servicios article li.seo:hover h4,
+	.servicios article li.seo:hover p{
+		opacity: 1;
+		-webkit-transform: scale(1.1);/* Safari */
+		-moz-transform: scale(1.1);/* Firefox */
+		-ms-transform: scale(1.1);/* IE */
+		-o-transform: scale(1.1);/* Opera */
+	}
+
+.servicios .integracion{
+	display: block;
+	text-align: center;
+	margin-top: 35px;
+	border-bottom: 1px solid #797979;
+}
+
+.servicios .integracion span{
+	text-transform: uppercase;
+	font-family: "archive";
+	font-weight: normal;
+	font-size: 22px;
+	letter-spacing: 10px;
+	color: #797979;
+	background: #fff;
+	padding: 0 10px 0 20px;
+	position: relative;
+	top: 13px;
+}
+
+
+/* Estilos sin Javascript - Navegacion normal */
+.no-js .servicios,
+.ipad .servicios{
+	background-color: #cccccc;
+}
+
+.ipad .servicios article li h4,
+.ipad .servicios article li p{
+	opacity: 1;
+}

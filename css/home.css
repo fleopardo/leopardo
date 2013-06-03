@@ -1,0 +1,179 @@
+.home.contenido{
+	padding-bottom: 0;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+.home.contenido.loading{
+	background: url("./assets/chicoui/loading-big.gif") 50% 50% no-repeat;
+}
+
+.home .contenedor{
+	height: 855px; /* Despues se pisa con JS, es para que el footer inicialmente no se pegue al header*/
+	position: static !important;
+}
+
+#maximage {
+	display:none;
+	position: absolute !important;
+}
+
+.no-js #maximage {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.no-js #maximage img{
+	width: 100%;
+	height: 100%;
+}
+
+#maximage .contenedor .info-slider{
+	position:absolute;
+	z-index:9999;
+	margin-left: 750px;
+	text-align: right;
+	z-index: 1;
+}
+
+#maximage .contenedor .info-slider img{
+	margin-bottom: 10px;
+}
+
+#maximage .contenedor .info-slider p{
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+#maximage .contenedor .info-slider a{
+	font-family: "archive";
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 99px;
+	text-transform: uppercase;
+	display: inline-block;
+	width: 177px;
+	padding-right: 30px;
+	background: url("./assets/home/btn.png") no-repeat;
+	color: #fff;
+}
+
+#maximage .contenedor .info-slider a:hover{
+	opacity: .9;
+}
+
+.ie7 #maximage .contenedor .info-slider a{
+	display: inline;
+	zoom: 1;
+}
+
+/* Slide foodpro */
+
+	#maximage .foodpro .info-slider{
+		width: 250px;
+		top: 38%;
+	}
+
+	#maximage .foodpro .info-slider p{
+		color: #999;
+	}
+
+/* Slide Later */
+
+	#maximage .later .info-slider{
+		width: 248px;
+		top: 42%;
+	}
+
+	#maximage .later .info-slider p{
+		color: #fff;
+	}
+
+/* Slide Posta */
+
+	#maximage .posta .info-slider{
+		width: 253px;
+		top: 43%;
+	}
+
+	#maximage .posta .info-slider p{
+		color: #fff;
+	}
+
+.cycle-nav {
+    position: absolute;
+    top: 650px;
+    left: 48%;
+    z-index: 0;
+    right: 0;
+}
+
+.cycle-nav ul {
+    list-style-type:none;
+}
+
+.cycle-nav ul li {
+    float: left;
+    margin-right: 3px;
+}
+
+.cycle-nav ul li a {
+    background: url("./assets/bullets.png") no-repeat;
+    display: block;
+    height: 18px;
+    width: 18px;
+}
+
+.cycle-nav ul li.activeSlide a{
+    background-position: -21px 0px;
+}
+
+@media screen and (max-height: 750px) {
+	.cycle-nav {
+	    top: 590px;
+	}
+}
+
+
+
+/* IPAD */
+
+
+.ipad,
+.ipad body {
+	overflow: hidden;
+}
+
+.ipad header,
+.ipad footer,
+.ipad nav{
+	position: fixed;
+}
+
+.ipad .home.contenido{
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	position: fixed;
+}
+
+.ipad #maximage {
+	position: fixed !important;
+}
+
+.ipad #maximage .contenedor .info-slider{
+	position: fixed;
+	right: 30px;
+}
+
+.ipad .cycle-nav {
+    position: fixed;
+    top: auto;
+    bottom: 120px;
+}

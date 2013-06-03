@@ -1,0 +1,58 @@
+.nosotros{
+	background-image: url("./assets/nosotros/bg-completo.png");
+	min-height: 785px;
+	padding-top: 130px;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.lt-ie10 .nosotros{
+	filter: none;
+}
+
+.nosotros h3{
+	width: 260px;
+	position: absolute;
+	right: 30px;
+	top: 0;
+	text-align: right;
+	color: #fff;
+	text-shadow: 2px 2px 2px #222;
+	background: url("./assets/borde-titulos.png") no-repeat bottom left;
+	padding-left: 39px;
+	line-height: 100px;
+}
+
+.nosotros h3 span{
+	color: #5a9ecf;
+}
+
+.nosotros .texto{
+	padding: 0 20px 0 620px;
+	background: url("./assets/nosotros/leopardo.png") no-repeat top left;
+	min-height: 535px;
+	position: relative;
+	top: -40px;
+}
+
+.nosotros .texto h4{
+	font-family: "archive";
+	font-size: 24px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #5a9ecf;
+	padding-top: 185px;
+	margin-bottom: 10px;
+}
+
+.nosotros .texto p{
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+
+/* Estilos sin Javascript - Navegacion normal */
+.no-js .nosotros,
+.ipad .nosotros{
+	background-color: #07a1d3;
+}

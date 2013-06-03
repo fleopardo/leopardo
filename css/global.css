@@ -1,0 +1,269 @@
+/* http://html5doctor.com/html-5-reset-stylesheet/ */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,images,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none;outline:0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}li{list-style:none}strong{font-weight:bold}
+
+
+body{
+	font-family: tahoma, arial, helvetica, sans-serif;
+	position: relative;
+	min-width: 1000px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke: 1px transparent;
+	text-rendering:optimizeLegibility;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+	font-size: 13px;
+	line-height: 18px;
+	background-image: url("./assets/textura-leopardo.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.hide{
+	display: none;
+}
+
+
+/*
+ * Clearfix
+*/
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/*
+ * FONTS
+*/
+
+@font-face {
+    font-family: 'archive';
+    src: url('../fonts/archive.eot');
+    src: url('../fonts/archive.svg') format('svg'),
+    	 url('../fonts/archive.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/archive.woff') format('woff'),
+         url('../fonts/archive.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'script';
+    src: url('../fonts/script.eot');
+    src: url('../fonts/script.svg') format('svg'),
+    	 url('../fonts/script.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/script.woff') format('woff'),
+         url('../fonts/script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * header principal
+*/
+
+.header-principal{
+	width: 870px;
+	height: 275px;
+	background: url("./assets/bg-header.png") no-repeat left top;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.header-principal h1{
+	padding-top: 6px;
+}
+
+.header-principal h1,
+.header-principal h1 a{
+	margin: 0;
+	display: block;
+	width: 355px;
+	height: 140px;
+}
+
+.header-principal h1 a{
+	text-indent: -9999px;
+	background: url("./assets/logo.png") no-repeat;
+}
+
+/*
+ * navegacion principal
+*/
+
+.nav-principal{
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	right: 20px;
+}
+
+.nav-principal ul{
+	margin: 0;
+	overflow: hidden;
+}
+
+.nav-principal li{
+	float: left;
+	list-style-type: none;
+}
+
+.nav-principal li a{
+	padding: 50px 12px 0 12px;
+	display: block;
+	text-decoration: none;
+	font-family: "archive";
+	font-size: 14px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 1px 1px 4px #111;
+	-webkit-transition:color 0.2s 0.3s ease-out;  /* Chrome y Safari */
+	-o-transition:color 0.2s 0.3s ease-out;  /* Opera */
+	-moz-transition:color 0.2s 0.3s ease-out;  /* Mozilla Firefox */
+	-ms-transition:color 0.2s 0.3s ease-out;   /* Internet Explorer */
+	transition:color 0.2s 0.3s ease-out;  /* W3C */
+}
+
+.nav-principal li a:hover,
+.nav-principal li a.active{
+	background: url("./assets/bg-nav.png") no-repeat center top;
+}
+
+/*
+.nav-principal.dark li a:hover,
+.nav-principal.dark li a.active{
+	background-position: center -89px;
+}*/
+
+/*
+.nav-principal.dark li a{
+	color: #222;
+	text-shadow: none;
+}*/
+
+
+/* Globales del contenido */
+
+section.contenido{
+	position: relative;
+	padding-bottom: 130px; /* Alto del footer + un espacio extra de separacion */
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	-moz-box-shadow: 0px 30px 27px #999;
+	-webkit-box-shadow: 0px 30px 27px #999;
+	box-shadow: 0px 30px 27px #999;
+}
+
+section.contenido h3{
+	font-family: "archive";
+	font-weight: normal;
+	font-size: 50px;
+	letter-spacing: -2px;
+}
+
+section.contenido h3 span{
+	font-family: "script";
+	font-weight: normal;
+	font-size: 46px;
+	display: block;
+	letter-spacing: 5px;
+}
+
+section.contenido .contenedor{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+/*
+ * Footer
+*/
+
+footer{
+	background: url("./assets/bg-footer.png") no-repeat left top;
+	height: 110px; /** Con monitores grandes deberia medir 185px..*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+footer > div{
+	margin: 65px 0 0 25px;
+}
+
+footer strong{
+	font-weight: normal;
+}
+
+footer p,
+footer a{
+	font-size: 11px;
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .fb-like{
+	position: absolute;
+	right: 30px;
+	top: 65px;
+}
+
+
+/* Estilos para onepage */
+
+.onepage,
+.onepage body{
+	overflow: hidden;
+}
+
+.onepage .header-principal,
+.onepage .nav-principal,
+.onepage footer{
+	position: fixed;
+}
+
+.onepage section.contenido{
+	margin-top: -220px;
+	margin-bottom: 50px;
+}
+
+.onepage section.contenido.home{
+	margin-top: 0;
+}
+
+
+.onepage footer{
+	bottom: -200px;
+	-webkit-transition: bottom 0.5s ease-out;  /* Chrome y Safari */
+	-o-transition:bottom 0.5s ease-out;  /* Opera */
+	-moz-transition:bottom 0.5s ease-out;  /* Mozilla Firefox */
+	-ms-transition:bottom 0.5s ease-out;   /* Internet Explorer */
+	transition:bottom 0.5s ease-out;  /* W3C */
+}
+
+.onepage footer.show{
+	bottom: 0;
+}
+
+
+
+@media screen and (max-width: 1010px) {
+	.onepage,
+	.onepage body{
+		overflow-x: scroll;
+	}
+}

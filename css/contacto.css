@@ -1,0 +1,204 @@
+.contacto{
+	background-image: url("./assets/contacto/bg-completo.png"); /* Old browsers */
+	min-height: 570px;
+	padding-top: 150px;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.lt-ie10 .contacto{
+	filter: none;
+}
+
+.contacto .contenedor{
+	padding-top: 120px;
+}
+
+.contacto h3{
+	width: 250px;
+	position: absolute;
+	right: 15px;
+	top: -25px;
+	text-align: right;
+	color: #8a8a8a;
+	text-shadow: none;
+	background: url("./assets/borde-titulos.png") no-repeat bottom left;
+	padding-left: 39px;
+	line-height: 100px;
+}
+
+.contacto form{
+	width: 780px;
+	float: left;
+}
+
+.contacto form .row{
+	position: relative;
+	float: left;
+}
+
+.contacto form .row.middle{
+	margin-right: 32px;
+	margin-bottom: 5px;
+}
+
+.contacto form .row.middle.last{
+	margin-right: 0;
+}
+
+.contacto form .required{
+	position: absolute;
+	top: 3px;
+	right: -12px;
+	color: #3f85b9;
+	font-size: 14px;
+}
+
+.contacto form label{
+	display: none;
+}
+
+.contacto form input[type="text"],
+.contacto form textarea{
+	border: 1px solid #a0a0a0;
+	border-radius: 5px;
+	background: #fff;
+	-moz-box-shadow: 4px 4px 12px #efefef;
+	-webkit-box-shadow: 4px 4px 12px #efefef;
+	box-shadow: inset 4px 4px 12px #efefef;
+	padding: 20px 15px;
+	margin: 0;
+}
+
+.contacto form input[type="text"].error,
+.contacto form textarea.error{
+	border-color: #EE0000;
+}
+
+.contacto form input[type="text"]{
+	width: 330px;
+}
+
+.contacto form textarea{
+	width: 725px;
+	height: 100px;
+	margin: 0;
+	resize: none;
+	overflow: auto;
+}
+
+.contacto form .action{
+	clear: both;
+	position: relative;
+}
+
+.contacto form input[type="submit"]{
+	width: 148px;
+	height: 90px;
+	line-height: 90px;
+	cursor: pointer;
+	color: #fff;
+	font-family: "archive";
+	font-weight: normal;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px #666;
+	text-transform: uppercase;
+	border: none;
+	background: url("./assets/contacto/submit.png");
+	margin: 10px 0 0 15px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	padding: 0;
+}
+
+.contacto form input[type="submit"]:hover{
+	opacity: 0.8;
+}
+
+.contacto form .action #form-response{
+	position: absolute;
+	top: 44px;
+	left: 200px;
+	right: 20px;
+	color: #2a9d02;
+	font-size: 13px;
+}
+
+.contacto form .action #form-response.error{
+	color: #ee0000;
+}
+
+.contacto form .action #form-response.loading{
+	background: url("./assets/chicoui/loading-small.gif") left 50% no-repeat;
+}
+
+.contacto .seguinos{
+	float: left;
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+.contacto .seguinos h4{
+	font-size: 24px;
+	font-weight: normal;
+	font-family: "archive";
+	color: #8a8a8a;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 1px #444;
+}
+
+.contacto .seguinos li a{
+	background: url("./assets/contacto/sprite-social.png");
+	width: 90px;
+	height: 104px;
+	display: block;
+	overflow: hidden;
+	text-indent: -200px;
+	-webkit-transition: all 0.2s ease-out;  /* Chrome y Safari */
+	-o-transition:all 0.2s ease-out;  /* Opera */
+	-moz-transition:all 0.2s ease-out;  /* Mozilla Firefox */
+	-ms-transition:all 0.2s ease-out;   /* Internet Explorer */
+	transition:all 0.2s ease-out;  /* W3C */
+}
+
+	.contacto .seguinos li a.tw{
+		background-position: 0px 0px;
+	}
+
+	.contacto .seguinos li a.fb{
+		background-position: 0px -104px;
+		margin-left: 48px;
+	}
+
+	.contacto .seguinos li a.tw:hover{
+		-webkit-transform: rotate(-5deg) scale(1.1);/* Safari */
+		-moz-transform: rotate(-5deg) scale(1.1);/* Firefox */
+		-ms-transform: rotate(-5deg) scale(1.1);/* IE */
+		-o-transform: rotate(-5deg) scale(1.1);/* Opera */
+	}
+
+	.contacto .seguinos li a.fb:hover{
+		-webkit-transform: rotate(5deg) scale(1.1);/* Safari */
+		-moz-transform: rotate(5deg) scale(1.1);/* Firefox */
+		-ms-transform: rotate(5deg) scale(1.1);/* IE */
+		-o-transform: rotate(5deg) scale(1.1);/* Opera */
+	}
+
+/* Estilos sin Javascript - Navegacion normal */
+.no-js .contacto,
+.ipad .contacto{
+	background-color: #363636;
+}
+
+
+/* Mediaquerys */
+@media screen and (max-height: 750px) {
+	.contacto form input[type="text"],
+	.contacto form textarea{
+		padding: 10px 15px;
+	}
+
+	.contacto form textarea{
+		height: 80px;
+	}
+}

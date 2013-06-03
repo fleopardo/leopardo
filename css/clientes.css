@@ -1,0 +1,87 @@
+.clientes{
+	background-image: url("./assets/clientes/bg-completo.png");
+	min-height: 640px;
+	padding-top: 145px;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.lt-ie10 .clientes{
+	filter: none;
+}
+
+.clientes .contenedor{
+	padding-top: 30px;
+}
+
+.clientes h3{
+	width: 234px;
+	position: absolute;
+	right: 32px;
+	top: 0;
+	text-align: right;
+	color: #fff;
+	text-shadow: 2px 2px 2px #4dbcd7;
+	line-height: 45px;
+}
+
+.clientes h3 span{
+	color: #2c485b;
+}
+
+.clientes .grilla{
+	background-image: url("./assets/clientes/grilla.png");
+	background-repeat: no-repeat;
+	height: 506px;
+	margin: 10px 0px 0 0;
+	position: relative;
+}
+
+.clientes .grilla li{
+	background: url("./assets/clientes/logos.png") no-repeat;
+	text-indent: -1000px;
+	overflow: hidden;
+	position: absolute;
+	-webkit-transition: all 0.2s ease-out;  /* Chrome y Safari */
+	-o-transition:all 0.2s ease-out;  /* Opera */
+	-moz-transition:all 0.2s ease-out;  /* Mozilla Firefox */
+	-ms-transition:all 0.2s ease-out;   /* Internet Explorer */
+	transition:all 0.2s ease-out;  /* W3C */
+}
+
+.clientes .grilla li:hover{
+	-webkit-transform: scale(1.1);/* Safari */
+	-moz-transform: scale(1.1);/* Firefox */
+	-ms-transform: scale(1.1);/* IE */
+	-o-transform: scale(1.1);/* Opera */
+}
+
+	.clientes .grilla li.nk{
+		background-position: 0px 0px;
+		width: 135px;
+		height: 47px;
+		top: 318px;
+		left: 187px;
+	}
+
+	.clientes .grilla li.dedo{
+		background-position: 0px -69px;
+		width: 98px;
+		height: 50px;
+		left: 708px;
+		top: 325px;
+	}
+
+	.clientes .grilla li.bc{
+		background-position: 0px -125px;
+		width: 128px;
+		height: 22px;
+		top: 184px;
+		left: 442px;
+	}
+
+/* Estilos sin Javascript - Navegacion normal */
+.no-js .clientes,
+.ipad .clientes{
+	background-color: #fff;
+}

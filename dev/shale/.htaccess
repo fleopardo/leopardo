@@ -1,0 +1,15 @@
+RewriteEngine On
+
+#Gzip
+<ifmodule mod_deflate.c>
+	<ifmodule mod_mime.c>
+	Addtype font/opentype .otf
+	Addtype font/eot .eot
+	Addtype font/truetype .ttf
+	</ifmodule>
+
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript application/javascript text/text font/opentype font/truetype font/eot
+</ifmodule>
+#End Gzip
+
+AddDefaultCharset UTF-8

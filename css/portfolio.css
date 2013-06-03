@@ -1,0 +1,317 @@
+.portfolio{
+	background-image: url("./assets/portfolio/bg-completo.png");
+	min-height: 620px;
+	padding-top: 128px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.lt-ie10 .portfolio{
+	filter: none;
+}
+
+.portfolio .contenedor{
+	padding-top: 90px;
+}
+
+.portfolio h3{
+	width: 270px;
+	position: absolute;
+	right: 0px;
+	top: -10px;
+	text-align: right;
+	color: #ffffff;
+	text-shadow: none;
+	background: url("./assets/borde-titulos.png") no-repeat bottom left;
+	padding-left: 39px;
+	line-height: 105px;
+}
+
+
+.portfolio .categs{
+	position: absolute;
+	top: -36px;
+	left: 785px;
+}
+
+.portfolio .categs li{
+	float: left;
+	margin-left: -30px;
+	font-size: 14px;
+	font-family: "archive";
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #3e88b6;
+	display: block;
+	position: relative;
+
+}
+
+.portfolio .categs a{
+
+}
+
+.portfolio .categs li:hover,
+.portfolio .categs li.active{
+	color: #fff;
+	background: url("./assets/portfolio/nav-hover.png") no-repeat;
+}
+
+	.portfolio .categs li.web{
+		width: 90px;
+		padding: 100px 0 35px 27px;
+	}
+
+	.portfolio .categs a.mobile{
+		width: 100px;
+		padding: 106px 0 30px 13px;
+		top: -6px;
+	}
+
+	.portfolio .categs a.labs{
+		width: 87px;
+		padding: 111px 0 25px 23px;
+		top: -11px;
+	}
+
+
+/* Carousel */
+
+.portfolio .ch-carousel{
+	/*overflow: visible !important;*/
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.portfolio .ch-carousel-prev:after,
+.portfolio .ch-carousel-next:after{
+	content: none;
+}
+
+.portfolio .ch-carousel-prev,
+.portfolio .ch-carousel-next{
+	background: url("./assets/portfolio/arrows_v2.png") no-repeat;
+	height: 120px;
+	width: 35px;
+	top: 150px;
+	display: none;
+}
+
+.portfolio .ch-carousel-prev:hover,
+.portfolio .ch-carousel-next:hover{
+	opacity: 1;
+}
+
+.portfolio .ch-carousel-prev{
+	left: -12px;
+	background-position: top left;
+}
+
+.portfolio .ch-carousel-next{
+	right: -12px;
+	background-position: top right;
+}
+
+.portfolio .ch-carousel-disabled{
+	/*display: block;
+	cursor: default;*/
+}
+
+.portfolio .ch-carousel-prev.ch-carousel-disabled{
+	background-position: 0px -139px;
+}
+
+.portfolio .ch-carousel-next.ch-carousel-disabled{
+	background-position: -35px -139px;
+}
+
+
+.portfolio .ch-carousel-adaptive{
+	margin: 0 20px;
+}
+
+.portfolio .ch-carousel ul,
+.portfolio .ch-carousel li{
+	height: 410px;
+}
+
+.portfolio .ch-carousel li{
+	width: 240px;
+	float: left;
+	position: relative;
+	top: 30px;
+}
+
+.portfolio .ch-carousel li a{
+	display: block;
+	-webkit-transition: -webkit-transform 0.2s ease-out;
+	-o-transition: -o-transform 0.2s ease-out;
+	-moz-transition: -moz-transform 0.2s ease-out;
+	-ms-transition: ms-transform 0.2s ease-out;
+	transition: transform 0.2s ease-out;
+
+}
+
+.portfolio .ch-carousel li a:hover{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+}
+
+.portfolio .ch-carousel li a img{
+	border: none;
+}
+
+
+.portfolio .ch-carousel-pages{
+	position: absolute;
+	top: 390px;
+}
+
+.portfolio .ch-carousel-pages span{
+	width: 18px;
+	height: 18px;
+	background: url("./assets/bullets.png") no-repeat;
+	box-shadow: none;
+    margin: 0 3px 0 0;
+}
+
+.portfolio .ch-carousel-pages .ch-carousel-selected{
+	background-color: transparent;
+	background-position: -21px 0px;
+}
+
+/* Mascara sin Javascrip del carousel */
+
+.portfolio .ch-carousel.mask{
+	padding-left: 20px;
+}
+
+.portfolio .ch-carousel.mask li{
+	margin-bottom: 30px;
+}
+
+.portfolio .ch-carousel.mask ul{
+	overflow: hidden;
+	width: 1000px;
+}
+
+
+/* Estilos sin Javascript - Navegacion normal */
+.no-js .portfolio,
+.ipad .portfolio{
+	background-color: #313131;
+}
+
+
+
+
+/***************************
+
+	PORTFOLIO DETALLE
+
+****************************/
+
+.portfolio .detalle > .txt{
+	width: 250px;
+	position: absolute;
+	background: url("./assets/portfolio/sombra-detalle.png") no-repeat top right;
+	padding-right: 55px;
+	min-height: 572px;
+}
+
+.portfolio .detalle h4{
+	font-family: "archive";
+	font-size: 24px;
+	color: #fff;
+	margin: 35px 0 20px 0;
+	line-height: 25px;
+}
+
+.portfolio .detalle h5{
+	color: #3980ae;
+}
+
+.portfolio .detalle p{
+	color: #696868;
+	margin-bottom: 10px;
+}
+
+.portfolio .detalle .volver{
+	background: url("./assets/portfolio/btn-volver.png") no-repeat;
+	width: 122px;
+	height: 66px;
+	color: #919191;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #fff;
+	line-height: 70px;
+	display: block;
+	font-size: 18px;
+	font-family: "archive";
+	text-align: center;
+	margin-top: 20px;
+	float: right;
+	margin-right: 35px;
+}
+
+.portfolio .detalle .volver:hover{
+	opacity: .8;
+}
+
+/* slider */
+
+.portfolio .detalle .ch-carousel{
+	margin-left: 300px;
+	width: 660px;
+	overflow: hidden;
+	position: relative;
+	top: 20px;
+}
+
+.portfolio .detalle .ch-carousel-prev,
+.portfolio .detalle .ch-carousel-next{
+	display: none;
+}
+
+.portfolio .detalle .ch-carousel-adaptive{
+	margin: 0;
+}
+
+.portfolio .detalle .ch-carousel ul,
+.portfolio .detalle .ch-carousel li{
+	height: 500px;
+}
+
+.portfolio .detalle .ch-carousel li{
+	width: 660px;
+	float: left;
+	top: 0;
+}
+
+.portfolio .detalle .ch-carousel-pages{
+	top: 480px;
+}
+
+/* Mascara sin Javascrip del carousel */
+
+.portfolio .detalle .ch-carousel.mask{
+	padding-left: 0;
+}
+
+
+
+.portfolio .wrapper-detalle{
+	display: none;
+}
+
+/* Mediaquerys */
+@media screen and (max-height: 750px) {
+	.portfolio .detalle .ch-carousel-pages{
+		top: 380px;
+	}
+
+	.portfolio .ch-carousel-pages{
+		top: 350px;
+	}
+}
