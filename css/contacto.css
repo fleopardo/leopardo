@@ -1,0 +1,94 @@
+.contacto .col{
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+}
+
+.contacto .col.last{
+	margin-right: 0;
+}
+
+.contacto .col form .row{
+	margin-bottom: 6px;
+}
+
+.contacto .col form label{
+	display: inline-block;
+	width: 24%;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+.contacto .col form input[type="text"],
+.contacto .col form textarea,
+.contacto .col form select{
+	border: 2px solid #fff;
+	padding: 12px 5px;
+	background: #e9e9e9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e9e9e9 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e9e9e9), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e9e9e9 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e9e9e9 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e9e9e9 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e9e9e9 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9e9', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	width: 70%;
+	-moz-box-shadow: 0px 7px 51px #a9cff0;
+	-webkit-box-shadow: 0px 7px 51px #a9cff0;
+	box-shadow: 0px 7px 51px #a9cff0;
+}
+
+.contacto .col form textarea{
+	height: 80px;
+	resize: none;
+	overflow: auto;
+}
+
+.contacto .col form input[type="submit"]{
+	width: 164px;
+	height: 123px;
+	background: transparent url("./assets/contacto/submit.png");
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	line-height: 120px;
+	cursor: pointer;
+	font-family: "gotham-book";
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 0;
+	float: right;
+}
+
+.contacto .col form input[type="submit"]:hover{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+
+.contacto .col form input[type="text"].error,
+.contacto .col form textarea.error,
+.contacto .ui-selectmenu.error{
+	border-color: #c00;
+}
+
+.contacto #form-response{
+	clear: both;
+	text-align: center;
+	color: #093;
+}
+
+.contacto #form-response.error{
+	clear: both;
+	text-align: center;
+	color: #c00;
+}
+
+/* Mapas */
+
+.mapa{
+	width: 100%;
+	height: 400px;
+	margin: 10px auto 0 auto;
+	border: 1px solid #fff;
+}

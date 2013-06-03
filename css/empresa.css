@@ -1,0 +1,50 @@
+.empresa .contenido .info{
+	width: 425px;
+	margin-right: 45px;
+	float: left;
+}
+
+.empresa .contenido .info article{
+	margin-bottom: 20px;
+}
+
+.empresa .contenido .info .titulo-grande .icon{
+	background: url("./assets/home/sprite-destacados.png") no-repeat;
+	background-position: -490px -471px;
+	width: 152px;
+	height: 191px;
+	display: block;
+	position: absolute;
+	right: 21px;
+	top: -71px;
+}
+
+.empresa .galeria{
+	float: left;
+	width: 480px;
+}
+
+.empresa .galeria .zoom{
+	width: 478px;
+	height: 250px;
+	margin-bottom: 20px;
+	-moz-box-shadow: 0px 5px 29px #999;
+	-webkit-box-shadow: 0px 5px 29px #999;
+	box-shadow: 0px 5px 29px #999;
+}
+
+.empresa .galeria #carousel-empresa li{
+	border: 1px solid #ccc;
+}
+
+.empresa .galeria #carousel-empresa.mask{
+	overflow: hidden;
+	height: 92px;
+}
+
+.empresa .galeria #carousel-empresa.mask li{
+	float: left;
+	width: 115px;
+	margin-right: 3px;
+	margin-bottom: 10px;
+}

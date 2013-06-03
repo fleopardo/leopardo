@@ -1,0 +1,88 @@
+/* Slider */
+
+.home .slider-principal{
+	position: relative;
+	margin-top: -65px;
+}
+
+.home .slider-principal p{
+	position: absolute;
+	top: 85px;
+	width: 480px;
+	font-size: 28px;
+	line-height: 28px;
+	color: #003e85;
+	text-transform: uppercase;
+	font-family: "gotham-book";
+	font-weight: normal;
+	letter-spacing: -3px;
+	z-index: 100;
+}
+
+.home .slider-principal p span{
+	color: #fff;
+	font-family: "gotham-black";
+	display: block;
+	font-size: 32px;
+	line-height: 34px;
+}
+
+.home .slider-principal .slider{
+	height: 450px;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.home .slider-principal .plusslider-pagination-wrapper{
+	position: absolute;
+	left: -2px;
+	top: 225px;
+	width: auto;
+}
+
+.home .destacados{
+	overflow: hidden;
+}
+
+.home .destacados article{
+	width: 155px;
+	padding-left: 150px;
+	padding-top: 37px;
+	margin-right: 15px;
+	float: left;
+	min-height: 160px;
+	background: url("./assets/home/sprite-destacados.png") no-repeat;
+}
+
+	.home .destacados article.last{
+		margin-right: 0;
+	}
+
+	.home .destacados article.servicios{
+		background-position: -15px 10px;
+	}
+
+	.home .destacados article.productos{
+		background-position: -229px -247px;
+	}
+
+	.home .destacados article.empresa{
+		background-position: -504px -471px;
+	}
+
+.home .destacados article p{
+	color: #6c6d6d;
+}
+
+.home .destacados .titulo-chico:after{
+	color: #6c6d6d;
+}
+
+.home .destacados article a:hover h3:after{
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	color: #2c86e0;
+}

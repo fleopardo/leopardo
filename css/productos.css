@@ -1,0 +1,49 @@
+.productos .contenido .titulo-grande .icon{
+	background: url("./assets/home/sprite-destacados.png") no-repeat;
+	background-position: -207px -240px;
+	width: 190px;
+	height: 195px;
+	display: block;
+	position: absolute;
+	right: -28px;
+	top: -71px;
+}
+
+.productos .col{
+	float: left;
+	width: 48%;
+	margin-right: 3%;
+}
+
+.productos .col.last{
+	margin-right: 0;
+}
+
+/* Carouseles */
+
+.productos .carousel li{
+	border: 1px solid #ccc;
+}
+
+.productos .carousel li p{
+	visibility: hidden;
+}
+
+.productos .jcarousel-container,
+.productos .carousel.mask{
+	margin-top: 50px;
+}
+
+.productos .carousel.mask{
+	overflow: hidden;
+	height: 132px;
+	margin-left: 20px;
+}
+
+.productos .carousel.mask li{
+	float: left;
+	width: 130px;
+	height: 130px;
+	margin-bottom: 10px;
+	margin-right: 9px;
+}

@@ -1,0 +1,36 @@
+/**
+ * jQuery.popover example stylesheet.
+ * By Davey IJzermans
+ * http://daveyyzermans.nl
+ *
+ * License: public domain
+ */
+
+.popover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	color: #fff;
+	font-size: 13px;
+	font-family: tahoma;
+	height: 169px;
+	width: 376px;
+	background: url("../assets/popover-top.png") no-repeat;
+}
+
+.popover .wrap {
+	padding: 20px 30px;
+}
+
+.popover .title {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+.popover .content {
+	max-height: 95px;
+	overflow: auto;
+	line-height: 16px;
+}

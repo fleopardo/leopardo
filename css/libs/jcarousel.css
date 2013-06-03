@@ -1,0 +1,91 @@
+.jcarousel-clip {
+    overflow: hidden;
+}
+
+/* Jcarousel Empresa */
+
+.empresa .jcarousel-container-horizontal{
+	width: 480px;
+}
+
+.empresa .jcarousel-item {
+	width: 115px;
+	height: 60px;
+	margin-right: 3px;
+}
+
+/* Jcarousel Productos */
+
+.productos .jcarousel-container-horizontal{
+	width: 420px;
+	margin: 0 auto;
+}
+
+.productos .jcarousel-item {
+	width: 130px;
+	height: 130px;
+	margin-right: 9px;
+}
+
+
+/* Horizontal Buttons */
+
+.jcarousel-prev-horizontal,
+.jcarousel-next-horizontal{
+  	background:url(../assets/arrows-carousel.png) no-repeat;
+  	position: absolute;
+  	z-index:100;
+  	cursor: pointer;
+}
+
+.jcarousel-prev-horizontal,
+.jcarousel-next-horizontal{
+	width: 7px;
+	height: 30px;
+	top: 18px;
+}
+
+
+.productos .jcarousel-prev-horizontal,
+.productos .jcarousel-next-horizontal{
+	top: 52px;
+}
+
+.jcarousel-next-horizontal {
+    background-position: top right;
+	right: -20px;
+}
+
+.jcarousel-prev-horizontal {
+    background-position: top left;
+	left: -20px;
+}
+
+.jcarousel-next-horizontal:hover,
+.jcarousel-next-horizontal:focus,
+.jcarousel-next-horizontal:active{
+    background-position: top right;
+}
+
+.jcarousel-next-disabled-horizontal,
+.jcarousel-next-disabled-horizontal:hover,
+.jcarousel-next-disabled-horizontal:focus,
+.jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: bottom right;
+}
+
+
+.jcarousel-prev-horizontal:hover,
+.jcarousel-prev-horizontal:focus,
+.jcarousel-prev-horizontal:active{
+   background-position: top left;
+}
+
+ .jcarousel-prev-disabled-horizontal,
+ .jcarousel-prev-disabled-horizontal:hover,
+ .jcarousel-prev-disabled-horizontal:focus,
+ .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: bottom left;
+}
