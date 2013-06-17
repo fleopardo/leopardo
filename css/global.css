@@ -16,8 +16,21 @@ body{
 	padding-top: 10px;
 }
 
+.ch-box-attention, .ch-box-error, .ch-box-help, .ch-box-information, .ch-box-ok{
+	text-shadow: none;
+}
+
 .hide{
 	display: none;
+}
+
+#dimmer{
+	position: fixed;
+	z-index: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
 
 /*
@@ -44,19 +57,27 @@ body{
 */
 
 ::-webkit-input-placeholder {
-   color: #282828;
+   color: #707070;
+   font-family: Georgia;
+   font-style: italic;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #282828;
+   color: #707070;
+   font-family: Georgia;
+   font-style: italic;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #282828;
+   color: #707070;
+   font-family: Georgia;
+   font-style: italic;
 }
 
 :-ms-input-placeholder {
-   color: #282828;
+   color: #707070;
+   font-family: Georgia;
+   font-style: italic;
 }
 
 /*
@@ -68,9 +89,10 @@ body{
  * ICONOS
 */
 header .barra .social dd a,
-header .barra form input[type="submit"],
+header .barra > form input[type="submit"],
 .frases > aside .acciones li,
 .icon-user,
+.icon-agregar-significado,
 header .barra .enviar-frase,
 .ch-box-attention.alert-filtros p{
 	background: url("./assets/iconos.png") no-repeat;
@@ -103,7 +125,7 @@ header .barra .enviar-frase,
 
 	.btn-rojo{
 		background-color: #C90000;
-		color: #BBBBBB;
+		color: #eee;
 	}
 
 	.btn-disabled{
@@ -126,6 +148,17 @@ header .barra .enviar-frase,
 
 .icon-user:hover{
 	background-position: -107px -82px;
+}
+
+.no-js .icon-user{
+	position: relative;
+	right: 10px;
+}
+.icon-agregar-significado{
+	background-position: -52px -28px;
+	width: 23px;
+	height: 23px;
+	display: inline-block;
 }
 
 /*
@@ -173,6 +206,10 @@ header .barra .enviar-frase,
  * HEADER
 */
 
+header{
+	margin-bottom: 30px;
+}
+
 header .logo-principal,
 header .logo-principal a{
 	width: 72px;
@@ -192,10 +229,12 @@ header .frase-random{
 header .frase-random .cita{
 	font-size: 25px;
 	line-height: 30px;
+	font-style: italic;
 }
 
 header .frase-random .nombre{
-	font-size: 11px;
+	font-family: Arial;
+	font-size: 10px;
 	line-height: 16px;
 	color: #999;
 	margin-top: 15px;
@@ -213,19 +252,31 @@ header .frase-random .nombre b{
 	header .barra{
 		background: #282828;
 		border-radius: 5px;
-		margin: 30px 0 30px 0;
+		margin: 30px 0 0 0;
 		position: relative;
+		z-index: 1;
 	}
 
-	header .barra .logo-chico{
-		width: 112px;
-		height: 40px;
-		display: block;
-		line-height: 40px;
-		background: #000 url("./assets/logo-chico.png") no-repeat 15px 10px;
-		border-top-left-radius: 5px;
-		border-bottom-left-radius: 5px;
-		float: left;
+
+	header .sticky-wrapper.is-sticky .contentBarra{
+		background: #fff;
+	}
+
+	header .sticky-wrapper.is-sticky .barra{
+		width: 100%;
+		max-width: 980px;
+		min-width: 830px;
+		top: -5px !important;
+	}
+
+	header .sticky-wrapper.is-sticky .barra .social{
+		height: 25px;
+		top: -25px;
+	}
+
+	header .sticky-wrapper.is-sticky .barra .social dl{
+		position: relative;
+		top: 4px;
 	}
 
 	header .barra nav{
@@ -235,17 +286,30 @@ header .frase-random .nombre b{
 
 	header .barra nav > *{
 		display: inline-block;
-		margin: 0 18px;
+		padding: 0 18px;
 		font-family: arial, helvetica, sans-serif;
 		font-weight: bold;
-		font-size: 14px;
+		font-size: 13px;
 		color: #bbbbbb;
 		line-height: 40px;
 		vertical-align: top;
+		float: left;
 	}
 
-	header .barra nav a:hover{
-		color: #fff;
+	header .barra nav a:hover,
+	header .barra nav a.active{
+		background-color: #000;
+	}
+
+	header .barra nav .logo-chico{
+		width: 102px;
+		height: 40px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		background: url("./assets/logo-chico.png") no-repeat 15px 10px;
+		text-indent: -200px;
+		overflow: hidden;
+		padding-left: 0;
 	}
 
 	header .barra nav #dropdownCuenta{
@@ -333,8 +397,12 @@ header .frase-random .nombre b{
 		margin-left: 5px;
 	}
 
-	header .barra nav #dropdownCuenta .ch-dropdown-content li a:hover{
+
+	header .barra nav #dropdownCuenta .ch-dropdown-content li a.ingresar{
 		font-weight: bold;
+	}
+
+	header .barra nav #dropdownCuenta .ch-dropdown-content li a:hover{
 		background: #DADADA;
 	}
 
@@ -350,22 +418,26 @@ header .frase-random .nombre b{
 		top: 5px;
 		padding: 0;
 		margin: 0;
+		z-index: 2;
 	}
 
-	header .barra .enviar-frase:hover{
+	header .barra .enviar-frase:hover,
+	header .barra .enviar-frase.active{
 		background-position: -152px -128px;
+		background-color: transparent;
 	}
 	/* Buscador */
 
-	header .barra form{
+	header .barra > form{
 		position: absolute;
 		right: 0;
 		top: 0;
 		height: 30px;
 		padding: 5px;
+		z-index: 2;
 	}
 
-	header .barra form input[type="text"]{
+	header .barra > form input[type="text"]{
 		background: #BBBBBB;
 		border: none;
 		color: #282828;
@@ -378,12 +450,12 @@ header .frase-random .nombre b{
 		font-family: arial;
 	}
 
-	header .barra form input[type="text"]:focus,
-	header .barra form input[type="text"].active{
+	header .barra > form input[type="text"]:focus,
+	header .barra > form input[type="text"].active{
 		background: #fff;
 	}
 
-	header .barra form .filtros-de-busqueda{
+	header .barra > form .filtros-de-busqueda{
 		position: absolute;
 		background: #fff;
 		border: 1px solid #000;
@@ -391,19 +463,21 @@ header .frase-random .nombre b{
 		width: 229px;
 		padding: 8px;
 		display: none;
+		font-size: 11px;
+		font-family: arial;
 	}
 
-	header .barra form .filtros-de-busqueda label{
+	header .barra > form .filtros-de-busqueda label{
 		display: block;
 		margin-bottom: 5px;
 		cursor: pointer;
 	}
 
-	header .barra form .filtros-de-busqueda label spans:hover{
+	header .barra > form .filtros-de-busqueda label span:hover{
 		text-decoration: underline;
 	}
 
-	header .barra form input[type="submit"]{
+	header .barra > form input[type="submit"]{
 		position: absolute;
 		top: 12px;
 		right: 10px;
@@ -424,8 +498,15 @@ header .frase-random .nombre b{
 
 	header .barra .social{
 		position: absolute;
-		right: 5px;
+		right: 0;
 		top: -20px;
+		left: 0;
+		background: #fff;
+	}
+
+	header .barra .social dl{
+		float: right;
+		margin-right: 10px;
 	}
 
 	header .barra .social dt{
@@ -461,53 +542,184 @@ header .frase-random .nombre b{
 	header .barra .social dd a.tw{
 		background-position: -332px -346px;
 	}
+
+
+	/* Agregar Frase */
+	header .barra .agregar-frases{
+		color: #fff;
+		position: absolute;
+		top: 37px;
+		left: 0;
+		right: 0;
+		background: #000;
+		z-index: 1;
+		font-family: Arial, helvetica, sans-serif;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		display: none;
+	}
+
+	header .barra .agregar-frases:before{
+		position: absolute;
+		top: -37px;
+		right: 0;
+		height: 40px;
+		background: #000;
+		width: 307px;
+		display: block;
+		content: "";
+		border-top-right-radius: 5px;
+	}
+
+	header .barra .agregar-frases form{
+		padding: 18px;
+		width: 60%;
+	}
+
+	header .barra .agregar-frases form .row{
+		margin-bottom: 20px;
+	}
+
+	header .barra .agregar-frases .info{
+		color: #ccc;
+		font-size: 11px;
+	}
+
+	/* Row elegir categoria*/
+	header .barra .agregar-frases .categs label{
+		display: block;
+	}
+
+	header .barra .agregar-frases .categs select{
+		padding: 5px;
+		min-width: 185px;
+	}
+
+
+	/* Row ingresar la frase */
+	header .barra .agregar-frases .frases > p{
+		margin-left: -13px;
+	}
+
+	header .barra .agregar-frases .frases input[type="text"]{
+		width: 90%;
+	}
+
+	header .barra .agregar-frases .frases .quote{
+		font-size: 32px;
+	}
+
+	header .barra .agregar-frases .frases #name-artist{
+		display: none;
+		width: 50%;
+		margin-left: 15px;
+	}
+
+	header .barra .agregar-frases .frases .info{
+		padding-left: 15px;
+	}
+
+
+	/* agregar significado */
+	header .barra .agregar-frases .significado .icon-agregar-significado{
+		vertical-align: middle;
+		margin-left: 5px;
+	}
+
+	header .barra .agregar-frases .significado .completar-significado{
+		margin-top: 8px;
+		display: none;
+	}
+
+	header .barra .agregar-frases .significado .completar-significado textarea{
+		width: 92%;
+		height: 80px;
+		margin: 0;
+	}
+
+
+	/* columna derecha */
+	header .barra .agregar-frases .reglas{
+		position: absolute;
+		top: 15px;
+		right: 0;
+		padding-left: 15px;
+		border-left: 1px solid #333;
+		font-size: 11px;
+		width: 292px;
+		bottom: 15px;
+	}
+
+	header .barra .agregar-frases .reglas li{
+		list-style-type: disc;
+		list-style-position: inside;
+	}
+
+
+	/* botones */
+	header .barra .agregar-frases .row.acciones{
+		margin-bottom: 0;
+	}
+
+	header .barra .agregar-frases .acciones .btn{
+		padding: 8px 20px;
+		margin-right: 15px;
+	}
+
 /*
  * CUERPO
 */
-.frases{
+
+.cuerpo .frases{
 	clear: both;
 	margin-bottom: 45px;
 }
 
-.frases h2{
+.cuerpo .frases h2{
 	font-size: 21px;
 	line-height: 30px;
 	font-weight: normal;
 	font-style: italic;
+	overflow: auto;
 }
 
-.frases.owner h2 > .txt{
+.cuerpo .frases h2 > .txt,
+.cuerpo .frases h2 > .quote.last{
+	margin-left: -5px;
+}
+
+.cuerpo .frases.owner h2 > .txt{
 	background-color: #FFFFCC;
 }
 
-.frases > aside{
+.cuerpo .frases > aside{
 	margin-top: 10px;
 	min-height: 26px; /* reserva espacio para fb button */
 	overflow: auto;
 }
 
-.frases > aside > .share{
+.cuerpo .frases > aside > .share{
 	min-width: 230px;
 	float: left;
 }
 
-.frases > aside > .share .fb-like{
+.cuerpo .frases > aside > .share .fb-like{
 	margin-right: 5px;
 	min-width: 102px;
 }
 
-.frases > aside .acciones{
+.cuerpo .frases > aside .acciones{
 	float: left;
 	margin-left: -20px;
 	padding-left: 10px;
 	border-left: 1px solid #ccc;
 }
 
-.frases > aside .acciones.visible{
+.cuerpo .frases > aside .acciones.visible{
 	visibility: visible;
 }
 
-.frases > aside .acciones li{
+.cuerpo .frases > aside .acciones li{
 	display: inline-block;
 	height: 22px;
 	overflow: hidden;
@@ -515,21 +727,22 @@ header .frase-random .nombre b{
 	text-indent: -200px;
 }
 
-.ie7 .frases > aside .acciones li{
+.ie7 .cuerpo .frases > aside .acciones li{
 	display: inline;
 	zoom: 1;
 }
 
-	.frases > aside .acciones li.ver-significado{
+	.cuerpo .frases > aside .acciones li.ver-significado{
 		background-position: 0px 0px;
 		width: 20px;
+		margin-right: 2px;
 	}
 
-	.frases > aside .acciones li.ver-significado:hover{
+	.cuerpo .frases > aside .acciones li.ver-significado:hover{
 		background-position: -21px 0px;
 	}
 
-	.frases > aside .acciones li.agregar-significado{
+	.cuerpo .frases > aside .acciones li.agregar-significado{
 		background-position: -23px -28px;
 		width: 23px;
 		opacity: 1;
@@ -542,34 +755,34 @@ header .frase-random .nombre b{
 		transition:opacity 0.5s ease-out;  /* W3C */
 	}
 
-	.frases > aside .acciones li.agregar-significado:hover{
+	.cuerpo .frases > aside .acciones li.agregar-significado:hover{
 		background-position: -52px -28px;
 	}
 
-	.frases > aside .acciones li.agregar-significado.enviado{
+	.cuerpo .frases > aside .acciones li.agregar-significado.enviado{
 		opacity: 0.3;
 		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 		filter: alpha(opacity=30);
 		cursor: default !important;
 }
 
-	.frases > aside .acciones li.borrar{
+	.cuerpo .frases > aside .acciones li.borrar{
 		background-position: -48px -60px;
 		width: 20px;
 	}
 
-	.frases > aside .acciones li.borrar:hover{
+	.cuerpo .frases > aside .acciones li.borrar:hover{
 		background-position: -73px -60px;
 	}
 
 
 
-.frases > aside .acciones > ul,
-.frases > aside .acciones > p{
+.cuerpo .frases > aside .acciones > ul,
+.cuerpo .frases > aside .acciones > p{
 	float: left;
 }
 
-.frases > aside .acciones > p{
+.cuerpo .frases > aside .acciones > p{
 	margin-left: 10px;
 	padding-left: 10px;
 	border-left: 1px solid #ccc;
@@ -578,7 +791,12 @@ header .frase-random .nombre b{
 	font-size:10px;
 }
 
-.frases.owner > aside .acciones > p > u{
+.cuerpo .frases > aside .acciones > p > .autor{
+	color: #999;
+	text-decoration: underline;
+}
+
+.cuerpo .frases.owner > aside .acciones > p > .autor{
 	color: #CC0000;
 }
 
@@ -728,6 +946,7 @@ header .frase-random .nombre b{
 	-webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.2);
 	-moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.2);
 	box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.2);
+	background-color: #FFFFCC;
 }
 
 .ch-box-attention.alert-filtros:before{
@@ -736,7 +955,8 @@ header .frase-random .nombre b{
 
 .ch-box-attention.alert-filtros p{
 	font-family: arial, helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 13px;
+	font-weight: bold;
 	color: #333;
 	background-position: -242px -247px;
 	display: inline-block;
@@ -749,4 +969,106 @@ header .frase-random .nombre b{
 .ch-box-attention.alert-filtros strong{
 	font-size: 16px;
 	font-style: italic;
+}
+
+
+
+
+/*
+ * PAGINADO
+*/
+
+.cuerpo .ch-pagination{
+	font-family: arial, helvetica, sans-serif;
+	margin: 20px auto;
+}
+
+.cuerpo .ch-pagination a{
+	color: #8B8B8B;
+	border: 1px solid #EDEDED;
+}
+
+.cuerpo .ch-pagination a:hover{
+	background: #F0F0F0;
+	color: #8B8B8B;
+	border: 1px solid #EDEDED;
+}
+
+.cuerpo .ch-pagination a[type="prev"],
+.cuerpo .ch-pagination a[type="next"]{
+	border: none;
+}
+
+.cuerpo .ch-pagination a[type="prev"]:hover,
+.cuerpo .ch-pagination a[type="next"]:hover{
+
+}
+
+.cuerpo .ch-pagination .ch-pagination-current a,
+.cuerpo .ch-pagination .ch-pagination-current a:hover{
+	color: #fff;
+	background: #8B8B8B;
+}
+
+
+
+
+
+/*
+ * Footer
+*/
+
+footer{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+	position: relative;
+	font-size: 11px;
+	font-family: arial, helvetica,sans-serif;
+}
+
+footer .copy{
+	width: 70%;
+}
+
+footer .copy strong > span{
+	color: #990000;
+}
+
+footer .copy a{
+	color: #990000;
+}
+
+
+footer .creadores{
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+footer .creadores li{
+	float: left;
+	margin-left: 10px;
+}
+
+footer .creadores li span{
+	background: url("./assets/creadores.jpg") no-repeat;
+	vertical-align: middle;
+	display: inline-block;
+	*display: inline;
+	overflow: hidden;
+	text-indent: -99px;
+}
+
+footer .creadores li.programacion span{
+	width: 20px;
+	height: 20px;
+	background-position: 0px -1px;
+}
+
+footer .creadores li.diseno span{
+	width: 24px;
+	height: 24px;
+	background-position: -27px -1px;
 }

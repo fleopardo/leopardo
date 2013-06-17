@@ -45,15 +45,21 @@
 			<!-- /Frase -->
 
 			<!-- barra -->
+
 			<div class="barra clearfix">
-				<a href="" class="logo-chico"><span class="hide">Tulexico.com</span></a>
+
 				<!-- navegacion -->
 				<nav>
-					<a href="">Famoscitas</a>
-					<a href="">Pene</a>
-					<a href="">Vagina</a>
-					<a href="">SHOP</a>
+					<a href="" class="logo-chico active">Tulexico.com</a>
+					<a href="">famoscitas</a>
+					<a href="">pene</a>
+					<a href="">vagina</a>
 
+					<!-- LINK ESTATICO -->
+					<a href="">SHOP</a>
+				</nav>
+
+				<nav clas="secundario">
 					<!-- Markup cuando no esta logueado -->
 					<div id="dropdownCuenta" class="ch-dropdown-skin">
 						<p class="crear-cuenta" title="Crear cuenta / Iniciar sesión"><i class="icon-user"></i> <span class="hide">Crear cuenta</span></p>
@@ -74,11 +80,10 @@
 						</ul>
 					</div-->
 
-					<a href="" class="enviar-frase"><span class="hide">Enviar frase</span></a>
+					<a href="" class="enviar-frase" title="Enviar Frase"><span class="hide">Enviar frase</span></a>
 				</nav>
 
-
-				<form>
+				<form class="search">
 					<input type="text" placeholder="Buscar frases.."/>
 
 					<div class="filtros-de-busqueda">
@@ -91,13 +96,76 @@
 					<input type="submit" value="" />
 				</form>
 
-				<dl class="social">
-					<dt>Seguinos:</dt>
-					<dd><a href="http://www.facebook.com/tulexico" class="fb">Facebook</a></dd>
-					<dd><a href="https://twitter.com/tulexico" class="tw">Twitter</a></dd>
-				</dl>
+				<div class="social">
+					<dl>
+						<dt>Seguinos:</dt>
+						<dd><a href="http://www.facebook.com/tulexico" class="fb">Facebook</a></dd>
+						<dd><a href="https://twitter.com/tulexico" class="tw">Twitter</a></dd>
+					</dl>
+				</div>
+
+				<!-- Agregar Frases -->
+				<div class="agregar-frases">
+
+					<form>
+
+						<div class="row categs">
+							<label for="categs">Publicar en:</label>
+							<select id="categs">
+								<option data-id="01">Tu Lexico</option>
+								<option data-id="02">Famocitas</option>
+								<option data-id="03">Pene</option>
+								<option data-id="04">Vagina</option>
+							</select>
+						</div>
+
+						<div class="row frases">
+							<p>
+								<span class="quote">"</span>
+								<input type="text" id="input-frase" placeholder="Ej.: ¡Que te garúe finito!"/>
+								<span class="quote">"</span>
+								<input type="text" id="name-artist" placeholder="Ej.: Diego Maradona"/>
+							</p>
+
+							<p class="info">Asegúrate de que la frase cumpla con el <u>manifiesto tuléxico</u> y esté <u>bien escrita</u> para que sea publicada.</p>
+						</div>
+
+						<div class="row significado">
+							<label>
+								<input type="checkbox" />
+								Sugerir significado <i class="icon-agregar-significado"></i>
+							</label>
+
+							<div class="completar-significado">
+								<textarea placeholder="Ej.: Para desearle a alguien un mal tan desagradable, como una llovizna molesta."></textarea>
+								<p class="info">Revisaremos tu sugerencia. Puede ser que la modifiquemos o no la incluyamos.</p>
+							</div>
+						</div>
+
+						<div class="row acciones">
+							<input type="submit" value="Enviar frase" class="btn btn-rojo" />
+							<input type="button" value="Cancelar" id="cancelar-envio-frase" class="btn btn-gris" />
+						</div>
+					</form>
+
+
+					<div class="reglas">
+						<h4>¿Por qué motivos mi frase no se publicó?</h4>
+						<ul>
+							<li>Si no representa el <u>manifiesto tuléxico</u>.</li>
+							<li>Si abusas de las mayúsculas.</li>
+							<li>Si es discrimitaroria.</li>
+							<li>Si consideramos ofensiva. </li>
+						</ul>
+					</div>
+
+				</div>
+
 			</div>
 			<!-- /barra -->
+
+
+
 
 		</header>
 		<!-- /header -->
@@ -127,7 +195,7 @@
 						<h2>
 							<span class="quote">"</span>
 							<span class="txt">Metele que son pasteles</span>
-							<span class="quote">"</span>
+							<span class="quote last">"</span>
 						</h2>
 
 						<aside>
@@ -146,7 +214,7 @@
 									<li class="borrar" rel="tooltip" title="Eliminar">Borrar frase</li>
 								</ul>
 
-								<p>12.02.2013 - Gracias <u>Joel Mendes Novo</u></p>
+								<p>12.02.2013 - Gracias <a href="query por autor" class="autor">Joel Mendes Novo</a></p>
 							</div>
 
 						</aside>
@@ -160,7 +228,7 @@
 						<h2>
 							<span class="quote">"</span>
 							<span class="txt">Pará, pará, pará... Pará el auto, abrí la guantera, sacá el mapa... ¡Y ubicate!</span>
-							<span class="quote">"</span>
+							<span class="quote last">"</span>
 						</h2>
 
 						<aside>
@@ -179,7 +247,7 @@
 									<li class="borrar" rel="tooltip" title="Eliminar">Borrar frase</li>
 								</ul>
 
-								<p>12.02.2013 - Gracias <u>Joel Mendes Novo</u></p>
+								<p>12.02.2013 - Gracias <a href="query por autor" class="autor">Joel Mendes Novo</a></p>
 							</div>
 
 						</aside>
@@ -193,7 +261,7 @@
 						<h2>
 							<span class="quote">"</span>
 							<span class="txt">Si tenes cola de paja, hacete un quincho en el orto</span>
-							<span class="quote">"</span>
+							<span class="quote last">"</span>
 						</h2>
 
 						<aside>
@@ -212,7 +280,39 @@
 									<li class="borrar" rel="tooltip" title="Eliminar">Borrar frase</li>
 								</ul>
 
-								<p>12.02.2013 - Gracias <u>Joel Mendes Novo</u></p>
+								<p>12.02.2013 - Gracias <a href="query por autor" class="autor">Joel Mendes Novo</a></p>
+							</div>
+
+						</aside>
+
+					</article>
+					<!-- /template frase -->
+					<!-- template frase -->
+					<article class="frases">
+
+						<h2>
+							<span class="quote">"</span>
+							<span class="txt">Pará, pará, pará... Pará el auto, abrí la guantera, sacá el mapa... ¡Y ubicate!</span>
+							<span class="quote last">"</span>
+						</h2>
+
+						<aside>
+
+							<div class="share">
+								<div class="fb-like" data-href="http://localhost/tulexico/" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
+
+								<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://localhost/tulexico" data-via="sleopardo" data-lang="es">Twittear</a>
+							</div>
+
+
+							<div class="acciones">
+								<ul>
+									<li class="ver-significado" rel="tooltip" title="Para expresar de manera irónica, que una situación volvió a su estado inicial.">Ver Significado</li>
+									<li class="agregar-significado" rel="tooltip" title="Sugerir significado">Sugerir significado</li>
+									<li class="borrar" rel="tooltip" title="Eliminar">Borrar frase</li>
+								</ul>
+
+								<p>12.02.2013 - Gracias <a href="query por autor" class="autor">Joel Mendes Novo</a></p>
 							</div>
 
 						</aside>
@@ -220,14 +320,104 @@
 					</article>
 					<!-- /template frase -->
 
-					<ul class="ch-pagination">
-						<!--li><a type="prev" href="/2.html">Previous</a></li-->
-						<li class="ch-pagination-current"><a href="/1.html">1</a></li>
-						<li><a href="/2.html">2</a></li>
-						<li><a href="/3.html">3</a></li>
-						<li><a href="/4.html">4</a></li>
-						<!--li><a type="next" href="/4.html">Next</a></li-->
-					</ul>
+					<!-- template frase -->
+					<article class="frases owner">
+
+						<h2>
+							<span class="quote">"</span>
+							<span class="txt">Si tenes cola de paja, hacete un quincho en el orto</span>
+							<span class="quote last">"</span>
+						</h2>
+
+						<aside>
+
+							<div class="share">
+								<div class="fb-like" data-href="http://localhost/tulexico/" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
+
+								<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://localhost/tulexico" data-via="sleopardo" data-lang="es">Twittear</a>
+							</div>
+
+
+							<div class="acciones">
+								<ul>
+									<li class="ver-significado" rel="tooltip" title="Para expresar de manera irónica, que una situación volvió a su estado inicial.">Ver Significado</li>
+									<li class="agregar-significado" rel="tooltip" title="Sugerir significado">Sugerir significado</li>
+									<li class="borrar" rel="tooltip" title="Eliminar">Borrar frase</li>
+								</ul>
+
+								<p>12.02.2013 - Gracias <a href="query por autor" class="autor">Joel Mendes Novo</a></p>
+							</div>
+
+						</aside>
+
+					</article>
+					<!-- /template frase -->
+					<!-- template frase -->
+					<article class="frases">
+
+						<h2>
+							<span class="quote">"</span>
+							<span class="txt">Pará, pará, pará... Pará el auto, abrí la guantera, sacá el mapa... ¡Y ubicate!</span>
+							<span class="quote last">"</span>
+						</h2>
+
+						<aside>
+
+							<div class="share">
+								<div class="fb-like" data-href="http://localhost/tulexico/" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
+
+								<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://localhost/tulexico" data-via="sleopardo" data-lang="es">Twittear</a>
+							</div>
+
+
+							<div class="acciones">
+								<ul>
+									<li class="ver-significado" rel="tooltip" title="Para expresar de manera irónica, que una situación volvió a su estado inicial.">Ver Significado</li>
+									<li class="agregar-significado" rel="tooltip" title="Sugerir significado">Sugerir significado</li>
+									<li class="borrar" rel="tooltip" title="Eliminar">Borrar frase</li>
+								</ul>
+
+								<p>12.02.2013 - Gracias <a href="query por autor" class="autor">Joel Mendes Novo</a></p>
+							</div>
+
+						</aside>
+
+					</article>
+					<!-- /template frase -->
+
+					<!-- template frase -->
+					<article class="frases owner">
+
+						<h2>
+							<span class="quote">"</span>
+							<span class="txt">Si tenes cola de paja, hacete un quincho en el orto</span>
+							<span class="quote last">"</span>
+						</h2>
+
+						<aside>
+
+							<div class="share">
+								<div class="fb-like" data-href="http://localhost/tulexico/" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
+
+								<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://localhost/tulexico" data-via="sleopardo" data-lang="es">Twittear</a>
+							</div>
+
+
+							<div class="acciones">
+								<ul>
+									<li class="ver-significado" rel="tooltip" title="Para expresar de manera irónica, que una situación volvió a su estado inicial.">Ver Significado</li>
+									<li class="agregar-significado" rel="tooltip" title="Sugerir significado">Sugerir significado</li>
+									<li class="borrar" rel="tooltip" title="Eliminar">Borrar frase</li>
+								</ul>
+
+								<p>12.02.2013 - Gracias <a href="query por autor" class="autor">Joel Mendes Novo</a></p>
+							</div>
+
+						</aside>
+
+					</article>
+					<!-- /template frase -->
+
 
 				</div>
 				<!-- /contenido -->
@@ -244,9 +434,29 @@
 			</div>
 			<!-- /columna derecha -->
 
+
+			<ul class="ch-pagination">
+				<li><a type="prev" href="/2.html">< Anterior</a></li>
+				<li class="ch-pagination-current"><a href="/1.html">1</a></li>
+				<li><a href="/2.html">2</a></li>
+				<li><a href="/3.html">3</a></li>
+				<li><a href="/4.html">4</a></li>
+				<li><a type="next" href="/4.html">Siguiente ></a></li>
+			</ul>
+
 		</section>
 		<!-- /cuerpo -->
 
+		<footer>
+			<p class="copy"><strong><span>tu</span>léxico</strong> &copy; fue ideado y creado en Enero de 2003 - <a href="">Privacidad</a> - <a href="">Términos</a></p>
+
+			<div class="creadores">
+				<ul>
+					<li class="programacion">Programación: <a href="http://www.leopardoagency.com" title="Leopardo Agency" target="_blank"><span>Leopardo Agency</span></a></li>
+					<li class="diseno">Diseño: <a href="http://joelmendesnovo.com.ar/" title="Joel Mendes Novo" target="_blank"><span>Joel Mendes Novo</span></a></li>
+				</ul>
+			</div>
+		</footer>
 
 	</div>
 
@@ -255,7 +465,7 @@
 
 		scr.js("js/libs/jquery.js", function(){
 
-			scr.js(["js/libs/chico-min-0.13.2.js","js/app.js"], function(){
+			scr.js(["js/libs/chico-min-0.13.2.js","js/app.js","js/libs/jquery.sticky.js"], function(){
 
 				scr.js("js/global.js");
 

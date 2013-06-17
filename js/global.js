@@ -1,44 +1,39 @@
 ;(function(){
 
-	"use strict";
-
 	/*
 	 * Elimino class no-js
 	*/
 	$("html").removeClass("no-js");
 
 
-	/*
-	 * Caché de variables
-	*/
+
+
+	/*****************************
+	 **** Cache de variables ****
+	*****************************/
 	var frases = $(".frases"),
-		formBusqueda = $(".barra").find("form"),
+		formBusqueda = $(".barra").find(".search"),
 		barraNegra = $(".barra"),
 		nav = barraNegra.find("nav");
 
 
-	/*
-	 * Inicializacion Facebook Like
-	*/
-	(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
 
 
-	/*
-	 * Inicializacion Twitter share
-	*/
-	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+	/*****************************
+	 **** Barra FIXED ****
+	*****************************/
+	barraNegra.sticky({topSpacing:25});
 
 
-	/*
-	 * Funcionalidad en el buscador
-	*/
 
+
+
+
+
+	/*****************************
+	 **** BUSCADOR ****
+	*****************************/
 	formBusqueda.find("input[type=text]").on("keyup", function(){
 
 		if( $(this).val() == "" ){
@@ -59,36 +54,163 @@
 
 
 
-	/*
-	 * Inicilizar dropdown de "crear cuenta
-	*/
+
+
+
+	/*****************************
+	 **** Enviar frases ****
+	*****************************/
+
+	nav.find(".enviar-frase").tooltip({
+		offset: "-10 10"
+	});
+
+	// ABRIR Y CERRAR EL MENU
+	nav.find(".enviar-frase").on("click",function(event){
+
+		event.preventDefault();
+
+		var that = $(this);
+
+		if( that.hasClass("active") ){
+
+			that.removeClass("active");
+
+			barraNegra.find(".agregar-frases").slideUp();
+
+			$("#dimmer").remove();
+
+		}else{
+
+			that.addClass("active");
+
+			barraNegra.find(".agregar-frases").slideDown(function(){
+
+				app.body.append('<div id="dimmer"></div>');
+
+				// Bindeo el cierre al documento
+				$("#dimmer,#cancelar-envio-frase").one("click", function(){
+
+					that.removeClass("active");
+
+					barraNegra.find(".agregar-frases").slideUp();
+
+					$("#dimmer").remove();
+
+				});
+
+			});
+
+		}
+
+	});
+
+
+	// MOSTRAR Y OCULTAR ENVIAR SIGNIFICADO DESDE EL CHECKBOX
+
+	barraNegra.find(".significado input[type=checkbox]").on("change", function(){
+
+		if( $(this).prop("checked") ){
+
+			barraNegra.find(".significado .completar-significado").show();
+
+		}else{
+
+			barraNegra.find(".significado .completar-significado").hide();
+
+		}
+
+	});
+
+
+	// CAMBIOS SEGUN SELECCION DEL USUARIO EN EL SELECT DE CATEGORIAS
+	barraNegra.find(".agregar-frases #categs").on("change", function(){
+
+		var id_selected = $(this).find("option:selected").data("id");
+
+		var input_frase = $("#input-frase");
+		var name_artist = $("#name-artist");
+		var agregar_significado = barraNegra.find(".agregar-frases .significado");
+		var descripcion = barraNegra.find(".frases .info");
+
+
+		//seleccion tulexico
+		if( id_selected == 1){
+
+			input_frase.attr("placeholder","Ej.: ¡Que te garúe finito!");
+			name_artist.hide();
+			agregar_significado.show();
+			descripcion.html("Asegúrate de que la frase cumpla con el <u>manifiesto tuléxico</u> y esté <u>bien escrita</u> para que sea publicada.");
+		};
+
+		//seleccion famoscitas
+		if( id_selected == 2){
+			input_frase.attr("placeholder","Ej.: La pelota no se mancha");
+			name_artist.show();
+			agregar_significado.hide();
+			descripcion.html("Asegúrate de que la frase se haya hecho conocida por haberl sido reresentativaa de un famoso");
+		};
+
+		//seleccion pene
+		if( id_selected == 3){
+			input_frase.attr("placeholder","Ej.: Garompa");
+			name_artist.hide();
+			agregar_significado.hide();
+			descripcion.html("Asegúrate de escribir una manera de llamar al pene.");
+		};
+
+		//seleccion vagina
+		if( id_selected == 4){
+			input_frase.attr("placeholder","Ej.: Concha");
+			name_artist.hide();
+			agregar_significado.hide();
+			descripcion.html("Asegúrate de escribir una manera de llamar a la vagina.");
+		};
+
+	});
+
+
+
+
+	/*********************************
+	 **** Init Dropdown Mi cuenta ****
+	*********************************/
 	var dropdownCuenta = nav.find("#dropdownCuenta").dropdown();
 
 
-	/*
-	 * Mostrar las acciones de las frases
-	*/
-	/*frases.on("mouseenter", function(){
-		$(this).find(".acciones").addClass("visible");
-	})
-
-	frases.on("mouseleave", function(){
-		$(this).find(".acciones").removeClass("visible");
-	})*/
 
 
-	/*
-	 * Tooltip en header
-	*/
+
+
+
+	/*****************************
+	 **** Tooltips Header ****
+	*****************************/
 	if( nav.find(".crear-cuenta").length > 0 ){
 		nav.find(".crear-cuenta").tooltip({
 			offset: "-16 10"
 		});
 	}
 
-	/*
-	 * Inicializacion de los tooltips en acciones de cada frase
-	*/
+
+
+
+
+	/*****************************
+	 **** Tooltips Footer ****
+	*****************************/
+	if( $("footer .creadores").length > 0 ){
+		$("footer .creadores").find("a").tooltip({
+			offset: "-16 10"
+		});
+	}
+
+
+
+
+	/****************************************
+	 **** Tooltips en acciones de frases ****
+	*****************************************/
 	if( frases.find(".ver-significado").length > 0 ){
 		frases.find(".ver-significado").tooltip({
 			offset: "-18 10"
@@ -108,19 +230,27 @@
 	}
 
 
-	/*
-	 * Alert Filtros de busqueda
-	*/
+
+
+
+	/***********************************
+	 **** ALERT FILTRO DE BUSQUEDA ****
+	***********************************/
+
 	$(".alert-filtros .ch-close").on("click", function(){
 		$(this).parent().slideUp(function(){
 			$(this).remove();
 		})
 	});
 
-	/*
-	 * Layer Agregar significado
-	*/
 
+
+
+
+
+	/*****************************
+	 **** Agregar significado ****
+	*****************************/
 	if(frases.find(".agregar-significado").length > 0){
 
 		frases.find(".agregar-significado").each(function(){
@@ -216,14 +346,14 @@
 
 	}
 
-	/* Fin agregar significado */
 
 
 
 
-	/*
-	 * Eliminar frases
-	*/
+
+	/*****************************
+	 **** Eliminar frases ****
+	*****************************/
 
 	if(frases.find(".borrar").length > 0){
 
@@ -281,6 +411,29 @@
 
 	}
 
-	/* Fin eliminar Frases */
+
+
+
+	/*****************************
+	 **** Init Facebook Plugins ****
+	*****************************/
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+
+
+
+
+
+	/*****************************
+	 **** Init Twitter Plugins ****
+	*****************************/
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
 
 })();
