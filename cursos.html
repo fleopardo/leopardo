@@ -18,6 +18,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700' rel='stylesheet' type='text/css'>
 
+	<link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.9.2.custom.min.css" />
+
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
 	<link rel="stylesheet" type="text/css" href="css/internas.css" />
 
@@ -77,7 +79,7 @@
 
 					<div class="universidad">
 						<img src="img/cursos/logo-universidad.jpg" width="222" height="195" class="logo"/>
-
+						*** ESTRELLAS ***
 						<p class="bajada">Per ea numquam accusata percipitur</p>
 					</div>
 
@@ -128,6 +130,35 @@
 						<li>Cremas básicas.</li>
 					</ul>
 
+					<div id="tab-cursos" class="tabs">
+						<ul>
+							<li><a href="#tabs-1">Objetivos</a></li>
+							<li><a href="#tabs-2">Cursos</a></li>
+						</ul>
+
+						<div id="tabs-1">
+							<ul>
+								<li>Masas quebradas (distintos tipos de tartas).</li>
+								<li>Merengues: suizo, francés, italiano.</li>
+								<li>Batidos livianos: bizcocuelos, genoise, pionono.</li>
+								<li>Batidos pesados: budines, magdalenas, muffins.</li>
+								<li>Pate au choux: masa bomba, aplicaciones.</li>
+								<li>Masas secas de corte y de manga.</li>
+								<li>Hojaldres: distintos tipos (elaboración y aplicaciones).</li>
+								<li>Crepes.</li>
+								<li>Flambeado.</li>
+								<li>Alfajores: rogel, marplatense, de maizena.</li>
+								<li>Conserva de frutas: métodos de esterilización, dulces, jaleas, mermeladas.</li>
+								<li>Postres de restaurant.</li>
+								<li>Preparaciones con chocolate.</li>
+								<li>Cremas básicas.</li>
+							</ul>
+						</div>
+						<div id="tabs-2">
+							<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+						</div>
+					</div>
+
 				</div>
 
 			</div>
@@ -163,6 +194,18 @@
 			</ul>
 		</div>
 	</footer>
+
+
+	<script src="js/libs/jquery.js"></script>
+	<script src="js/libs/jquery-ui-1.9.2.custom.min.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		if($("#tab-cursos").length > 0){
+			$("#tab-cursos").tabs();
+		}
+	});
+	</script>
+
 
 
 </body>
