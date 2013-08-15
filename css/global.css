@@ -351,6 +351,10 @@ a.ver-articulos{
 	color: #70a9ca;
 }
 
+a.ver-articulos:hover{
+	color: #fff;
+}
+
 footer .social-media{
 	overflow: hidden;
 	margin-bottom: 10px;
