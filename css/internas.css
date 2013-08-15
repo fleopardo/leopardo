@@ -47,6 +47,7 @@
 		-moz-box-shadow:    0px 3px 11px #ccc;
 		box-shadow:         0px 3px 11px #ccc;
 		display: table;
+		margin-bottom: 30px;
 	}
 
 
@@ -169,6 +170,11 @@
 		padding: 20px 30px;
 	}
 
+	.internas .tabs{
+		font-family: tahoma;
+		font-size: 14px;
+		line-height: 22px;
+	}
 
 
 

@@ -161,6 +161,10 @@ ul.connect li.aprender a span{
 	background-position: right -168px;
 }
 
+ul.connect li a:hover{
+	opacity: 0.8;
+}
+
 
 
 .home section.content{
@@ -189,8 +193,8 @@ section.content form{
 
 form input[type=submit]{
 	background: transparent url("./assets/fd-buscador-submit.png") no-repeat;
-	width: 46px;
-	height: 40px;
+	width: 58px;
+	height: 37px;
 	display: block;
 	position: absolute;
 	right: 0;
@@ -202,7 +206,7 @@ form input[type=submit]{
 form input[type=text]{
 	background: transparent;
 	width: 280px;
-	height: 40px;
+	height: 30px;
 	padding: 0 15px;
 	display: block;
 	border: none;
@@ -349,6 +353,10 @@ a.ver-articulos{
 	font-size: 21px;
 	line-height: 24px;
 	color: #70a9ca;
+}
+
+a.ver-articulos:hover{
+	color: #fff;
 }
 
 footer .social-media{
