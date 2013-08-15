@@ -22,6 +22,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
 	<link rel="stylesheet" type="text/css" href="css/internas.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.jcarousel.css" />
 
 </head>
 
@@ -79,7 +80,7 @@
 
 					<div class="universidad">
 						<img src="img/cursos/logo-universidad.jpg" width="222" height="195" class="logo"/>
-						*** ESTRELLAS ***
+						<div class="valoracion cuatro"></div>
 						<p class="bajada">Per ea numquam accusata percipitur</p>
 					</div>
 
@@ -168,43 +169,62 @@
 	</section>
 
 
-	<footer>
-		<div class="layout">
-			<div class="empresas">
-				<img src="./img/footer/" width="" height="">
-			</div>
-			<div class="left">
-				<ul class="social-media">
-					<li class="fb"><a href="#" title="Facebook">Facebook</a></li>
-					<li class="tw"><a href="#" title="Twitter">Twitter</a></li>
-					<li class="ln"><a href="#" title="LinkedIn">LinkedIn</a></li>
-				</ul>
-				<p>EnCarrera 2013 &copy;Copyright. All right reserved.</p>
-			</div>
-
-			<div class="right clearfix">
-				<ul class="left">
-					<li><a href="#" title="Acerca de Carrera">Acerca de Carrera</a></li>
-					<li><a href="#" title="Blog">Blog</a></li>
-				</ul>
-				<ul class="right">
-					<li><a href="#" title="">Cursos Promocionales</a></li>
-					<li><a href="#" title="">Preguntas Frecuentes</a></li>
-					<li><a href="#" title="">T&eacute;rminos y Condiciones</a></li>
-					<li><a href="#" title="">Pol&iacute;ticas de Privacidad</a></li>
+	<div class="slider-empresas">
+			<div class="layout">
+				<ul id="carousel">
+				    <li><img src="img/carousel-empresas/demo.jpg" width="155" height="200" alt="" /></li>
+				    <li><img src="img/carousel-empresas/demo.jpg" width="155" height="200" alt="" /></li>
+				    <li><img src="img/carousel-empresas/demo.jpg" width="155" height="200" alt="" /></li>
+				    <li><img src="img/carousel-empresas/demo.jpg" width="155" height="200" alt="" /></li>
+				    <li><img src="img/carousel-empresas/demo.jpg" width="155" height="200" alt="" /></li>
+				    <li><img src="img/carousel-empresas/demo.jpg" width="155" height="200" alt="" /></li>
+				    <li><img src="img/carousel-empresas/demo.jpg" width="155" height="200" alt="" /></li>
+				    <li><img src="img/carousel-empresas/demo.jpg" width="155" height="200" alt="" /></li>
 				</ul>
 			</div>
 		</div>
-	</footer>
+
+		<footer>
+
+			<div class="layout clearfix">
+				<div class="left">
+					<ul class="social-media">
+						<li class="fb"><a href="#" title="Facebook">Facebook</a></li>
+						<li class="tw"><a href="#" title="Twitter">Twitter</a></li>
+						<li class="ln"><a href="#" title="LinkedIn">LinkedIn</a></li>
+					</ul>
+					<p>EnCarrera 2013 &copy;Copyright. All right reserved.</p>
+				</div>
+
+				<div class="right clearfix">
+					<ul class="left">
+						<li><a href="#" title="Acerca de Carrera">Acerca de Carrera</a></li>
+						<li><a href="#" title="Blog">Blog</a></li>
+					</ul>
+					<ul class="right">
+						<li><a href="#" title="">Cursos Promocionales</a></li>
+						<li><a href="#" title="">Preguntas Frecuentes</a></li>
+						<li><a href="#" title="">T&eacute;rminos y Condiciones</a></li>
+						<li><a href="#" title="">Pol&iacute;ticas de Privacidad</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 
 
 	<script src="js/libs/jquery.js"></script>
 	<script src="js/libs/jquery-ui-1.9.2.custom.min.js"></script>
+	<script src="js/libs/jquery.jcarousel.min.js"></script>
+
 	<script type="text/javascript">
 
+		// Tabs
 		if($("#tab-cursos").length > 0){
 			$("#tab-cursos").tabs();
 		}
+
+		//Carousel empresas
+		$('.slider-empresas #carousel').jcarousel();
 
 	</script>
 

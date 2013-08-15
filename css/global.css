@@ -54,6 +54,7 @@ a{
 
 body{
 	font-family: 'Oxygen', sans-serif;
+	background: #f2f2f2
 }
 
 .layout{
@@ -61,6 +62,32 @@ body{
 	margin: 0 auto;
 	position: relative;
 }
+
+.valoracion{
+	width: 128px;
+	height: 25px;
+	background: url("./assets/estrellas.png") no-repeat 0px 0px;
+}
+
+	.valoracion.uno{
+		background-position: 0px -25px;
+	}
+
+	.valoracion.dos{
+		background-position: 0px -50px;
+	}
+
+	.valoracion.tres{
+		background-position: 0px -75px;
+	}
+
+	.valoracion.cuatro{
+		background-position: 0px -100px;
+	}
+
+	.valoracion.cinco{
+		background-position: 0px -125px;
+	}
 
 header{
 	background: #302b3e;
@@ -302,6 +329,11 @@ form input[type=text]{
 	z-index: 10;
 }
 
+.bloques .valoracion{
+	margin-left: 18px;
+	margin-bottom: 10px;
+}
+
 .bloques .categoria{
 	color: #fff;
 	font-size: 12px;
@@ -310,13 +342,15 @@ form input[type=text]{
 	margin-left: 20px;
 	position: relative;
 	z-index: 10;
+	margin-bottom: 10px;
+	display: inline-block;
 }
 
 .bloques > a{
 	background: url("./assets/sp-bloques.png") no-repeat;
 	background-position: 0 0;
 	display: block;
-	width: 79px;
+	width: 77px;
 	height: 79px;
 	overflow: hidden;
 	text-indent: -9999px;
@@ -346,7 +380,6 @@ form input[type=text]{
 	background-position: 0 -395px;
 }
 
-
 a.ver-articulos{
 	font-family: 'Cabin Condensed', sans-serif;
 	font-weight: 700;
@@ -357,6 +390,17 @@ a.ver-articulos{
 
 a.ver-articulos:hover{
 	color: #fff;
+}
+
+
+.slider-empresas{
+	background: #fff;
+}
+
+
+
+footer{
+	padding: 30px 0 70px 0;
 }
 
 footer .social-media{
@@ -390,6 +434,10 @@ footer .social-media li.ln a{
 	background-position: 0 -120px;
 }
 
+footer .social-media li a:hover{
+	opacity: 0.8;
+}
+
 footer p,
 footer li a{
 	font-weight: 700;
@@ -403,4 +451,8 @@ footer .layout > .right > ul.right li{
 
 footer .layout > .right > ul{
 	margin-left: 70px;
+}
+
+footer .layout > .right li a:hover{
+	color: #000;
 }

@@ -1,0 +1,72 @@
+.jcarousel-clip {
+    overflow: hidden;
+}
+
+/* Jcarousel Empresas */
+
+.slider-empresas .jcarousel-container-horizontal{
+	width: 930px;
+	margin: 0 auto;
+}
+
+.slider-empresas .jcarousel-item {
+	width: 155px;
+	height: 200px;
+	margin-right: 32px;
+}
+
+/* Horizontal Buttons */
+
+.jcarousel-prev-horizontal,
+.jcarousel-next-horizontal{
+  	background:url(./assets/arrows-carousel.png) no-repeat;
+  	position: absolute;
+  	z-index:100;
+  	cursor: pointer;
+}
+
+.jcarousel-prev-horizontal,
+.jcarousel-next-horizontal{
+	width: 7px;
+	height: 30px;
+	top: 85px;
+}
+
+.jcarousel-next-horizontal {
+    background-position: top right;
+	right: -20px;
+}
+
+.jcarousel-prev-horizontal {
+    background-position: top left;
+	left: -20px;
+}
+
+.jcarousel-next-horizontal:hover,
+.jcarousel-next-horizontal:focus,
+.jcarousel-next-horizontal:active{
+    background-position: top right;
+}
+
+.jcarousel-next-disabled-horizontal,
+.jcarousel-next-disabled-horizontal:hover,
+.jcarousel-next-disabled-horizontal:focus,
+.jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: bottom right;
+}
+
+
+.jcarousel-prev-horizontal:hover,
+.jcarousel-prev-horizontal:focus,
+.jcarousel-prev-horizontal:active{
+   background-position: top left;
+}
+
+ .jcarousel-prev-disabled-horizontal,
+ .jcarousel-prev-disabled-horizontal:hover,
+ .jcarousel-prev-disabled-horizontal:focus,
+ .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: bottom left;
+}

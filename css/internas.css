@@ -217,6 +217,10 @@
 		border-radius: 7px;
 	}
 
+	.cursos .col-izq .universidad .valoracion{
+		margin: 5px 0 8px 0;
+	}
+
 	.cursos .col-izq .universidad .bajada{
 		font-size: 18px;
 		font-family: 'Oxygen', sans-serif;
