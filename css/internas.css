@@ -28,6 +28,11 @@
 		display: inline-block;
 	}
 
+	.ie7 .internas .breadcrumb li{
+		display: inline;
+		margin-right: 8px;
+	}
+
 	.internas .breadcrumb li:after{
 		content: "/";
 	}
@@ -61,7 +66,7 @@
 		padding: 0 40px;
 		font-size: 26px;
 		line-height: 50px;
-		font-family: 'Oxygen', sans-serif;
+		font-family: 'Cabin Condensed', sans-serif;
 		border-bottom: 1px solid #619622;
 	}
 
@@ -75,6 +80,7 @@
 		overflow: hidden;
 		padding: 34px;
 		color: #fff;
+		font-family: 'Cabin Condensed', sans-serif;
 	}
 
 	.internas .header-section a{
@@ -97,6 +103,11 @@
 		line-height: 22px;
 		display: table-cell;
 		vertical-align: top;
+	}
+
+	.ie7 .internas .col-izq,
+	.ie7 .internas .col-der{
+		float: left;
 	}
 
 	.internas .col-izq{
@@ -122,7 +133,7 @@
 		font-size: 26px;
 		line-height: 30px;
 		margin: 20px 0;
-		font-family: 'Oxygen', sans-serif;
+		font-family: 'Cabin Condensed', sans-serif;
 	}
 
 	.internas .col-der p{
@@ -161,7 +172,7 @@
 		font-size: 26px;
 		line-height: 30px;
 		padding: 16px 30px;
-		font-family: 'Oxygen', sans-serif;
+		font-family: 'Cabin Condensed', sans-serif;
 		color: #fff;
 	}
 
@@ -222,7 +233,7 @@
 	}
 
 	.cursos .col-izq .universidad .bajada{
-		font-size: 18px;
+		font-size: 17px;
 		font-family: 'Oxygen', sans-serif;
 		line-height: 22px;
 	}
@@ -241,7 +252,7 @@
 	.cursos .col-izq .datos-compra ul{
 		font-size: 14px;
 		line-height: 22px;
-		font-family: 'Oxygen', sans-serif;
+		font-family: 'Cabin Condensed', sans-serif;
 	}
 
 	.cursos .col-izq .datos-compra ul .precio{

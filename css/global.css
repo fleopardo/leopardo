@@ -283,6 +283,10 @@ form input[type=text]{
 	margin-right: 0;
 }
 
+.lt-ie9 .bloques{
+	margin-right: 16px;
+}
+
 .bloques.marron{
 	background: #9c8e64;
 	border-bottom: 1px solid #766b4c;
