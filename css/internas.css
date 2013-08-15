@@ -1,0 +1,106 @@
+/*
+ * Estilos generales para las secciones internas
+*/
+
+	/* Header introductorio */
+
+	.internas .header-section{
+		overflow: hidden;
+		padding: 34px;
+		color: #fff;
+	}
+
+	.internas .header-section a{
+		color: #fff;
+	}
+
+	.internas .header-section h2{
+		font-size: 42px;
+		line-height: 46px;
+	}
+
+	/* Estructura de dos columnas */
+
+	.internas .col-izq,
+	.internas .col-der{
+		float: left;
+		padding: 34px;
+		font-family: tahoma;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+
+	.internas .col-izq{
+		width: 222px;
+		background: #302b3e;
+		color: #fff;
+	}
+
+	.internas .col-izq .titulo{
+		font-size: 20px;
+		line-height: 28px;
+		margin: 20px 0;
+		font-family: 'Oxygen', sans-serif;
+	}
+
+	.internas .col-der{
+		width: 632px;
+		background: #fff;
+		color: #333;
+	}
+
+	.internas .col-der .titulo{
+		font-size: 26px;
+		line-height: 30px;
+		margin: 20px 0;
+		font-family: 'Oxygen', sans-serif;
+	}
+
+	.internas .col-der p{
+		margin-bottom: 10px;
+	}
+
+
+
+
+
+
+
+
+
+/* PAGE: CURSOS */
+
+.cursos{
+	background: #f2f2f2 url("./assets/bg-cursos.jpg") repeat-x;
+}
+
+	/* Columna izquierda */
+
+	.cursos .col-izq > div{
+		margin-bottom: 50px;
+	}
+
+	.cursos .col-izq .universidad .logo{
+		border-radius: 7px;
+	}
+
+	.cursos .col-izq .instructor .foto{
+		border-radius: 50%;
+		margin: 0 auto 25px auto;
+		display: block;
+		width: 122px;
+	}
+
+
+	/* Columna derecha */
+
+	.cursos .col-der .video{
+		margin: 20px 0 10px 0;
+		width: 100%;
+	}
+
+	.cursos .col-der .video{
+		margin: 20px 0 10px 0;
+		width: 100%;
+	}
