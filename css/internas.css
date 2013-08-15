@@ -18,6 +18,10 @@
 		color: #d2d2d2;
 	}
 
+	.internas .breadcrumb li a:hover{
+		color: #fff;
+	}
+
 	.internas .breadcrumb li{
 		display: inline-block;
 	}
@@ -33,6 +37,7 @@
 	.internas .breadcrumb li:last-of-type:after{
 		content: "";
 	}
+
 
 	.internas .layout .content-col{
 		-webkit-box-shadow: 0px 3px 11px #ccc;
@@ -132,7 +137,7 @@
 	/* Header introductorio */
 
 	.cursos .header-section .datos-compra{
-		margin-top: 5px;
+		margin-top: 8px;
 	}
 
 	.cursos .header-section .datos-compra ul{
