@@ -159,7 +159,7 @@ ul.connect li.aprender a span{
 	background: #302b3e;
 }
 
-section.content h2{
+.home section.content h2{
 	float: left;
 	font-family: 'Cabin Condensed', sans-serif;
 	font-weight: 300;
@@ -219,15 +219,29 @@ form input[type=text]{
 
 .bloques-cont{
 	clear: both;
+	overflow: hidden;
 }
 
 .bloques{
 	position: relative;
 	width: 223px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+}
+
+.bloques:nth-child(5n){
+	clear: both;
+	float: left;
 }
 
 .bloques img{
 	width: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 12px;
 }
 
 .bloques h3{
@@ -236,4 +250,17 @@ form input[type=text]{
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
+	margin-bottom: 35px;
+}
+
+.bloques .categoria{
+	color: #fff;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 700;
+}
+
+
+.ver-articulos{
+	clear: left;
 }
