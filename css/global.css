@@ -155,7 +155,7 @@ ul.connect li.aprender a span{
 
 
 
-section.content{
+.home section.content{
 	background: #302b3e;
 }
 
@@ -219,4 +219,21 @@ form input[type=text]{
 
 .bloques-cont{
 	clear: both;
+}
+
+.bloques{
+	position: relative;
+	width: 223px;
+}
+
+.bloques img{
+	width: 100%;
+}
+
+.bloques h3{
+	color: #fff;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
 }
