@@ -43,6 +43,7 @@
 		-webkit-box-shadow: 0px 3px 11px #ccc;
 		-moz-box-shadow:    0px 3px 11px #ccc;
 		box-shadow:         0px 3px 11px #ccc;
+		display: table;
 	}
 
 	.internas .btn-comprar{
@@ -82,11 +83,13 @@
 
 	.internas .col-izq,
 	.internas .col-der{
-		float: left;
+		/*float: left;*/
 		padding: 34px;
 		font-family: tahoma;
 		font-size: 14px;
 		line-height: 22px;
+		display: table-cell;
+		vertical-align: top;
 	}
 
 
@@ -136,6 +139,10 @@
 
 	/* Header introductorio */
 
+	.cursos .header-section .nombre-curso{
+		width: 585px;
+	}
+
 	.cursos .header-section .datos-compra{
 		margin-top: 8px;
 	}
@@ -173,6 +180,21 @@
 		margin: 0 auto 25px auto;
 		display: block;
 		width: 122px;
+	}
+
+	.cursos .col-izq .datos-compra .btn-comprar{
+		margin-bottom: 10px;
+	}
+
+	.cursos .col-izq .datos-compra ul{
+		font-size: 14px;
+		line-height: 22px;
+		font-family: 'Oxygen', sans-serif;
+	}
+
+	.cursos .col-izq .datos-compra ul .precio{
+		font-size: 22px;
+		line-height: 30px;
 	}
 
 
