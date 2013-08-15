@@ -51,11 +51,13 @@ body{
 .layout{
 	width: 990px;
 	margin: 0 auto;
+	position: relative;
 }
 
 header{
 	background: #302b3e;
 	padding: 6px 0;
+	position: relative;
 }
 
 header h1,
@@ -96,5 +98,11 @@ header nav li.perfil a{
 
 header nav li a:hover{
 	color: #fff;
+}
+
+ul.connect{
+	position: absolute;
+	right: 0;
+	background: rgba(0,0,0,0.6);
 }
 
