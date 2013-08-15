@@ -14,28 +14,77 @@
 
 	<!--[if lt IE 9]><script src="js/libs/html5.js"></script><![endif]-->
 	
-
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
 
 </head>
 <body class="home">
 	
-	<div class="layout">
+	
 
 		<header>
+			<div class="layout">
+				<h1><a href="./index.html" title="En carrera">En carrera</a></h1>
+				<nav>
+					<ul>
+						<li><a href="#" title="¿C&oacute;mo funciona?">C&oacute;mo funciona?</a></li>
+						<li><a href="#" title="Cursos">Cursos</a></li>
+						<li><a href="#" title="Instituciones">Instituciones</a></li>
+						<li><a href="#" title="Perfil">Perfil</a></li>
+					</ul>
+				</nav>
+				<ul class="connect">
+					<li class="fb-connect"><a href="#" title="Registrate con Facebook">Registrate con Facebook</a></li>
+					<li class="aprender"><a href="#" title="Empeza a aprender">Empeza a aprender</a></li>
+				</ul>
+			</div>
 		</header>
 
 		<section class="content">
-			
+			<div class="flexslider">
+	  			<ul class="slides">
+	    			<li><img src='img/home/slide1.jpg' /></li>
+	    			<li><img src='img/home/slide1.jpg' /></li>
+	    		</ul>
+	    	</div>
+
+	    	<div class="layout">
+	    		<h2>Cursos m&aacute;s populares</h2>
+	    		<form method="" action="" class="buscador">
+	    			<input type="text" id="" name="" placeholder="Qu&eacute; te gusar&iacute;a aprender?">
+	    			<input type="submit" value="">
+	    		</form>
+	    		<div class="bloques-cont">
+	    			<article class="">
+
+	    			</article>
+	    		</div>
+	    	</div>
+
 		</section>
 
 		<footer>
+
 			
 		</footer>
 
-	</div>
 
 
 	<script src="js/libs/jquery.js"></script>
+	<script src="js/libs/jquery.flexslider-min.js"></script>
+	<script type="text/javascript">
+	if( $('.flexslider').length > 0){
+
+		$('.flexslider').flexslider({
+			animationSpeed: 400,
+			animation: "fade",
+			controlNav: true,
+			pauseOnAction: true,
+			pauseOnHover: false
+		});
+
+	}
+	</script>
 </body>
 </html>
