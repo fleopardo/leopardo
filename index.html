@@ -51,7 +51,12 @@
     				</div>
     				<img src='img/home/slider1.jpg' />
     			</li>
-    			<li><img src='img/home/slider1.jpg' /></li>
+    			<li>
+    				<div class="layout">
+    					<p>2 Take de world's<br />best courses, online, for free.</p>
+    				</div>
+    				<img src='img/home/slider1.jpg' />
+    			</li>
     		</ul>
     	</div>
 
@@ -151,7 +156,13 @@
 
 	<script src="js/libs/jquery.js"></script>
 	<script src="js/libs/jquery.flexslider-min.js"></script>
+	<script src="js/libs/jquery.placeholder.js"></script>
 	<script type="text/javascript">
+
+	//Placeholder fallback
+	$('input[placeholder],textarea[placeholder]').placeholder();
+
+
 	if( $('.flexslider').length > 0){
 
 		$('.flexslider').flexslider({
