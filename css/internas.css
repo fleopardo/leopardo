@@ -1,0 +1,17 @@
+/*
+ * Estilos generales para las secciones internas
+*/
+
+.internas .col-izq,
+.internas .col-der{
+	float: left;
+}
+
+
+.internas .col-izq{
+	width: 290px;
+}
+
+.internas .col-der{
+	width: 700px;
+}
