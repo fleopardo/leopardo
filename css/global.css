@@ -58,6 +58,7 @@ header{
 	background: #302b3e;
 	padding: 6px 0;
 	position: relative;
+	border-bottom: 2px solid #1f1d24;
 }
 
 header h1,
@@ -102,7 +103,7 @@ header nav li a:hover{
 
 ul.connect{
 	position: absolute;
-	top: 63px;
+	top: 65px;
 	right: 0;
 	background: rgba(0,0,0,0.6);
 	padding: 28px 14px;

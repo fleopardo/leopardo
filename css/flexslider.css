@@ -82,7 +82,19 @@ html[xmlns] .slides {display: block;}
 
 
 /* Modificando estilos */
-
+.flexslider li p{
+	position: absolute;
+	top: 120px;
+	left: 0;
+	color: #fff;
+	z-index: 20;
+	font-size: 68px;
+	line-height: 72px;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px #004364;
+    filter: dropshadow(color=#004364, offx=1, offy=1);
+}
 .flexslider .flex-control-nav{
 	bottom:20px;
 }
