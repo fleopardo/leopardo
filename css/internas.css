@@ -5,13 +5,14 @@
 .internas .col-izq,
 .internas .col-der{
 	float: left;
+	padding: 30px;
 }
 
 
 .internas .col-izq{
-	width: 290px;
+	width: 230px;
 }
 
 .internas .col-der{
-	width: 700px;
+	width: 640px;
 }
