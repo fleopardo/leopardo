@@ -49,5 +49,26 @@ body{
 }
 
 header{
+	
+}
+
+header h1 a{
+	display: block;
+	width: 206px;
+	height: 57px;
+	background: url("./assets/logo.png") no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+header nav li a{
 	font-family: 'Cabin Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 28px;
+	color: #ccbfed;
+}
+
+header nav li.perfil a{
+	color: #9cb800;
 }
