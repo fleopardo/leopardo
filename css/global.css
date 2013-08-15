@@ -233,13 +233,46 @@ form input[type=text]{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	border-bottom: 1px solid #567100;
 	float: left;
+	background: #719500;
+	margin: 30px 31px 30px 0;
 }
 
 .bloques:nth-child(5n){
 	clear: both;
 	float: left;
 }
+
+.bloques:nth-child(4n){
+	margin-right: 0;
+}
+
+.bloques.marron{
+	background: #9c8e64;
+	border-bottom: 1px solid #766b4c;
+}
+
+.bloques.celeste{
+	background: #4fc4f6;
+	border-bottom: 1px solid #4f6b7c;
+}
+
+.bloques.violeta{
+	background: #8a649c;
+	border-bottom: 1px solid #674a74;
+}
+
+.bloques.rosa{
+	background: #cc324b;
+	border-bottom: 1px solid #7a4e50;
+}
+
+.bloques.gris{
+	background: #64869c;
+	border-bottom: 1px solid #4f6b7c;
+}
+
 
 .bloques img{
 	width: 100%;
@@ -256,6 +289,9 @@ form input[type=text]{
 	font-size: 16px;
 	line-height: 18px;
 	margin-bottom: 35px;
+	padding: 0 20px;
+	position: relative;
+	z-index: 10;
 }
 
 .bloques .categoria{
@@ -263,6 +299,43 @@ form input[type=text]{
 	font-size: 12px;
 	line-height: 14px;
 	font-weight: 700;
+	margin-left: 20px;
+	position: relative;
+	z-index: 10;
+}
+
+.bloques > a{
+	background: url("./assets/sp-bloques.png") no-repeat;
+	background-position: 0 0;
+	display: block;
+	width: 79px;
+	height: 79px;
+	overflow: hidden;
+	text-indent: -9999px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.bloques.marron > a{
+	background-position: 0 -79px;
+}
+
+.bloques.celeste > a{
+	background-position: 0 -158px;
+}
+
+.bloques.violeta > a{
+	background-position: 0 -237px;
+}
+
+.bloques.rosa > a{
+	background-position: 0 -316px;
+}
+
+.bloques.gris > a{
+	background-position: 0 -395px;
 }
 
 
