@@ -48,8 +48,19 @@ body{
 	font-family: 'Oxygen', sans-serif;
 }
 
+.layout{
+	width: 990px;
+	margin: 0 auto;
+}
+
 header{
-	
+	background: #302b3e;
+	padding: 6px 0;
+}
+
+header h1,
+header nav li{
+	float: left;
 }
 
 header h1 a{
@@ -61,14 +72,29 @@ header h1 a{
 	overflow: hidden;
 }
 
+header nav{
+	float: right;
+	margin-top: 12px;
+}
+
+header nav ul{
+	overflow: hidden;
+}
+
 header nav li a{
 	font-family: 'Cabin Condensed', sans-serif;
 	font-weight: 300;
 	font-size: 26px;
 	line-height: 28px;
 	color: #ccbfed;
+	margin-left: 15px;
 }
 
 header nav li.perfil a{
 	color: #9cb800;
 }
+
+header nav li a:hover{
+	color: #fff;
+}
+
