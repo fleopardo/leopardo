@@ -2,6 +2,10 @@
  * Estilos generales para las secciones internas
 */
 
+.internas .header-section{
+	overflow: hidden;
+}
+
 .internas .col-izq,
 .internas .col-der{
 	float: left;
