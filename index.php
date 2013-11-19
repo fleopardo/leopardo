@@ -11,8 +11,8 @@
 <!--[if IE 9]>    <html class="no-js lt-ie10 ie9" lang="es"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
 <head>
-	<title>Triana Eventos</title>
-	<meta name="description" content="">
+	<title>Triana Eventos - Organizacion de eventos</title>
+	<meta name="description" content="Triana Eventos, Organizacion de eventos sociales y empresariales. Casamientos, Cumpleaños de 15, Aniversarios, Fiesta fin de año, Congresos / Convenciones, Coffe Breaks, Family Day, Bar / Bat Mitzva, Presentacion de productos y otros.">
 	<meta charset="utf-8" />
 	<meta name="robots" content="all" />
 	<meta name="HandheldFriendly" content="True">
@@ -26,6 +26,8 @@
 		<script src="<?=$BASE_URL;?>/js/libs/respond.min.js"></script>
 	<![endif]-->
 
+	<?php if( $desa == true ){ ?>
+	<!-- En desarrollo cargo los js sin comprimir y unificar -->
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/global.css">
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/home.css">
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/quienes-somos.css">
@@ -33,24 +35,27 @@
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/contacto.css">
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/libs/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/libs/plusslider.css">
+	<?php }else{ ?>
+	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/all-components.css">
+	<?php } ?>
 
-
-	<link rel="shorcut icon" href="<?=$BASE_URL;?>/favicon.png" />
 </head>
 
 <body>
 
 	<div class="contenedor toLoad home" id="home">
 
-		<?php include("./includes/header.php"); ?>
+		<div>
+			<?php include("./includes/header.php"); ?>
 
-		<section class="cuerpo animated fadeIn">
+			<section class="cuerpo animated fadeIn">
 
-			<h3><span class="hide">Hacemos su evento mágico</span></h3>
+				<h3><span class="hide">Hacemos su evento mágico</span></h3>
 
-		</section>
+			</section>
 
-		<?php include("./includes/footer.php"); ?>
+			<?php include("./includes/footer.php"); ?>
+		</div>
 
 	</div>
 
@@ -65,22 +70,44 @@
 		// Imprimo la variable base url global
 		<? echo "var base_url = '$BASE_URL';" ?>
 
-		scr.js("js/libs/jquery.js", function(){
+		<?php if( $desa == true ){ ?>
 
-	    	scr.js(["js/libs/jquery.mousewheel.js",
-	    			"js/libs/jquery.scrollTo.js",
-	    			"js/libs/jquery.easing.1.3.js",
-	    			"js/libs/jquery.placeholder.js",
-	    			"js/libs/jquery.plusslider-min.js",
-	    			"js/navegacion.js"],function(){
-	    				scr.js("js/global.js",function(){
+			// SI es desarrollo cargo los scripts sin comprimir
+			scr.js(base_url+"/js/libs/jquery.js", function(){
 
-	    					scr.js("js/home.js");
+		    	scr.js([base_url+"/js/libs/jquery.mousewheel.js",
+		    			base_url+"/js/libs/jquery.scrollTo.js",
+		    			base_url+"/js/libs/jquery.easing.1.3.js",
+		    			base_url+"/js/libs/jquery.placeholder.js",
+		    			base_url+"/js/libs/jquery.plusslider-min.js",
+		    			base_url+"/js/navegacion.js"],function(){
+		    				scr.js(base_url+"/js/global.js",function(){
 
-	    				})
-	    	})
+		    					scr.js(base_url+"/js/home.js");
 
-		});
+		    				})
+		    	})
+
+			});
+
+		<?php }else{ ?>
+
+			scr.js(base_url+"/js/build/all-components.js", function(){
+
+		    	scr.js(base_url+"/js/home.js");
+
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-41452275-1', 'trianaeventos.com');
+				ga('send', 'pageview');
+
+			});
+
+		<?php } ?>
+
 	</script>
 
 </body>

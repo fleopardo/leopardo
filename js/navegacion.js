@@ -25,7 +25,7 @@
 		navegacionAsync.flag_append_after = false;
 
 		// Velocidad para el scrollTo
-		navegacionAsync.speed_scroll = 800;
+		navegacionAsync.speed_scroll = 0;
 
 		// Easing
 		navegacionAsync.easing = "easeInOutQuart";
@@ -67,7 +67,7 @@
 
 						navegacionAsync.flag_scrollwheel = true;
 
-					},1500);
+					},2500);
 
 					var active = navegacionAsync.nav.find(".active").parent();
 
@@ -97,7 +97,7 @@
 
 				var active = navegacionAsync.nav.find(".active").parent();
 
-				if( e.keyCode == 38 ){
+				if( e.keyCode == 38 || e.keyCode == 37 ){
 
 					if(active.prev().length > 0){
 						navegacionAsync.scrollTo(active.prev().children());
@@ -105,7 +105,7 @@
 
 				}
 
-				if(e.keyCode == 40){
+				if(e.keyCode == 40 || e.keyCode == 39){
 
 					if(active.next().length > 0){
 						navegacionAsync.scrollTo(active.next().children());
@@ -241,44 +241,55 @@
 		// Funcion para scrollear hasta la seccion que se clickeo
 		navegacionAsync.scrollTo = function(link,notDoPushState){
 
-			var page_id = link.data("nav:id");
+			$(".contenedor .cuerpo, .nav-principal").addClass("animated fadeOutLeft");
 
-			$.scrollTo.window().queue([]).stop();
+			setTimeout(function(){
 
-			$.scrollTo("#" + page_id, navegacionAsync.speed_scroll, {
+				var page_id = link.data("nav:id");
 
-				easing: navegacionAsync.easing,
+				$.scrollTo.window().queue([]).stop();
 
-				onAfter: function(){
+				$.scrollTo("#" + page_id, navegacionAsync.speed_scroll, {
 
-					$(document).trigger("app.scrolled");
+					easing: navegacionAsync.easing,
 
+					onAfter: function(){
+
+						$(document).trigger("app.scrolled");
+
+						$(".contenedor .cuerpo, .nav-principal").removeClass("fadeOutLeft");
+
+						$(".contenedor .cuerpo, .nav-principal").addClass("fadeInRight");
+
+					}
+
+				});
+
+				// Si llega el parametro con true no lo ejecuto
+				if(notDoPushState != true){
+
+					// Si es home no pongo nada..
+					if( page_id == "home"){
+						var newUrl = base_url + "/";
+
+					}else{
+						var newUrl = base_url + "/" + page_id + "/";
+
+					}
+
+					if(window.history.pushState){
+
+						window.history.pushState({'page_id':page_id}, newUrl, newUrl);
+
+					}
 				}
 
-			});
+				navegacionAsync.set_active(page_id);
 
-			// Si llega el parametro con true no lo ejecuto
-			if(notDoPushState != true){
+				$(document).trigger("app.scrolling");
 
-				// Si es home no pongo nada..
-				if( page_id == "home"){
-					var newUrl = base_url + "/";
+			},800);
 
-				}else{
-					var newUrl = base_url + "/" + page_id + "/";
-
-				}
-
-				if(window.history.pushState){
-
-					window.history.pushState({'page_id':page_id}, newUrl, newUrl);
-
-				}
-			}
-
-			navegacionAsync.set_active(page_id);
-
-			$(document).trigger("app.scrolling");
 
 		}
 
@@ -292,6 +303,8 @@
 			popstate();
 
 			load_sections();
+
+			$(".nav-principal").removeClass("fadeIn");
 
 			// Seteo el primer popState
 			// Si es home no pongo nada..
@@ -315,4 +328,4 @@
 	// Exporto el objeto
 	window.navegacionAsync = navegacionAsync;
 
-}());
+})();

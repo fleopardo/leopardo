@@ -132,6 +132,11 @@ body{
 	margin: 0 15px;
 }
 
+.nav-principal h3{
+	position: absolute;
+	visibility: hidden;
+}
+
 .nav-principal ul{
 	margin: 0 20px;
 	overflow: hidden;
@@ -271,12 +276,50 @@ footer p span{
 	color: #fff;
 }
 
+footer .logo-afip{
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+footer .logo-afip img{
+	width: 40px;
+	height: auto;
+}
+
 
 /* Estilos para onepage */
 
 .onepage .contenedor{
 	margin-bottom: 400px;
 }
+
+.onepage .contenedor > div,
+.onepage .contenedor .cuerpo,
+.onepage .contenedor .nav-principal{
+	opacity: 1;
+	-webkit-transition:opacity 0.4s ease-out;  /* Chrome y Safari */
+	-o-transition:opacity 0.4s ease-out;  /* Opera */
+	-moz-transition:opacity 0.4s ease-out;  /* Mozilla Firefox */
+	-ms-transition:opacity 0.4s ease-out;   /* Internet Explorer */
+	transition:opacity 0.4s ease-out;  /* W3C */
+}
+
+.onepage .contenedor > div.off,
+.onepage .contenedor .cuerpo.off,
+.onepage .contenedor .nav-principal.off{
+	opacity: 0;
+}
+
+/*
+.onepage .quienes-somos,
+.onepage .eventos,
+.onepage .contacto{
+	position: absolute;
+	top: 1400px;
+	left: 50%;
+	margin-left: -430px;
+}*/
 
 /* Only for IPAD */
 
@@ -297,15 +340,81 @@ footer p span{
 
 
 
+
 /* Mediaquerys */
+
+/* Si la pantalla es menos alta que 750px ajusto los paddings */
 @media screen and (max-height: 750px) {
 	.contenedor {
 	    padding: 90px 0 90px 0;
 	}
 }
 
+
+/* Si la pantalla es menos alta que 650px ajusto los paddings */
 @media screen and (max-height: 650px) {
 	.contenedor {
 	    padding: 30px 0 30px 0;
 	}
+}
+
+
+/* Styles para mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	body{
+		min-width: 100%;
+	}
+
+	.contenedor{
+		padding: 30px 0;
+		margin: 0 10px;
+		width: auto;
+	}
+
+	.header-principal h1{
+		float: none;
+		margin: 0 auto;
+	}
+
+	.nav-principal{
+		margin: 0;
+		background-image: none;
+		border-radius: 0;
+	}
+
+	.nav-principal ul{
+		margin: 0
+	}
+
+	.nav-principal li{
+		float: none;
+		width: 100%;
+		border-bottom: 1px solid #4e1b6a;
+	}
+
+	.nav-principal li a:hover,
+	.nav-principal li a.active{
+		background: none;
+	}
+
+	.nav-principal li a:before{
+		content: none;
+	}
+
+	.interna .cuerpo{
+		height: auto;
+		padding: 20px;
+	}
+
+	footer .social{
+		float: none;
+		margin: 0 auto;
+	}
+
+	footer .copy{
+		float: none;
+		text-align: center;
+	}
+
 }

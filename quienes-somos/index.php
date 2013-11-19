@@ -11,8 +11,8 @@
 <!--[if IE 9]>    <html class="no-js lt-ie10 ie9" lang="es"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
 <head>
-	<title>Leopardo Agency: Nosotros</title>
-	<meta name="description" content="somos un extudio de diseño web y programacion web, frontend y backend">
+	<title>Triana Eventos - Quienes somos</title>
+	<meta name="description" content="Triana Eventos una empresa joven que valora la excelencia y el prestigio de nuestros clientes a la hora de generar un evento a su medida.">
 	<meta charset="utf-8" />
 	<!--meta name="google-site-verification" content="" /-->
 	<meta name="robots" content="all" />
@@ -27,6 +27,8 @@
 	<![endif]-->
 
 
+	<?php if( $desa == true ){ ?>
+	<!-- En desarrollo cargo los js sin comprimir y unificar -->
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/global.css">
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/home.css">
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/quienes-somos.css">
@@ -34,25 +36,29 @@
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/contacto.css">
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/libs/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/libs/plusslider.css">
+	<?php }else{ ?>
+	<link rel="stylesheet" type="text/css" href="<?=$BASE_URL;?>/css/all-components.css">
+	<?php } ?>
 
-	<link rel="shorcut icon" href="<?=$BASE_URL;?>/favicon.png" />
 </head>
 
 <body>
 
 		<div class="contenedor toLoad quienes-somos interna" id="quienes-somos">
 
-			<?php include("../includes/header.php"); ?>
+			<div>
+				<?php include("../includes/header.php"); ?>
 
-			<section class="cuerpo animated fadeIn">
+				<section class="cuerpo animated fadeIn">
 
-				<h3><span class="hide">Quienes Somos</span></h3>
-				<p>Somos una empresa joven que valora la excelencia y el prestigio de nuestros clientes a la hora de generar un evento a su medida, nuestro compromiso es saber interpretar sus necesidades y brindarle el asesoramiento integral  necesario para tal fin. Nuestra meta es poder traducir sus requisitos y así lograr un evento único e irrepetible.</p>
+					<h3><span class="hide">Quienes Somos</span></h3>
+					<p>Somos una empresa joven que valora la excelencia y el prestigio de nuestros clientes a la hora de generar un evento a su medida, nuestro compromiso es saber interpretar sus necesidades y brindarle el asesoramiento integral  necesario para tal fin. Nuestra meta es poder traducir sus requisitos y así lograr un evento único e irrepetible.</p>
 
-				<span class="deco"></span>
-			</section>
+					<span class="deco"></span>
+				</section>
 
-			<?php include("../includes/footer.php"); ?>
+				<?php include("../includes/footer.php"); ?>
+			</div>
 
 		</div>
 
@@ -63,22 +69,42 @@
 		// Imprimo la variable base url global
 		<? echo "var base_url = '$BASE_URL';" ?>
 
-		scr.js("../js/libs/jquery.js", function(){
+		<?php if( $desa == true ){ ?>
 
-	    	scr.js(["../js/libs/jquery.mousewheel.js",
-	    			"../js/libs/jquery.scrollTo.js",
-	    			"../js/libs/jquery.easing.1.3.js",
-	    			"../js/libs/jquery.placeholder.js",
-	    			"../js/libs/jquery.plusslider-min.js",
-	    			"../js/navegacion.js"],function(){
-	    				scr.js("../js/global.js",function(){
+			// SI es desarrollo cargo los scripts sin comprimir
+			scr.js(base_url+"/js/libs/jquery.js", function(){
 
-	    					scr.js("../js/quienes-somos.js");
+		    	scr.js([base_url+"/js/libs/jquery.mousewheel.js",
+		    			base_url+"/js/libs/jquery.scrollTo.js",
+		    			base_url+"/js/libs/jquery.easing.1.3.js",
+		    			base_url+"/js/libs/jquery.placeholder.js",
+		    			base_url+"/js/libs/jquery.plusslider-min.js",
+		    			base_url+"/js/navegacion.js"],function(){
+		    				scr.js(base_url+"/js/global.js",function(){
 
-	    				})
-	    	})
+		    					scr.js(base_url+"/js/quienes-somos.js");
 
-		});
+		    				})
+		    	})
+
+			});
+
+		<?php }else{ ?>
+
+			scr.js(base_url+"/js/build/all-components.js", function(){
+
+		    	scr.js(base_url+"/js/quienes-somos.js");
+
+		    	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-41452275-1', 'trianaeventos.com');
+				ga('send', 'pageview');
+			});
+
+		<?php } ?>
 	</script>
 
 </body>

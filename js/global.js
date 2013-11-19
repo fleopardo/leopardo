@@ -106,7 +106,7 @@
 
 		$(".deco").each(function(){
 
-			var that = $(this)
+			var that = $(this);
 
 			that.removeClass("animated fadeInRight");
 
@@ -114,7 +114,7 @@
 
 				that.addClass("animated fadeInRight");
 
-			},400);
+			},0);
 
 
 		})
