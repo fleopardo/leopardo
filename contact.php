@@ -7,6 +7,7 @@ if(!empty($_POST))
 	$email = trim($_POST['email']);
 	$message = trim($_POST['message']);
 	$emailAdmin = "gonzalolocutor@hotmail.com";
+	$emailAdmin2 = "info@gonzaloheras.com";
 
 	//Validations
 	$return['status'] = 'ok';
@@ -49,6 +50,7 @@ if(!empty($_POST))
 		$content .= "Email: ".$email."\n";
 		$content .= "Mensaje: \n".$message."\n";
 		mail($emailAdmin, $title, $content, $headers);
+		mail($emailAdmin2, $title, $content, $headers);
 
 
 		//header Copy
@@ -64,6 +66,7 @@ if(!empty($_POST))
 		$content .= "Mensaje: \n".$message."\n\n";
 
 		mail($email, $title, $content, $headersCopy);
+
 	}
 
 	if(isset($_POST['javascript']))
