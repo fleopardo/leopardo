@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Hose Power",
   "devDependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "gulp": "3.9.1"
   }
 }
