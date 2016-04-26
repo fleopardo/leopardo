@@ -1,0 +1,8 @@
+{
+  "name": "hosepower",
+  "version": "0.0.1",
+  "description": "Hose Power",
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
