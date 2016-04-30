@@ -21,7 +21,8 @@
         <script src="./src/scripts/vendors/html5shiv.js"></script>
     <![endif]-->
 
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <!--link href="./css/bootstrap.min.css" rel="stylesheet" /-->
+    <link href="./css/libs/owl.carousel.css" rel="stylesheet" />
     <link href="./css/bundle.css" rel="stylesheet" />
 
 </head>
@@ -29,31 +30,111 @@
 
     <body data-lang="" data-device=""> <!-- data-lang="ES | PT | EN" data-device="mobile | desktop" -->
         <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>hola</h1>
-                    </div>
-                </div>
-            </div>
+            <h1>HosePower</h1>
+            <nav>
+                <ul>
+                    <li><a href="/" title="Home">Home</a></li>
+                    <li><a href="./empresa.html" title="Empresa">Empresa</a></li>
+                    <li><a href="./catalogo-de-productos.html" title="Catálogo de productos">Catálogo de productos</a></li>
+                    <li><a href="./servicios.html" title="Servicios">Servicios</a></li>
+                    <li><a href="./contacto.html" title="Contacto">Contacto</a></li>
+                </ul>
+            </nav>
         </header>
+        <section id="carousel" class="owl-carousel owl-theme">
+            <div>
+                <img src="./img/destacado-header.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/destacado-header.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/destacado-header.jpg" alt="">
+            </div>
+        </section>
         <main>
             <div class="container">
-                <div class="row">
-                    <h1>titulo</h1>
-                    <div class="col-sm-6" style="background: #ccc;">
-                    hola
-                    </div>
-                    <div class="col-sm-6" style="background: #ccc;">
-                    hola
-                    </div>
-                </div>
+                <article>
+                    <h1>Bienvenidos</h1>
+                    <p></p>
+                    <a href="./catalogo-de-productos.html" title="Ver catálogo de productos">Ver catálogo de productos</a>
+                </article>
+                <article>
+                    <h1>Nuestros servicios</h1>
+                    <p></p>
+                    <a href="./servicios.html" title="Ver más">Ver más</a>
+                </article>
+                <article>
+                    <h1>Contáctenos</h1>
+                    <form>
+                        <fieldset>
+                            <input type="text" placeholder="Nombre">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Teléfono">
+                            <textarea placeholder="Consulta"></textarea>
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </form>
+                    <a href="#" title=""></a>
+                </article>
             </div>
+            <section class="">
+                <h1>Catálogo de productos</h1>
+                <article>
+                    <a href="#" title="">
+                        <div>
+                            <h2></h2>
+                            <span>Ver</span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" title="">
+                        <div>
+                            <h2></h2>
+                            <span>Ver</span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" title="">
+                        <div>
+                            <h2></h2>
+                            <span>Ver</span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" title="">
+                        <div>
+                            <h2></h2>
+                            <span>Ver</span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" title="">
+                        <div>
+                            <h2></h2>
+                            <span>Ver</span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" title="">
+                        <div>
+                            <h2></h2>
+                            <span>Ver</span>
+                        </div>
+                    </a>
+                </article>
+                <a href="#" class="Ver catálogo completo">Ver catálogo completo</a>
+            </section>
         </main>
     </body>
 
-    <!--script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="./node_modules/owl-carousel-2/owl.carousel.min.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script type="text/javascript" src="./js/global.js"></script-->
+    <script type="text/javascript" src="./js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/libs/owl.carousel.js"></script>
+    <!--script src="http://maps.googleapis.com/maps/api/js"></script-->
+    <script type="text/javascript" src="./js/home.js"></script>
 </html>
