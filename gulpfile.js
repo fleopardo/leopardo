@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 // Compila los sass del proyecto
 gulp.task('css', function() {
-   return gulp.src('./scss/global.scss')
+   return gulp.src('./scss/home.scss')
        .pipe($.concat('bundle.css'))
        .pipe($.sass())
        .pipe($.postcss([

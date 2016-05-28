@@ -29,12 +29,17 @@
 </head>
 
 
-    <body class="home" data-lang="" data-device=""> <!-- data-lang="ES | PT | EN" data-device="mobile | desktop" -->
-        <header>
-            <div class="logo-container">
-                <h1>HosePower</h1>
+    <body class="home"> <!-- data-lang="ES | PT | EN" data-device="mobile | desktop" -->
+
+        <!-- header -->
+        <header class="hosepower-header">
+            <div class="hosepower-header__logo">
+                <h1>
+                    <a href="/" title="Hosepower">HosePower</a>
+                </h1>
             </div>
-            <nav>
+
+            <nav class="hosepower-header__nav">
                 <ul>
                     <li><a href="/" title="Home">Home</a></li>
                     <li><a href="./empresa.html" title="Empresa">Empresa</a></li>
@@ -44,6 +49,8 @@
                 </ul>
             </nav>
         </header>
+        <!-- /header -->
+
         <section id="carousel" class="owl-carousel owl-theme">
             <div>
                 <img src="./img/destacado-header.jpg" alt="">
@@ -55,8 +62,10 @@
                 <img src="./img/destacado-header.jpg" alt="">
             </div>
         </section>
+
         <main>
-            <section class="container sections-info">
+
+            <section class="hosepower-container sections-info">
                 <article>
                     <h1><span class="glyphicon glyphicon-home"></span> Bienvenidos</h1>
                     <p>Lorem ipsum dolor sit amet, sit dico vivendo omnesque eu, etiam eruditi delenit sea eu, ne inimicus intellegam nec. Ex mollis molestie eam. Ei iudicabit principes has, movet libris indoctum no per.</p>
@@ -144,22 +153,35 @@
                     <a href="#" class="Ver catálogo completo" style="clear: both;">Ver catálogo completo</a>
                 </section>
             </div>
+
         </main>
-        <footer>
-            <nav>
+
+        <!-- Footer -->
+        <footer class="hosepower-footer">
+            <nav class="hosepower-footer__nav">
                 <ul>
                     <li><a href="/" title="Home">Home</a></li>
                     <li><a href="./empresa.html" title="Empresa">Empresa</a></li>
-                    <li><a href="./catalogo-de-productos.html" title="Catálogo de productos">Catálogo de productos</a></li>
+                    <li><a href="./catalogo-de-productos.html" title="Catálogo de productos">Productos</a></li>
                     <li><a href="./servicios.html" title="Servicios">Servicios</a></li>
-                    <li><a href="./contacto.html" title="Contacto">Contacto</a></li>
+                    <li><a href="./contacto.html" title="Contacto">Contacto y ubicación</a></li>
                 </ul>
             </nav>
-            <p></p>
-            <div class="social-media">
 
+            <p class="hosepower-footer__info">
+                Camarones 4061/63 - Código Postal 1407 - Ciudad de Buenos Aires - República Argentina.<br />
+                Teléfonos/Fax:( 54-11) 4639-1897 // 4639-1673 // 4567-2410 // 4648-1551 // 4568-4936
+            </p>
+
+            <div class="hosepower-footer__social">
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
             </div>
         </footer>
+        <!-- Footer -->
+
     </body>
 
     <script type="text/javascript" src="./js/libs/jquery.min.js"></script>
