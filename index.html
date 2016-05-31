@@ -18,174 +18,287 @@
 
     <!-- The HTML5 Shiv (https://github.com/aFarkas/html5shiv) -->
     <!--[if lt IE 9]>
-        <script src="./src/scripts/vendors/html5shiv.js"></script>
+        <script src="./js/libs/html5shiv.min.js"></script>
     <![endif]-->
 
-    <!--link href="./css/bootstrap.min.css" rel="stylesheet" /-->
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-    <link href="./css/libs/owl.carousel.css" rel="stylesheet" />
-    <link href="./css/bundle.css" rel="stylesheet" />
+    <style>
+    /********************************
+        FONTS ICONS
+    ********************************/
+
+    /*!
+     *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
+     *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+     */
+    /* FONT PATH
+     * -------------------------- */
+
+     @font-face {
+       font-family: 'FontAwesome';
+       src: url('./build/fonts/fontawesome-webfont.eot?v=4.4.0');
+       src: url('./build/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('./build/fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('./build/fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('./build/fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('./build/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+       font-weight: normal;
+       font-style: normal;
+     }
+
+    .fa {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* makes the font 33% larger relative to the icon container */
+    .fa-lg {
+      font-size: 1.33333333em;
+      line-height: 0.75em;
+      vertical-align: -15%;
+    }
+    .fa-2x {
+      font-size: 2em;
+    }
+    .fa-3x {
+      font-size: 3em;
+    }
+    .fa-4x {
+      font-size: 4em;
+    }
+    .fa-5x {
+      font-size: 5em;
+    }
+    .fa-fw {
+      width: 1.28571429em;
+      text-align: center;
+    }
+    .fa-ul {
+      padding-left: 0;
+      margin-left: 2.14285714em;
+      list-style-type: none;
+    }
+    .fa-ul > li {
+      position: relative;
+    }
+    .fa-li {
+      position: absolute;
+      left: -2.14285714em;
+      width: 2.14285714em;
+      top: 0.14285714em;
+      text-align: center;
+    }
+    .fa-li.fa-lg {
+      left: -1.85714286em;
+    }
+    .fa-border {
+      padding: .2em .25em .15em;
+      border: solid 0.08em #eeeeee;
+      border-radius: .1em;
+    }
+    .fa-pull-left {
+      float: left;
+    }
+    .fa-pull-right {
+      float: right;
+    }
+    .fa.fa-pull-left {
+      margin-right: .3em;
+    }
+    .fa.fa-pull-right {
+      margin-left: .3em;
+    }
+    /* Deprecated as of 4.4.0 */
+    .pull-right {
+      float: right;
+    }
+    .pull-left {
+      float: left;
+    }
+    .fa.pull-left {
+      margin-right: .3em;
+    }
+    .fa.pull-right {
+      margin-left: .3em;
+    }
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear;
+    }
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8);
+    }
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+      }
+    }
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+      }
+    }
+    .fa-rotate-90 {
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+    .fa-rotate-180 {
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    .fa-rotate-270 {
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+    }
+    .fa-flip-horizontal {
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+      -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+    }
+    .fa-flip-vertical {
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+      -webkit-transform: scale(1, -1);
+      -ms-transform: scale(1, -1);
+      transform: scale(1, -1);
+    }
+    :root .fa-rotate-90,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical {
+      filter: none;
+    }
+    .fa-stack {
+      position: relative;
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      vertical-align: middle;
+    }
+    .fa-stack-1x,
+    .fa-stack-2x {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .fa-stack-1x {
+      line-height: inherit;
+    }
+    .fa-stack-2x {
+      font-size: 2em;
+    }
+    .fa-inverse {
+      color: #ffffff;
+    }
+
+    .fa-envelope:before {
+      content: "\f0e0";
+    }
+
+    .fa-phone:before {
+      content: "\f095";
+    }
+
+
+    .under-construction {
+        box-sizing: border-box;
+        background: url('./build/images/assets/bg-under-construction.jpg') no-repeat center top;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        padding-top: 100px;
+        height: 100vh;
+    }
+
+    .under-construction .content{
+        background: url('./build/images/assets/bg-under-construction-center.jpg') repeat-x left top;
+        height: 200px;
+        margin-bottom: 35px;
+    }
+
+    .under-construction .content .logo {
+        width: 245px;
+        height: 155px;
+        overflow: hidden;
+        background: url('./build/images/assets/under-construction-logo.png') no-repeat left top;
+        margin: 0 auto;
+        text-indent: -1000px;
+        position: relative;
+        top: 15px;
+    }
+
+    .under-construction .data{
+        max-width: 670px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .under-construction .data p, .under-construction .data a{
+        color: #0f488a;
+        font-family: helvetica, arial, sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .under-construction .data .text {
+        font-size: 22px;
+        border-bottom: 1px solid #0f488a;
+        padding-bottom: 10px;
+    }
+
+    .under-construction .data .contact {
+        font-size: 17px;
+        vertical-align: top;
+    }
+
+    .under-construction .data .contact > span{
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+    }
+
+    .under-construction .data .contact i{
+        color: #2b8dc5;
+        font-size: 20px;
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    </style>
 
 </head>
 
 
-    <body class="home"> <!-- data-lang="ES | PT | EN" data-device="mobile | desktop" -->
+    <body class="under-construction">
 
-        <!-- header -->
-        <header class="hosepower-header">
-            <div class="hosepower-header__logo">
-                <h1>
-                    <a href="/" title="Hosepower">HosePower</a>
-                </h1>
-            </div>
+        <div class="content">
+            <h1 class="logo">HOSEPOWER</h1>
+        </div>
 
-            <nav class="hosepower-header__nav">
-                <ul>
-                    <li><a href="/" title="Home">Home</a></li>
-                    <li><a href="./empresa.html" title="Empresa">Empresa</a></li>
-                    <li><a href="./catalogo-de-productos.html" title="Catálogo de productos">Catálogo de productos</a></li>
-                    <li><a href="./servicios.html" title="Servicios">Servicios</a></li>
-                    <li><a href="./contacto.html" title="Contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- /header -->
+        <div class="data">
+            <p class="text">Estamos trabajando en el sitio <br>para brindarle una mejor experiencia.</p>
 
-        <section id="carousel" class="owl-carousel owl-theme">
-            <div>
-                <img src="./img/destacado-header.jpg" alt="">
-            </div>
-            <div>
-                <img src="./img/destacado-header.jpg" alt="">
-            </div>
-            <div>
-                <img src="./img/destacado-header.jpg" alt="">
-            </div>
-        </section>
-
-        <main>
-
-            <section class="hosepower-container sections-info">
-                <article>
-                    <h1><span class="glyphicon glyphicon-home"></span> Bienvenidos</h1>
-                    <p>Lorem ipsum dolor sit amet, sit dico vivendo omnesque eu, etiam eruditi delenit sea eu, ne inimicus intellegam nec. Ex mollis molestie eam. Ei iudicabit principes has, movet libris indoctum no per.</p>
-                    <p>Usu solet invenire evertitur ut, no congue fastidii eum. Id quo oratio aliquam lucilius. Ornatus democritum quo no, cu tota habemus placerat mei.</p>
-                    <a href="./catalogo-de-productos.html" title="Ver catálogo de productos" class="button"><span class="glyphicon glyphicon-tag"></span> Ver catálogo de productos</a>
-                </article>
-                <article>
-                    <h1><span class="glyphicon glyphicon-cog"></span> Nuestros servicios</h1>
-                    <p>- Asesoramiento técnico en la instalación y definición de conductores de fluidos adaptados a cada necesidad.</p>
-                    <p>- Ensayos según normas internacionales, certificados hidráulicos, neumáticos, vacío y electroestática.</p>
-                    <p>- Certificación de materiales, garantías de funcionalidad, aptitud, compatibilidad de productos y condiciones de uso.</p>
-                    <a href="./servicios.html" title="Ver más" class="button"><span class="glyphicon glyphicon-plus"></span> Ver más</a>
-                </article>
-                <article>
-                    <h1><span class="glyphicon glyphicon-envelope"></span> Contáctenos</h1>
-                    <form>
-                        <fieldset>
-                            <input type="text" placeholder="Nombre">
-                            <input type="email" placeholder="Email">
-                            <input type="text" placeholder="Teléfono">
-                            <textarea placeholder="Consulta"></textarea>
-                            <button type="submit" class="button"><span class="glyphicon glyphicon-send"></span> Enviar</button>
-                        </fieldset>
-                    </form>
-                </article>
-            </section>
-
-            <div class="acceso-catalogo">
-                <section class="container clearfix">
-                    <h1>Catálogo de productos</h1>
-                    <div class="article-cont clearfix">
-                        <article>
-                            <a href="#" title="">
-                                <div>
-                                    <h2></h2>
-                                    <span>Ver</span>
-                                </div>
-                            </a>
-                        </article>
-                        <article>
-                            <a href="#" title="">
-                                <div>
-                                    <h2></h2>
-                                    <span>Ver</span>
-                                </div>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="article-cont clearfix">
-                    <article>
-                        <a href="#" title="">
-                            <div>
-                                <h2></h2>
-                                <span>Ver</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#" title="">
-                            <div>
-                                <h2></h2>
-                                <span>Ver</span>
-                            </div>
-                        </a>
-                    </article>
-                    </div>
-                    <div class="article-cont clearfix">
-                        <article>
-                            <a href="#" title="">
-                                <div>
-                                    <h2></h2>
-                                    <span>Ver</span>
-                                </div>
-                            </a>
-                        </article>
-                        <article>
-                            <a href="#" title="">
-                                <div>
-                                    <h2></h2>
-                                    <span>Ver</span>
-                                </div>
-                            </a>
-                        </article>
-                    </div>
-                    <a href="#" class="Ver catálogo completo" style="clear: both;">Ver catálogo completo</a>
-                </section>
-            </div>
-
-        </main>
-
-        <!-- Footer -->
-        <footer class="hosepower-footer">
-            <nav class="hosepower-footer__nav">
-                <ul>
-                    <li><a href="/" title="Home">Home</a></li>
-                    <li><a href="./empresa.html" title="Empresa">Empresa</a></li>
-                    <li><a href="./catalogo-de-productos.html" title="Catálogo de productos">Productos</a></li>
-                    <li><a href="./servicios.html" title="Servicios">Servicios</a></li>
-                    <li><a href="./contacto.html" title="Contacto">Contacto y ubicación</a></li>
-                </ul>
-            </nav>
-
-            <p class="hosepower-footer__info">
-                Camarones 4061/63 - Código Postal 1407 - Ciudad de Buenos Aires - República Argentina.<br />
-                Teléfonos/Fax:( 54-11) 4639-1897 // 4639-1673 // 4567-2410 // 4648-1551 // 4568-4936
-            </p>
-
-            <div class="hosepower-footer__social">
-                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-            </div>
-        </footer>
-        <!-- Footer -->
-
+            <p class="contact">
+                <span><i class="fa fa-phone" aria-hidden="true"></i> (011) 4574-2842  ||  (011) 4571-7241/0940</span>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ventas@hosepower.com.ar">ventas@hosepower.com.ar</a><p></span>
+        </div>
     </body>
-
-    <script type="text/javascript" src="./js/libs/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/libs/owl.carousel.js"></script>
-    <!--script src="http://maps.googleapis.com/maps/api/js"></script-->
-    <script type="text/javascript" src="./js/home.js"></script>
 </html>

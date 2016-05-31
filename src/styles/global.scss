@@ -1,0 +1,43 @@
+/* Clearfix
+-------------------------------------------------- */
+.clearfix { *zoom: 1; }
+.clearfix:before, .clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+   color: $placeholder;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $placeholder;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $placeholder;
+}
+
+:-ms-input-placeholder {
+   color: $placeholder;
+}
+
+/* SETEOS GENERALES*/
+
+body {
+	font: 12px/1.4 helvetica, arial, sans-serif;
+	color: $base;
+	background: url('../images/assets/bg-body.jpg') center top no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.hosepower-container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+}
