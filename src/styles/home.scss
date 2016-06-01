@@ -10,116 +10,136 @@
 // Sections
 @import 'global';
 @import 'header';
+@import 'carouselHeader';
 @import 'footer';
 
 
+.hosepower-home__container {
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin-top: -35px;
+}
 
-.home {
-	main {
-		.sections-info {
-			display: -webkit-flex;
-		    display: -ms-flexbox;
-		    display: flex;
+.hosepower-home__container-article {
+	width: 32%;
+	margin-right: 2%;
+	padding: 20px 20px 70px;
+	background: $white;
+	position: relative;
 
-		    -webkit-flex-wrap: wrap;
-		    -ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
-			article{
-				width: 32%;
-				margin-right: 2%;
-				padding: 20px 20px 70px;
-				background: $white;
-				position: relative;
-				&:last-child {
-					margin-right: 0;
-				}
-				h1 {
-					font-size: 1.83em;
-					text-transform: uppercase;
-					color: $blue;
-					font-weight: bold;
-					margin-bottom: 15px;
-					.glyphicon {
-						color: $lightBlue;
-						font-weight: normal;
-						margin-right: 5px;
-					}
-				}
-				p {
-					margin-bottom: 10px;
-					&:last-child {
-						margin-bottom: 0;
-					}
-				}
-				input,
-				textarea {
-					display: block;
-					width: 100%;
-					border: 1px solid $borders;
-					color: $placeholder;
-					padding: 0 10px;
-					height: 30px;
-					margin-bottom: 10px;
-					background: $bgForms;
-				}
-				textarea {
-					resize: none;
-					overflow: hidden;
-					overflow-y: auto;
-					padding-top: 10px;
-					padding-bottom: 10px;
-				}
-				.button {
-					display: block;
-					position: absolute;
-					background: $blue;
-					color: $white;
-					font-family: 'Oswald', sans-serif;
-					font-weight: 400;
-					left: 0;
-					bottom: 0;
-					width: 100%;
-					font-size: 1.25em;
-					line-height: 3em;
-					text-align: center;
-					text-transform: uppercase;
-					text-decoration: none;
-					opacity: 0.85;
-					padding: 0;
-					border: none;
-					cursor: pointer;
-					@include transition();
-					&:hover {
-						opacity: 1;
-					}
-					.glyphicon{
-						margin-right: 5px;
-					}
-				}
-			}
+	&:last-child {
+		margin-right: 0;
+	}
+
+	h1 {
+		font-size: 1.83em;
+		text-transform: uppercase;
+		color: $blue;
+		font-weight: bold;
+		margin-bottom: 15px;
+
+		.fa {
+			color: $lightBlue;
+			font-weight: normal;
+			margin-right: 5px;
+		}
+	}
+
+	p {
+		margin-bottom: 10px;
+		font-size: 13px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	input,
+	textarea {
+		display: block;
+		width: 100%;
+		border: 1px solid $borders;
+		color: $placeholder;
+		padding: 0 10px;
+		height: 30px;
+		margin-bottom: 10px;
+		background: $bgForms;
+	}
+
+	textarea {
+		resize: none;
+		overflow: hidden;
+		overflow-y: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.button {
+		display: block;
+		position: absolute;
+		background: $blue;
+		color: $white;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		font-size: 1.25em;
+		line-height: 3em;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		opacity: 0.85;
+		padding: 0;
+		border: none;
+		cursor: pointer;
+
+		@include transition();
+		&:hover {
+			opacity: 1;
+		}
+		.fa{
+			margin-right: 5px;
+		}
+	}
+}
+
+
+
+.hosepower-home__catalogo {
+	display: none; // por ahora
+	background: rgba(14, 69, 135,0.49);
+
+	.article-cont {
+		width: 32%;
+		margin-right: 2%;
+		float: left;
+
+		&:last-child {
+			margin-right: 0!important;
 		}
 
-		.acceso-catalogo {
-			background: rgba(14, 69, 135,0.49);
-			.article-cont {
-				width: 32%;
-				margin-right: 2%;
-				float: left;
-				&:last-child {
-					margin-right: 0!important;
-				}
-				article {
-					width: 48%;
-					float: left;
-					background: #fff;
-					margin-right: 4%;
-					&:last-child{
-						margin-right:0;
-					}
-				}
+		article {
+			width: 48%;
+			float: left;
+			background: #fff;
+			margin-right: 4%;
+
+			&:last-child{
+				margin-right:0;
 			}
-
 		}
+	}
+}
 
+
+@media screen and (max-width: 600px) {
+	.hosepower-home__container-article {
+		width: 100%;
+		margin: 0;
 	}
 }

@@ -106,8 +106,8 @@ gulp.task('default', $.sync(gulp).sync([
 
 gulp.task('watch', function() {
    gulp.start('build');
-   gulp.watch('./src/styles/**.*.scss', ['styles']);
-   gulp.watch('./src/scripts/**.*.js', ['scripts']);
+   gulp.watch('./src/styles/**/*.scss', ['styles']);
+   gulp.watch('./src/scripts/**/*.js', ['scripts']);
    gulp.watch('./src/images/**/*.{png,gif,jpg,webp,jpeg,ico}', ['images']);
    gulp.watch('./src/fonts/*.{eot,otf,svg,ttf,woff,woff2}', ['fonts']);
 });
