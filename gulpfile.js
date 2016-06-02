@@ -7,6 +7,7 @@ var del = require('del');
 var cssnano = require('cssnano');
 var mergeStream = require('merge-stream');
 var objectAssign = require('object-assign');
+var handlebars = require('handlebars');
 var autoprefixer = require('autoprefixer');
 var $ = require('gulp-load-plugins')();
 var paths = require('./config/paths');
@@ -18,6 +19,26 @@ gulp.task('clean', function () {
     return del.sync([paths.build.root + '*'], {'force': true});
 });
 
+
+gulp.task('templates', function () {
+    mkdirp.sync(paths.build.templates);
+    var tasks = [];
+    Object.keys(bundles.templates).forEach(function (bundle) {
+        tasks.push(gulp.src(bundles.templates[bundle])
+            .pipe($.handlebars({'handlebars': handlebars}))
+            .pipe($.wrap('Handlebars.template(<%= contents %>)'))
+            .pipe($.declare({
+                'namespace': 'App.templates',
+                'noRedeclare': true
+            }))
+            .pipe($.concat(bundle + '.js'))
+            .pipe($.size({'title': 'Handlebars templates size:'}))
+            .pipe(gulp.dest(paths.build.templates))
+        );
+    });
+
+    return mergeStream(tasks);
+});
 
 gulp.task('styles', function () {
     mkdirp.sync(paths.build.styles);
@@ -49,7 +70,7 @@ gulp.task('scripts', function () {
             tasks.push(gulp.src(bundles.scripts[name])
                 .pipe($.plumber())
                 .pipe($.concat(name + '.js'))
-                .pipe($.uglify())
+                // .pipe($.uglify())
                 .pipe($.size({'title': 'Size of JS bundle (build) "' + name + '.js":'}))
                 .pipe(gulp.dest(paths.build.scripts))
             );
@@ -98,8 +119,14 @@ gulp.task('build', function() {
     gulp.start('default');
 });
 
+gulp.task('templatesWatch', $.sync(gulp).sync([
+    'templates',
+    'scripts'
+]));
+
 gulp.task('default', $.sync(gulp).sync([
     'clean',
+    'templates',
     ['styles', 'scripts', 'fonts', 'images']
 ]));
 
@@ -107,6 +134,7 @@ gulp.task('default', $.sync(gulp).sync([
 gulp.task('watch', function() {
    gulp.start('build');
    gulp.watch('./src/styles/**/*.scss', ['styles']);
+   gulp.watch('./src/templates/*.hbs', ['templatesWatch']);
    gulp.watch('./src/scripts/**/*.js', ['scripts']);
    gulp.watch('./src/images/**/*.{png,gif,jpg,webp,jpeg,ico}', ['images']);
    gulp.watch('./src/fonts/*.{eot,otf,svg,ttf,woff,woff2}', ['fonts']);

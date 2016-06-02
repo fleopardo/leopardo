@@ -4,5 +4,6 @@ exports.build = {
     'scripts': 'build/scripts/',
     'images': 'build/images/',
     'fonts': 'build/fonts/',
-    'assets': 'build/assets/'
+    'assets': 'build/assets/',
+    'templates': 'build/templates/'
 };
