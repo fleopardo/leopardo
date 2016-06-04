@@ -1,0 +1,57 @@
+.hosepower-contact__container {
+	overflow: hidden;
+	margin-top: -35px;
+}
+
+.hosepower-contact__left {
+	width: 340px;
+	float: left;
+}
+
+.hosepower-contact__right {
+	margin-left: 360px;
+}
+
+.hosepower-contact__container-article {
+	width: 100%;
+	margin-bottom: 20px;
+	background: $white;
+	padding: 20px;
+
+	p {
+		margin-bottom: 5px;
+		font-size: 13px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: initial;
+		}
+	}
+
+}
+
+.horsepower-contact__article-title {
+	font-size: 1.73em;
+	text-transform: uppercase;
+	color: $blue;
+	font-weight: 600;
+	margin-bottom: 15px;
+
+	.fa {
+		color: $lightBlue;
+		font-weight: normal;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 500px) {
+
+}
