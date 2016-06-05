@@ -10,6 +10,7 @@ var objectAssign = require('object-assign');
 var handlebars = require('handlebars');
 var autoprefixer = require('autoprefixer');
 var $ = require('gulp-load-plugins')();
+var browserSync = require('browser-sync').create();
 var paths = require('./config/paths');
 var bundles = require('./config/bundles');
 
@@ -54,6 +55,7 @@ gulp.task('styles', function () {
             ]))
             .pipe($.concat(bundle + '.css'))
             .pipe($.size({'title': 'Size of CSS bundle (build) "' + bundle + '.css":'}))
+            .pipe(browserSync.stream())
             .pipe(gulp.dest(paths.build.styles))
         );
     });
@@ -72,6 +74,7 @@ gulp.task('scripts', function () {
                 .pipe($.concat(name + '.js'))
                 // .pipe($.uglify())
                 .pipe($.size({'title': 'Size of JS bundle (build) "' + name + '.js":'}))
+                .pipe(browserSync.stream())
                 .pipe(gulp.dest(paths.build.scripts))
             );
         });
@@ -87,6 +90,7 @@ gulp.task('fonts', function () {
     Object.keys(bundles.fonts).forEach(function (bundle) {
         tasks.push(gulp.src(bundles.fonts[bundle])
             .pipe($.size({'title': 'Fonts size (build):'}))
+            .pipe(browserSync.stream())
             .pipe(gulp.dest(paths.build.fonts))
         );
     });
@@ -103,6 +107,7 @@ gulp.task('images', function () {
         tasks.push(gulp.src(bundles.images[bundle])
             .pipe($.imageOptimization())
             .pipe($.size({'title': 'Images size (build):'}))
+            .pipe(browserSync.stream())
             .pipe(gulp.dest(paths.build.images))
         );
     });
@@ -130,6 +135,21 @@ gulp.task('default', $.sync(gulp).sync([
     ['styles', 'scripts', 'fonts', 'images']
 ]));
 
+
+gulp.task('serve', ['build'], function() {
+
+    browserSync.init({
+        server: "./"
+    });
+
+    gulp.watch('./src/styles/**/*.scss', ['styles']);
+    gulp.watch('./src/templates/*.hbs', ['templatesWatch']);
+    gulp.watch('./src/scripts/**/*.js', ['scripts']);
+    gulp.watch('./src/images/**/*.{png,gif,jpg,webp,jpeg,ico}', ['images']);
+    gulp.watch('./src/fonts/*.{eot,otf,svg,ttf,woff,woff2}', ['fonts']);
+
+    gulp.watch("./*.html").on('change', browserSync.reload);
+});
 
 gulp.task('watch', function() {
    gulp.start('build');
