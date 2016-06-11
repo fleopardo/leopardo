@@ -1,12 +1,77 @@
 .hosepower-company__container {
 	margin-top: -35px;
+	margin-bottom: 40px;
+}
+
+.hosepower-company__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hosepower-company__col {
+	width: 45%;
+	margin-right: 5%;
+	background: $white;
+	padding: 35px 35px 65px 35px;
+	position: relative;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	p {
+		font-size: 13px;
+		margin-bottom: 10px;
+
+		strong {
+			color: $blue;
+		}
+	}
+
+	a {
+		display: block;
+		background: $blue;
+		color: $white;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		width: 100%;
+		font-size: 1.25em;
+		line-height: 3em;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		opacity: 0.85;
+		padding: 0;
+		border: none;
+		cursor: pointer;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		@include transition();
+
+		&:hover {
+			opacity: 1;
+		}
+		.fa{
+			margin-right: 5px;
+		}
+	}
+}
+
+
+.hosepower-company__col-photo {
+	background-image: url('../images/company/destacada.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center right;
 }
 
 
 @media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 500px) {
-
+	.hosepower-company__col {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
 }

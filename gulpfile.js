@@ -72,7 +72,7 @@ gulp.task('scripts', function () {
             tasks.push(gulp.src(bundles.scripts[name])
                 .pipe($.plumber())
                 .pipe($.concat(name + '.js'))
-                // .pipe($.uglify())
+                .pipe($.uglify())
                 .pipe($.size({'title': 'Size of JS bundle (build) "' + name + '.js":'}))
                 .pipe(browserSync.stream())
                 .pipe(gulp.dest(paths.build.scripts))
