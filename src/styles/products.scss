@@ -1,3 +1,92 @@
 .hosepower-products__container {
 	margin-top: -35px;
+	margin-bottom: 20px;
+}
+
+.hosepower-products__content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hosepower-products__category {
+	width: 47.5%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	background: $white;
+	position: relative;
+}
+
+.hosepower-products__category:nth-child(even) {
+	margin-right: 0;
+}
+
+.hosepower-products__category-title {
+	font-size: 16px;
+	color: $blue;
+	line-height: 20px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	border-bottom: 1px solid $lightBlue;
+	padding: 10px;
+
+	.fa {
+		font-size: 13px;
+		position: relative;
+		top: -2px;
+	}
+}
+
+.hosepower-products__category-container {
+	padding: 20px 0;
+}
+
+.hosepower-products__category-image {
+	float: left;
+	width: 29%;
+	height: auto;
+	display: block;
+}
+
+.hosepower-products__category-list {
+	list-style: none;
+    width: 33%;
+    margin-right: 3%;
+    float: left;
+    border-left: 1px solid $lightBlue;
+    padding-left: 10px;
+    min-height: 157px;
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.hosepower-products__category-list > li {
+	font-size: 13px;
+	margin-bottom: 8px;
+
+	.fa {
+		color: $lightBlue;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.hosepower-products__category {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.hosepower-products__category-image {
+		margin-bottom: 20px;
+		width: auto;
+	}
+
+	.hosepower-products__category-list {
+		clear: both;
+		width: 100%;
+		margin-right: 0;
+		border: none;
+		min-height: auto;
+	}
 }

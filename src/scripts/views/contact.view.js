@@ -8,11 +8,6 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
             //GOOGLE MAPS
         	if( typeof(google) != "undefined"){
 
-// -34.5760088
-// -58.4977576
-//
-// -34.5760132
-// -58.4955689
         		var options = {
         			zoom: 15,
         			center: new google.maps.LatLng(-34.5760088,-58.4977576),
