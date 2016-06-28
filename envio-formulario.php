@@ -4,29 +4,46 @@
 
 	//recopilo datos
 	$nombre = $_POST["nombre"];
-	$apellido = $_POST["apellido"];
 	$email = $_POST["email"];
     $telefono = $_POST["telefono"];
-    $ciudad = $_POST["ciudad"];
-    $empresa = $_POST["empresa"];
 	$consulta = $_POST["consulta"];
+
+	if ($_POST["section"] == 'contact') {
+		$apellido = $_POST["apellido"];
+	    $ciudad = $_POST["ciudad"];
+	    $empresa = $_POST["empresa"];
+	}
 
 	//Destinatario
 	// $para = "ventas@hosepower.com.ar";
 	$para = "santiagoleopardo@gmail.com";
 
 	//armo el mensaje
-	$datos = "Nombre: ".$nombre." ".$apellido;
-	$datos .= "\n";
-	$datos .= "Email: ".$email;
-    $datos .= "\n";
-	$datos .= "Telefono: ".$telefono;
-    $datos .= "\n";
-	$datos .= "Ciudad: ".ciudad;
-    $datos .= "\n";
-	$datos .= "Empresa: ".ciudad;
-    $datos .= "\n\n";
-	$datos .= "Mensaje:\n".$consulta;
+	if ($_POST["section"] === 'contact') {
+		$datos = "Nombre: ".$nombre;
+		$datos .= "\n";
+		$datos = "Apellido: ".$apellido;
+		$datos .= "\n";
+		$datos .= "Email: ".$email;
+	    $datos .= "\n";
+		$datos .= "Telefono: ".$telefono;
+	    $datos .= "\n";
+		$datos .= "Ciudad: ".ciudad;
+	    $datos .= "\n";
+		$datos .= "Empresa: ".ciudad;
+	    $datos .= "\n\n";
+		$datos .= "Mensaje:\n".$consulta;
+	}
+
+	if ($_POST["section"] === 'home') {
+		$datos = "Nombre: ".$nombre;
+		$datos .= "\n";
+		$datos .= "Email: ".$email;
+	    $datos .= "\n";
+		$datos .= "Telefono: ".$telefono;
+	    $datos .= "\n\n";
+		$datos .= "Mensaje:\n".$consulta;
+	}
 
 	//Header
 	$headers = "MIME-Version: 1.0\r\n";

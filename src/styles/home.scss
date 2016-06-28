@@ -90,6 +90,16 @@
 			margin-right: 5px;
 		}
 	}
+
+	.contentError {
+		margin-top: 10px;
+		#mensajeError {
+			color: #d60000;
+		}
+		#mensajeExito {
+			color: #0e951b;
+		}
+	}
 }
 
 

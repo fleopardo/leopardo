@@ -17,7 +17,7 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
         },
 
         events: {
-            // '@ui.btnSubmit click': 'contact'
+            'click @ui.btnSubmit': 'contact'
         },
 
         onShow: function() {
@@ -51,9 +51,7 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
         },
 
         contact: function(event) {
-            console.log('klsdsa');
 
-            //Freno el submit del navegador
     		event.preventDefault();
     		event.stopPropagation();
 
@@ -89,7 +87,7 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
             //valido apellido
     		if(!(isNaN(this.ui.apellido.val())) || this.ui.apellido.val() == null || this.ui.apellido.val().length == 0 || /^\s+$/.test(this.ui.apellido.val()) || this.ui.apellido.val() == this.ui.apellido.attr("placeholder")) {
     			error = true;
-    			errorNombre = true;
+    			errorApellido = true;
     			this.ui.apellido.addClass("error");
     		}else{
     			this.ui.apellido.removeClass('error');
@@ -122,7 +120,7 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
             //valido ciudad
     		if(this.ui.ciudad.val() == null || this.ui.ciudad.val().length == 0 || this.ui.ciudad.val() == this.ui.ciudad.attr("placeholder")) {
     			error = true;
-    			errorNombre = true;
+    			errorCiudad = true;
     			this.ui.ciudad.addClass("error");
     		}else{
     			this.ui.ciudad.removeClass('error');
@@ -131,7 +129,7 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
             //valido empresa
     		if(this.ui.empresa.val() == null || this.ui.empresa.val().length == 0 || this.ui.empresa.val() == this.ui.empresa.attr("placeholder")) {
     			error = true;
-    			errorNombre = true;
+    			errorEmpresa = true;
     			this.ui.empresa.addClass("error");
     		}else{
     			this.ui.empresa.removeClass('error');
@@ -146,19 +144,17 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
     			this.ui.consulta.removeClass('error');
     		}
 
-
     		//Si hubo errores
     		if (error){
 
     			var mensajeError = '<p id="mensajeError">Los siguientes campos tienen errores: ';
     			if(errorNombre){ mensajeError += 'Nombre. ';}
-    			if(errorApellido){ mensajeError += 'Appelido. ';}
+    			if(errorApellido){ mensajeError += 'Apellido. ';}
     			if(errorEmail){ mensajeError += 'Email. ';}
     			if(errorTelefono){ mensajeError += 'Telefono (Solo numeros). ';}
     			if(errorCiudad){ mensajeError += 'Ciudad ';}
     			if(errorEmpresa){ mensajeError += 'Empresa ';}
     			if(errorConsulta){ mensajeError += 'Consulta. ';}
-
     			mensajeError += '</p>';
 
     			this.ui.contentError.append(mensajeError);
@@ -170,22 +166,26 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
     				type:'post',
     				url:'envio-formulario.php',
     				data:{
-    					nombre:nombreIngresado,
-    					apellido:apellidoIngresado,
-    					email:emailIngresado,
-    					telefono:telefonoIngresado,
-    					ciudad:ciudadIngresado,
-    					empresa:empresaIngresado,
-    					consulta:consultaIngresado
+    					'nombre': nombreIngresado,
+    					'apellido': apellidoIngresado,
+    					'email': emailIngresado,
+    					'telefono': telefonoIngresado,
+    					'ciudad': ciudadIngresado,
+    					'empresa': empresaIngresado,
+    					'consulta': consultaIngresado,
+                        'section': 'contact'
     				},
     				dataType:'json',
     				success:function(datos,status){
     					if(datos.success == true){
     						this.ui.contentError.append('<p id="mensajeExito">Los datos fueron enviados correctamente. Muchas Gracias.</p>');
-    						nombre.val('');
-    						email.val('');
-    						telefono.val('');
-    						consulta.val('');
+    						this.ui.nombre.val('');
+    						this.ui.apellido.val('');
+    						this.ui.email.val('');
+    						this.ui.telefono.val('');
+    						this.ui.ciudad.val('');
+    						this.ui.empresa.val('');
+    						this.ui.consulta.val('');
     					}else{
     						this.ui.contentError.append('<p id="mensajeError">No se pudo enviar la consulta, intente nuevamente.</p>');
     					}
