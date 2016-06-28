@@ -38,6 +38,24 @@
 
 .hosepower-products__category-container {
 	padding: 20px 0;
+	.hosepower-products__category-list {
+		list-style: none;
+	    width: 66%;
+	    margin-right: 3%;
+	    float: left;
+	    border-left: 1px solid $lightBlue;
+	    padding-left: 10px;
+	    min-height: 157px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&.two-cols {
+		.hosepower-products__category-list {
+			width: 33%;
+		}
+	}
 }
 
 .hosepower-products__category-image {
@@ -47,19 +65,7 @@
 	display: block;
 }
 
-.hosepower-products__category-list {
-	list-style: none;
-    width: 33%;
-    margin-right: 3%;
-    float: left;
-    border-left: 1px solid $lightBlue;
-    padding-left: 10px;
-    min-height: 157px;
 
-	&:last-child{
-		margin-right: 0;
-	}
-}
 
 .hosepower-products__category-list > li {
 	font-size: 13px;
