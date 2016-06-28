@@ -44,16 +44,17 @@
             <article class="hosepower-contact__container-article hosepower-contact__container-article-message">
                 <h3 class="horsepower-contact__article-title"><i class="fa fa-comment" aria-hidden="true"></i> Mensaje</h3>
 
-                <input type="text" placeholder="Nombre" />
-                <input type="text" placeholder="Apellido" />
-                <input type="text" placeholder="E-mail" />
-                <input type="text" placeholder="Teléfono" />
-                <input type="text" placeholder="Ciudad" />
-                <input type="text" placeholder="Empresa" />
+                <input type="text" placeholder="Nombre" data-js="nombre" />
+                <input type="text" placeholder="Apellido" data-js="apellido" />
+                <input type="text" placeholder="E-mail" data-js="email" />
+                <input type="text" placeholder="Teléfono" data-js="telefono" />
+                <input type="text" placeholder="Ciudad" data-js="ciudad" />
+                <input type="text" placeholder="Empresa" data-js="empresa" />
 
-                <textarea placeholder="Consulta"></textarea>
+                <textarea placeholder="Consulta" data-js="consulta"></textarea>
 
-                <button type="submit" class="hosepower-contact-submit"><i class="fa fa-send"></i> Enviar</button>
+                <button type="submit" class="hosepower-contact-submit" data-js="btnSubmit"><i class="fa fa-send"></i> Enviar</button>
+                <div class="contentError" data-js="contentError"></div>
             </article>
         </div>
     </div>
