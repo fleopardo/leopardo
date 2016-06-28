@@ -64,10 +64,18 @@
 .hosepower-products__category-list > li {
 	font-size: 13px;
 	margin-bottom: 8px;
-
+	a {
+		color: $base;
+		text-decoration: none;
+		@include transition();
+		&:hover {
+			color: $lightBlue;
+		}
+	}
 	.fa {
 		color: $lightBlue;
 	}
+
 }
 
 
