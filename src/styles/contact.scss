@@ -74,6 +74,9 @@
 	textarea {
 		width: 100%;
 		height: 100px;
+		resize: none;
+		overflow: hidden;
+		overflow-y: auto;
 	}
 
 	.hosepower-contact-submit {
