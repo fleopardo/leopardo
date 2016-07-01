@@ -164,7 +164,7 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
 
     			$.ajax({
     				type:'post',
-    				url:'envio-formulario.php',
+    				url:'send-form.php',
     				data:{
     					'nombre': nombreIngresado,
     					'apellido': apellidoIngresado,
