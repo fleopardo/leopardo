@@ -47,24 +47,17 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
     		event.preventDefault();
     		event.stopPropagation();
 
-            var error = false;
-    		var errorNombre = false;
-    		var errorEmail = false;
-    		var errorTelefono = false;
-    		var errorConsulta = false;
-
-            var nombreIngresado = this.ui.nombre.val();
-    		var emailIngresado = this.ui.email.val();
-    		var telefonoIngresado = this.ui.telefono.val();
-    		var consultaIngresado = this.ui.consulta.val();
+            var that = this,
+                error = {};
+            error.fields = {};
 
     		//Si ya hay mensajes los oculto
     		this.ui.contentError.html('').hide();
 
     		//valido nombre
     		if(!(isNaN(this.ui.nombre.val())) || this.ui.nombre.val() == null || this.ui.nombre.val().length == 0 || /^\s+$/.test(this.ui.nombre.val()) || this.ui.nombre.val() == this.ui.nombre.attr("placeholder")) {
-    			error = true;
-    			errorNombre = true;
+    			error.flag = true;
+    			error.fieldsnombre = true;
     			this.ui.nombre.addClass("error");
     		}else{
     			this.ui.nombre.removeClass('error');
@@ -72,8 +65,8 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
 
     		//valido email
     		if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.ui.email.val())) || this.ui.email.val() == this.ui.email.attr("placeholder")) {
-    			error = true;
-    			errorEmail = true;
+    			error.flag = true;
+    			error.email = true;
     			this.ui.email.addClass("error");
     		}else{
     			this.ui.email.removeClass('error');
@@ -86,8 +79,8 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
     		}else{
     			//Si tiene datos los valido
     			if( isNaN(this.ui.telefono.val()) || /^\s+$/.test(this.ui.telefono.val())) {
-    				error = true;
-    				errorTelefono = true;
+    				error.flag = true;
+    				error.telefono = true;
     				this.ui.telefono.addClass("error");
     			}else{
     				this.ui.telefono.removeClass('error');
@@ -96,54 +89,70 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
 
     		//valido consulta
     		if(this.ui.consulta.val().length <= 10) {
-    			error = true;
-    			errorConsulta = true;
+    			error.flag = true;
+    			error.consulta = true;
     			this.ui.consulta.addClass("error");
     		}else{
     			this.ui.consulta.removeClass('error');
     		}
 
     		//Si hubo errores
-    		if (error){
-
-    			var mensajeError = '<p id="mensajeError">Los siguientes campos tienen errores: ';
-    			if(errorNombre){ mensajeError += 'Nombre. ';}
-    			if(errorEmail){ mensajeError += 'Email. ';}
-    			if(errorTelefono){ mensajeError += 'Telefono (Solo numeros). ';}
-    			if(errorConsulta){ mensajeError += 'Consulta. ';}
-    			mensajeError += '</p>';
-
-    			this.ui.contentError.append(mensajeError);
-    			this.ui.contentError.fadeIn(1000);
-
+    		if (error.flag){
+                this.showErrorForm(error, '1');
     		}else{
-
     			$.ajax({
     				type:'post',
     				url:'send-form.php',
     				data:{
-    					'nombre': nombreIngresado,
-    					'email': emailIngresado,
-    					'telefono': telefonoIngresado,
-    					'consulta': consultaIngresado,
+    					'nombre': this.ui.nombre.val(),
+    					'email': this.ui.email.val(),
+    					'telefono': this.ui.telefono.val(),
+    					'consulta': this.ui.consulta.val(),
                         'section': 'home'
     				},
     				dataType:'json',
-    				success:function(datos,status){
-    					if(datos.success == true){
-    						this.ui.contentError.append('<p id="mensajeExito">Los datos fueron enviados correctamente. Muchas Gracias.</p>');
-    						this.ui.nombre.val('');
-    						this.ui.email.val('');
-    						this.ui.telefono.val('');
-    						this.ui.consulta.val('');
-    					}else{
-    						this.ui.contentError.append('<p id="mensajeError">No se pudo enviar la consulta, intente nuevamente.</p>');
-    					}
-    					this.ui.contentError.fadeIn(1000);
-    				}
+    				success: function(datos,status){
+                        if (datos.success) {
+                            that.showSuccessForm();
+                        } else {
+                            that.showErrorForm(error, '2');
+                        }
+    				},
+                    error: function() {
+                        that.showErrorForm(error, '2');
+                    }
     			});
 
     		}
+        },
+
+        showSuccessForm: function() {
+            this.ui.nombre.val('');
+            this.ui.email.val('');
+            this.ui.telefono.val('');
+            this.ui.consulta.val('');
+            this.ui.contentError.append('<p id="mensajeExito">Los datos fueron enviados correctamente. Muchas Gracias.</p>');
+            this.ui.contentError.fadeIn(1000);
+        },
+
+        showErrorForm: function(error, type) {
+            var mensaje = '';
+
+            if (type === '1') {
+                mensaje = '<p id="mensajeError">Los siguientes campos tienen errores: ';
+                if(error.fieldsnombre){ mensaje += 'Nombre. ';}
+                if(error.email){ mensaje += 'Email. ';}
+                if(error.telefono){ mensaje += 'Telefono (Solo numeros). ';}
+                if(error.consulta){ mensaje += 'Consulta. ';}
+                mensaje += '</p>';
+            }
+
+            if (error.type === '2') {
+                mensaje = '<p id="mensajeError">No se pudo enviar la consulta, intente nuevamente.</p>';
+            }
+
+            this.ui.contentError.append(mensaje);
+            this.ui.contentError.fadeIn(1000);
         }
 
     });

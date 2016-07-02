@@ -55,30 +55,17 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
     		event.preventDefault();
     		event.stopPropagation();
 
-            var error = false;
-    		var errorNombre = false;
-    		var errorApellido = false;
-    		var errorEmail = false;
-    		var errorTelefono = false;
-    		var errorCiudad = false;
-    		var errorEmpresa = false;
-    		var errorConsulta = false;
-
-            var nombreIngresado = this.ui.nombre.val();
-            var apellidoIngresado = this.ui.apellido.val();
-    		var emailIngresado = this.ui.email.val();
-    		var telefonoIngresado = this.ui.telefono.val();
-    		var empresaIngresado = this.ui.empresa.val();
-    		var ciudadIngresado = this.ui.ciudad.val();
-    		var consultaIngresado = this.ui.consulta.val();
+            var that = this,
+                error = {};
+            error.fields = {};
 
     		//Si ya hay mensajes los oculto
     		this.ui.contentError.html('').hide();
 
     		//valido nombre
     		if(!(isNaN(this.ui.nombre.val())) || this.ui.nombre.val() == null || this.ui.nombre.val().length == 0 || /^\s+$/.test(this.ui.nombre.val()) || this.ui.nombre.val() == this.ui.nombre.attr("placeholder")) {
-    			error = true;
-    			errorNombre = true;
+    			error.flag = true;
+    			error.fields.nombre = true;
     			this.ui.nombre.addClass("error");
     		}else{
     			this.ui.nombre.removeClass('error');
@@ -86,8 +73,8 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
 
             //valido apellido
     		if(!(isNaN(this.ui.apellido.val())) || this.ui.apellido.val() == null || this.ui.apellido.val().length == 0 || /^\s+$/.test(this.ui.apellido.val()) || this.ui.apellido.val() == this.ui.apellido.attr("placeholder")) {
-    			error = true;
-    			errorApellido = true;
+    			error.flag = true;
+    			error.fields.apellido = true;
     			this.ui.apellido.addClass("error");
     		}else{
     			this.ui.apellido.removeClass('error');
@@ -95,8 +82,8 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
 
     		//valido email
     		if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.ui.email.val())) || this.ui.email.val() == this.ui.email.attr("placeholder")) {
-    			error = true;
-    			errorEmail = true;
+    			error.flag = true;
+    			error.fields.email = true;
     			this.ui.email.addClass("error");
     		}else{
     			this.ui.email.removeClass('error');
@@ -109,8 +96,8 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
     		}else{
     			//Si tiene datos los valido
     			if( isNaN(this.ui.telefono.val()) || /^\s+$/.test(this.ui.telefono.val())) {
-    				error = true;
-    				errorTelefono = true;
+    				error.flag = true;
+    				error.fields.telefono = true;
     				this.ui.telefono.addClass("error");
     			}else{
     				this.ui.telefono.removeClass('error');
@@ -119,8 +106,8 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
 
             //valido ciudad
     		if(this.ui.ciudad.val() == null || this.ui.ciudad.val().length == 0 || this.ui.ciudad.val() == this.ui.ciudad.attr("placeholder")) {
-    			error = true;
-    			errorCiudad = true;
+    			error.flag = true;
+    			error.ciudad = true;
     			this.ui.ciudad.addClass("error");
     		}else{
     			this.ui.ciudad.removeClass('error');
@@ -128,8 +115,8 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
 
             //valido empresa
     		if(this.ui.empresa.val() == null || this.ui.empresa.val().length == 0 || this.ui.empresa.val() == this.ui.empresa.attr("placeholder")) {
-    			error = true;
-    			errorEmpresa = true;
+    			error.flag = true;
+    			error.fields.empresa = true;
     			this.ui.empresa.addClass("error");
     		}else{
     			this.ui.empresa.removeClass('error');
@@ -137,62 +124,78 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
 
     		//valido consulta
     		if(this.ui.consulta.val().length <= 10) {
-    			error = true;
-    			errorConsulta = true;
+    			error.flag = true;
+    			error.fields.consulta = true;
     			this.ui.consulta.addClass("error");
     		}else{
     			this.ui.consulta.removeClass('error');
     		}
 
     		//Si hubo errores
-    		if (error){
-
-    			var mensajeError = '<p id="mensajeError">Los siguientes campos tienen errores: ';
-    			if(errorNombre){ mensajeError += 'Nombre. ';}
-    			if(errorApellido){ mensajeError += 'Apellido. ';}
-    			if(errorEmail){ mensajeError += 'Email. ';}
-    			if(errorTelefono){ mensajeError += 'Telefono (Solo numeros). ';}
-    			if(errorCiudad){ mensajeError += 'Ciudad ';}
-    			if(errorEmpresa){ mensajeError += 'Empresa ';}
-    			if(errorConsulta){ mensajeError += 'Consulta. ';}
-    			mensajeError += '</p>';
-
-    			this.ui.contentError.append(mensajeError);
-    			this.ui.contentError.fadeIn(1000);
-
+    		if (error.flag){
+                this.showErrorForm(error,'1');
     		}else{
-
     			$.ajax({
     				type:'post',
     				url:'send-form.php',
     				data:{
-    					'nombre': nombreIngresado,
-    					'apellido': apellidoIngresado,
-    					'email': emailIngresado,
-    					'telefono': telefonoIngresado,
-    					'ciudad': ciudadIngresado,
-    					'empresa': empresaIngresado,
-    					'consulta': consultaIngresado,
+    					'nombre': this.ui.nombre.val(),
+    					'apellido': this.ui.apellido.val(),
+    					'email': this.ui.email.val(),
+    					'telefono': this.ui.telefono.val(),
+    					'ciudad': this.ui.ciudad.val(),
+    					'empresa': this.ui.empresa.val(),
+    					'consulta': this.ui.consulta.val(),
                         'section': 'contact'
     				},
     				dataType:'json',
-    				success:function(datos,status){
-    					if(datos.success == true){
-    						this.ui.contentError.append('<p id="mensajeExito">Los datos fueron enviados correctamente. Muchas Gracias.</p>');
-    						this.ui.nombre.val('');
-    						this.ui.apellido.val('');
-    						this.ui.email.val('');
-    						this.ui.telefono.val('');
-    						this.ui.ciudad.val('');
-    						this.ui.empresa.val('');
-    						this.ui.consulta.val('');
-    					}else{
-    						this.ui.contentError.append('<p id="mensajeError">No se pudo enviar la consulta, intente nuevamente.</p>');
-    					}
-    					this.ui.contentError.fadeIn(1000);
-    				}
+    				success:function(datos, status){
+                        if (datos.success) {
+                            that.showSuccessForm();
+                        } else {
+                            that.showErrorForm(error, '2');
+                        }
+    				},
+                    error: function() {
+                        that.showErrorForm(error,'2');
+                    }
     			});
     		}
+        },
+
+        showSuccessForm: function() {
+            this.ui.nombre.val('');
+            this.ui.apellido.val('');
+            this.ui.email.val('');
+            this.ui.telefono.val('');
+            this.ui.ciudad.val('');
+            this.ui.empresa.val('');
+            this.ui.consulta.val('');
+            this.ui.contentError.append('<p id="mensajeExito">Los datos fueron enviados correctamente. Muchas Gracias.</p>');
+            this.ui.contentError.fadeIn(1000);
+        },
+
+        showErrorForm: function(error, type) {
+            var mensaje = '';
+
+            if (type === '1') {
+                mensaje = '<p id="mensajeError">Los siguientes campos tienen errores: ';
+                if(error.fields.nombre){ mensaje += 'Nombre. ';}
+    			if(error.fields.apellido){ mensaje += 'Apellido. ';}
+    			if(error.fields.email){ mensaje += 'Email. ';}
+    			if(error.fields.telefono){ mensaje += 'Telefono (Solo numeros). ';}
+    			if(error.fields.ciudad){ mensaje += 'Ciudad ';}
+    			if(error.fields.empresa){ mensaje += 'Empresa ';}
+    			if(error.fields.consulta){ mensaje += 'Consulta. ';}
+                mensaje += '</p>';
+            }
+
+            if (error.type === '2') {
+                mensaje = '<p id="mensajeError">No se pudo enviar la consulta, intente nuevamente.</p>';
+            }
+
+            this.ui.contentError.append(mensaje);
+            this.ui.contentError.fadeIn(1000);
         }
 
     });

@@ -2,7 +2,7 @@
 
 	require('phpmailer/PHPMailerAutoload.php');
 
-	$asunto = "Contacto Web HOSEPOWER";
+	$data = array();
 
 	//recopilo datos
 	$nombre = $_POST["nombre"];
@@ -18,11 +18,11 @@
 
 	$mail = new PHPMailer();
 
-	$mail->IsSMTP();                                      // set mailer to use SMTP
+	$mail->IsSMTP();  // set mailer to use SMTP
 	$mail->Host = "smtp.gmail.com";  // specify main and backup server
 	$mail->SMTPAuth = true;     // turn on SMTP authentication
-	$mail->Username = "fleopardo@gmail.com";  // SMTP username
-	$mail->Password = "santiaguito84"; // SMTP password
+	$mail->Username = "santiagoleopardo@gmail.com";  // SMTP username
+	$mail->Password = "32766754S"; // SMTP password
 
 	$mail->From = $_POST["email"];
 	$mail->FromName = $_POST["nombre"];
@@ -30,12 +30,12 @@
 	$mail->AddAddress("ellen@example.com");                  // name is optional
 	$mail->AddReplyTo("info@example.com", "Information");*/
 
-    $mail -> SMTPDebug = 2;
+    $mail -> SMTPDebug = 0;
     $mail -> Debugoutput = 'html';
     $mail -> Port = 587;
     $mail -> SMTPSecure = 'tls';
-    $mail -> addAddress('fleopardo@gmail.com', 'Test');
-    $mail -> addReplyTo($email, 'Test2');
+    $mail -> addAddress('santiagoleopardo@gmail.com', 'Test');
+    $mail -> addReplyTo($email, 'Reply');
 
 	/*$mail->WordWrap = 50;                                // set word wrap to 50 characters
 	$mail->AddAttachment("/var/tmp/file.tar.gz");         // add attachments
@@ -47,7 +47,7 @@
 	if ($_POST["section"] === 'contact') {
 		$datos = "Nombre: ".$nombre;
 		$datos .= "\n";
-		$datos = "Apellido: ".$apellido;
+		$datos .= "Apellido: ".$apellido;
 		$datos .= "\n";
 		$datos .= "Email: ".$email;
 	    $datos .= "\n";
@@ -80,21 +80,14 @@
 	$headers .= "Reply-To: " . $email . "\r\n";
 	$headers .= "Return-path: " . $email;
 
-    $mensaje = array();
-	$mensaje['success']=true;
+	$data['success'] = false;
 
-	if(!$mail->Send())
-	{
+    if(!$mail->Send()) {
 	   echo "Message could not be sent. <p>";
 	   echo "Mailer Error: " . $mail->ErrorInfo;
-
-	   $mensaje['mensaje']="Mailer Error: " . $mail->ErrorInfo;;
-	   $mensaje['success']=false;
-
 	   exit;
 	}
 
-	echo json_encode($mensaje);
-
-
+	$data['success'] = true;
+	echo json_encode($data);
 ?>
