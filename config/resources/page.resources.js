@@ -13,7 +13,7 @@ exports.scripts = [
     'node_modules/owl.carousel/dist/owl.carousel.js',
     // Application and Configs
     'src/scripts/app.js',
-    'build/templates/templates.js',
+    'build/templates/templates__page.js',
     // Modules
     'src/scripts/modules/handlebars-helpers.module.js',
     'src/scripts/modules/utils.module.js',
@@ -39,13 +39,9 @@ exports.styles = [
     'src/styles/page.scss'
 ];
 
-exports.fonts = [
-    'src/fonts/*.{eot,otf,svg,ttf,woff,woff2}'
-];
+exports.fonts = [];
 
-exports.images = [
-    'src/images/**/*.{png,gif,jpg,webp,jpeg,ico}'
-]
+exports.images = []
 
 exports.templates = [
     'src/templates/**/*.hbs'
