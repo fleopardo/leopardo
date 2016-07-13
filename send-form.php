@@ -21,8 +21,8 @@
 	$mail->IsSMTP();  // set mailer to use SMTP
 	$mail->Host = "smtp.gmail.com";  // specify main and backup server
 	$mail->SMTPAuth = true;     // turn on SMTP authentication
-	$mail->Username = "santiagoleopardo@gmail.com";  // SMTP username
-	$mail->Password = "32766754S"; // SMTP password
+	$mail->Username = "administracion@hosepower.com.ar";  // SMTP username
+	$mail->Password = "Hose987"; // SMTP password
 
 	$mail->From = $_POST["email"];
 	$mail->FromName = $_POST["nombre"];
