@@ -21,10 +21,10 @@
 	$mail->IsSMTP();  // set mailer to use SMTP
 	$mail->Host = "smtp.gmail.com";  // specify main and backup server
 	$mail->SMTPAuth = true;     // turn on SMTP authentication
-	$mail->Username = "administracion@hosepower.com.ar";  // SMTP username
-	$mail->Password = "Hose987"; // SMTP password
+	$mail->Username = "ventas.hosepower@gmail.com";  // SMTP username
+	$mail->Password = "rivera5738"; // SMTP password
 
-	$mail->From = $_POST["email"];
+	$mail->setFrom($email,$nombre);
 	$mail->FromName = $_POST["nombre"];
 	/*$mail->AddAddress("josh@example.net", "Josh Adams");
 	$mail->AddAddress("ellen@example.com");                  // name is optional
@@ -34,7 +34,9 @@
     $mail -> Debugoutput = 'html';
     $mail -> Port = 587;
     $mail -> SMTPSecure = 'tls';
-    $mail -> addAddress('santiagoleopardo@gmail.com', 'Test');
+    $mail -> addAddress('administracion@hosepower.com.ar');
+    //$mail -> addAddress('fleopardo@gmail.com', 'Test');
+    
     $mail -> addReplyTo($email, 'Reply');
 
 	/*$mail->WordWrap = 50;                                // set word wrap to 50 characters
