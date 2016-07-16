@@ -27,14 +27,27 @@ App.module('Hosepower.Router', function (Router, App, Backbone, Marionette, $, _
     };
 
     controller.productsDetail = function (id) {
-        var model = App.Hosepower.Products.get(id);
-        if (model) {
-            var page = new App.Hosepower.Views.ProductsDetail({
-                'model': model
-            });
-            App.getRegion('main').show(page);
+
+        function showPage(id) {
+            var model = App.Hosepower.Products.get(id);
+            if (model) {
+                var page = new App.Hosepower.Views.ProductsDetail({
+                    'model': model
+                });
+                App.getRegion('main').show(page);
+            } else {
+                App.getRegion('main').$el.html(App.templates.notFound());
+            }
+        }
+
+        if (App.Hosepower.Products) {
+            showPage(id);
         } else {
-            App.getRegion('main').$el.html(App.templates.notFound());
+            $.when(App.Hosepower.getProducts()).then(function(data) {
+                App.Hosepower.Products = new App.Hosepower.Collections.Products();
+                App.Hosepower.Products.add(data.products);
+                showPage(id);
+            });
         }
     };
 
