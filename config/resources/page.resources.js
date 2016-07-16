@@ -22,7 +22,9 @@ exports.scripts = [
     'src/scripts/modules/router.module.js',
     'src/scripts/modules/hosepower.module.js',
     // Models
-    // 'src/scripts/models/user.model.js',
+    'src/scripts/models/product.model.js',
+    // collections
+    'src/scripts/collections/products.collection.js',
     // Views
     'src/scripts/views/header.view.js',
     'src/scripts/views/footer.view.js',
@@ -31,6 +33,7 @@ exports.scripts = [
     'src/scripts/views/company.view.js',
     'src/scripts/views/services.view.js',
     'src/scripts/views/products.view.js',
+    'src/scripts/views/productsDetail.view.js',
     'src/scripts/views/contact.view.js'
 ];
 

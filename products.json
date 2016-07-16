@@ -1,0 +1,16 @@
+{
+    "products": [
+        {
+            "id": "manguera-industrial",
+            "name": "Manguera",
+            "image": "manguera-industrial.jpg",
+            "description": "Hola que hace manguera"
+        },
+        {
+            "id": "cano-de-acero",
+            "name": "Caño",
+            "image": "cano-de-acero.jpg",
+            "description": "Hola que hace caño"
+        }
+    ]
+}
