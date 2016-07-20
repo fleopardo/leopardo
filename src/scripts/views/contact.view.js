@@ -31,7 +31,7 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
 
         		var options = {
         			zoom: 15,
-        			center: new google.maps.LatLng(-34.5760088,-58.4977576),
+        			center: new google.maps.LatLng(-34.5761722,-58.4955796),
         			mapTypeId: google.maps.MapTypeId.ROADMAP,
         			mapTypeControl: false,
         			navigationControl: false,

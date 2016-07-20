@@ -63,8 +63,7 @@
 .hosepower-company__col-photo {
 	background-image: url('../images/company/destacada.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center right;
+	background-size: 100% 100%;
 }
 
 
@@ -73,5 +72,9 @@
 		width: 100%;
 		margin-right: 0;
 		margin-bottom: 20px;
+	}
+
+	.hosepower-company__col-photo {
+		display: none;
 	}
 }

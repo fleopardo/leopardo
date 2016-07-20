@@ -1,3 +1,8 @@
+@keyframes fade-in {
+    from { opacity: 0;}
+    to {opacity: 1;}
+}
+
 /* Clearfix
 -------------------------------------------------- */
 .clearfix { *zoom: 1; }
@@ -37,15 +42,19 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-.hosepower-main {
+.hosepower-main{
 	position: relative;
 	z-index: 2;
+	// > div{
+	// 	animation: fade-in 250ms ease-out;
+	// }
 }
 
 .hosepower-container {
 	max-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
+	animation: fade-in 450ms ease-out;
 }
 
 .hosepower-sections-title {
