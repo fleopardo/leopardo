@@ -1,16 +1,39 @@
 {
-    "products": [
+    "categories": [
         {
-            "id": "manguera-industrial",
             "name": "Manguera",
-            "image": "manguera-industrial.jpg",
-            "description": "Hola que hace manguera"
+            "id": "manguera",
+            "products": [
+                {
+                    "name": "Manguera",
+                    "image": "manguera-industrial.jpg",
+                    "description": "Hola que hace manguera"
+                },
+                {
+                    "name": "Caño",
+                    "image": "cano-de-acero.jpg",
+                    "description": "Hola que hace caño"
+                }
+            ]
         },
+
         {
-            "id": "cano-de-acero",
-            "name": "Caño",
-            "image": "cano-de-acero.jpg",
-            "description": "Hola que hace caño"
+            "name": "Manguera2",
+            "id": "manguera2",
+            "products": [
+                {
+                    "name": "Manguera",
+                    "image": "manguera-industrial.jpg",
+                    "description": "Hola que hace manguera"
+                },
+                {
+                    "name": "Caño",
+                    "image": "cano-de-acero.jpg",
+                    "description": "Hola que hace caño"
+                }
+            ]
         }
     ]
+
+
 }

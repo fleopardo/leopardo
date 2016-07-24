@@ -4,10 +4,21 @@
         <h2 class="hosepower-container">Detalle de producto</h2>
     </div>
 
+    <h3 class="hosepower-products-detail__category-title"><i class="fa fa-chevron-right"></i> {{name}}</h3>
+
+    {{#each products}}
     <div class="hosepower-container hosepower-products-detail__content">
-        <p>Nombre: {{name}}</p>
-        <p>Foto: <img src="{{image}}" /></p>
-        <p>Descripcion: {{description}}</p>
-    </div>
+        <article class="hosepower-products-detail__category">
+            <div class="hosepower-products-detail__category-container clearfix">
+                <img src="./build/images/products/{{image}}" width="168" height="157" class="hosepower-products-detail__category-image" />
+                
+                <div class="hosepower-products-detail__category-list">
+	                <p>Nombre: {{name}}</p>
+			        <p>Descripcion: {{description}}</p>
+			    </div>
+            </div>
+    	</article>
+	</div>
+	{{/each}}
 
 </section>

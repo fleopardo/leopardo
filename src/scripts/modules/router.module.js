@@ -45,7 +45,7 @@ App.module('Hosepower.Router', function (Router, App, Backbone, Marionette, $, _
         } else {
             $.when(App.Hosepower.getProducts()).then(function(data) {
                 App.Hosepower.Products = new App.Hosepower.Collections.Products();
-                App.Hosepower.Products.add(data.products);
+                App.Hosepower.Products.add(data.categories);
                 showPage(id);
             });
         }
