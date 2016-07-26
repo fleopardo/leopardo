@@ -27,7 +27,7 @@ this["App"]["templates"]["products"] = Handlebars.template({"compiler":[7,">= 4.
 this["App"]["templates"]["productsDetail"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "    <div class=\"hosepower-container hosepower-products-detail__content\">\n        <article class=\"hosepower-products-detail__category\">\n            <div class=\"hosepower-products-detail__category-container clearfix\">\n                <img src=\"./build/images/products/"
+  return "    <div class=\"hosepower-container hosepower-products-detail__content\">\n        <article class=\"hosepower-products-detail__category\">\n            <div class=\"hosepower-products-detail__category-container clearfix\">\n                <img src=\"./build/images/products-details/"
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data}) : helper)))
     + "\" width=\"168\" height=\"157\" class=\"hosepower-products-detail__category-image\" />\n                \n                <div class=\"hosepower-products-detail__category-list\">\n	                <p>Nombre: "
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
