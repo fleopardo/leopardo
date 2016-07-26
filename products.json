@@ -1,18 +1,44 @@
 {
     "categories": [
         {
-            "name": "Manguera",
+            "name": "Mangueras industriales",
             "id": "manguera",
             "products": [
                 {
-                    "name": "Manguera",
-                    "image": "manguera-industrial.jpg",
-                    "description": "Hola que hace manguera"
+                    "name": "Chem Marine",
+                    "image": "acidos-quimicos-chem-marine.jpg",
+                    "description": "Recomendadas para transferencia de productos químicos altamente corrosivos, en operaciones marinas pesadas (carga y descarga).",
+                    "link" : "acidos-quimicos-chem-marine.pdf"
                 },
                 {
-                    "name": "Caño",
-                    "image": "cano-de-acero.jpg",
-                    "description": "Hola que hace caño"
+                    "name": "Chem Power EPDM",
+                    "image": "acidos-quimicos-chem-power-epdm.jpg",
+                    "description": "Manguera apta para succión y descarga de ácidos y bases a concentración media.",
+                    "link": "acidos-quimicos-chem-power-epdm.pdf"
+                },
+                {
+                    "name": "Chem Power PTFE",
+                    "image": "acidos-quimicos-chem-power-ptfe.jpg",
+                    "description": "Manguera para succión y entrega de productos químicos con bases a concentración alta, solventes y farmacéuticos.",
+                    "link": "acidos-quimicos-chem-power-ptfe.pdf"
+                },
+                {
+                    "name": "Chem Power UPE",
+                    "image": "acidos-quimicos-chem-power-upe.jpg",
+                    "description": "Manguera para succión y descarga de productos químicos, ácidos y solventes en general. De uso habitual en las industrias farmacéutica, química. Para obtener más información, consulte la tabla de resistencia a los productos químicos.",
+                    "link": "acidos-quimicos-chem-power-upe.pdf"
+                },
+                {
+                    "name": "Chem Power XLPE",
+                    "image": "acidos-quimicos-chem-power-xlpe.jpg",
+                    "description": "Manguera de succión y descarga de productos químicos, ácidos y solventes en general.",
+                    "link": "acidos-quimicos-chem-power-xlpe.pdf"
+                },
+                {
+                    "name": "Solchem S",
+                    "image": "acidos-quimicos-solchem-s.jpg",
+                    "description": "Manguera apta para succión, descarga y transferencia de productos químicos altamente corrosivos.",
+                    "link": "acidos-quimicos-solchem-s.pdf"
                 }
             ]
         },
