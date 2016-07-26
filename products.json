@@ -2,7 +2,7 @@
     "categories": [
         {
             "name": "Mangueras industriales",
-            "id": "manguera",
+            "id": "mangueras-industriales",
             "products": [
                 {
                     "name": "Chem Marine",
@@ -39,6 +39,12 @@
                     "image": "acidos-quimicos-solchem-s.jpg",
                     "description": "Manguera apta para succión, descarga y transferencia de productos químicos altamente corrosivos.",
                     "link": "acidos-quimicos-solchem-s.pdf"
+                },
+                {
+                    "name": "Solchem",
+                    "image": "acidos-quimicos-solchem.jpg",
+                    "description": "Manguera apta para succión, descarga y transferencia de ácidos y alkalis altamente corrosivos, aldehidos, aminas. alifáticos, solventes aromáticos, alcoholes, esteres, cetonas y productos derivados del petróleo.",
+                    "link": "acidos-quimicos-solchem.pdf"
                 }
             ]
         },
