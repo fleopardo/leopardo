@@ -50,18 +50,20 @@
         },
 
         {
-            "name": "Manguera2",
-            "id": "manguera2",
+            "name": "Aire Agua",
+            "id": "aire-agua",
             "products": [
                 {
-                    "name": "Manguera",
-                    "image": "manguera-industrial.jpg",
-                    "description": "Hola que hace manguera"
+                    "name": "Accesorios",
+                    "image": "aire-agua-accesorios.jpg",
+                    "description": "Construídos en acero inoxidable 316",
+                    "link": "aire-agua-accesorios.pdf"
                 },
                 {
                     "name": "Caño",
                     "image": "cano-de-acero.jpg",
-                    "description": "Hola que hace caño"
+                    "description": "Hola que hace caño",
+                    "link": "acidos-quimicos-solchem.pdf"
                 }
             ]
         }
