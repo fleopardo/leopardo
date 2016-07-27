@@ -2,7 +2,8 @@
     "categories": [
         {
             "name": "Mangueras industriales",
-            "id": "mangueras-industriales",
+            "id": "acidos-quimicos",
+            "categoryParent": "Mangueras industriales",
             "products": [
                 {
                     "name": "Chem Marine",
@@ -52,6 +53,7 @@
         {
             "name": "Aire Agua",
             "id": "aire-agua",
+            "categoryParent": "Mangueras industriales",
             "products": [
                 {
                     "name": "Accesorios",
@@ -107,6 +109,7 @@
         {
             "name": "Alimentos / Bebidas",
             "id": "alimentos-bebidas",
+            "categoryParent": "Mangueras industriales",
             "products": [
                 {
                     "name": "Food Power UPE",
@@ -159,6 +162,4 @@
             ]
         }
     ]
-
-
 }

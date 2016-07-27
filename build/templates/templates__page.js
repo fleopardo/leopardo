@@ -39,10 +39,12 @@ this["App"]["templates"]["productsDetail"] = Handlebars.template({"1":function(c
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
     + "\" target=\"_blank\"><i class=\"fa fa-cloud-download\" aria-hidden=\"true\"></i> Descargar PDF</a>\n    			    </div>\n                </div>\n        	</article>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : {};
+    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<section class=\"hosepower-products-detail__container\">\n\n    <div class=\"hosepower-sections-title\">\n        <h2 class=\"hosepower-container\">\n            <a href=\"#/productos\">Productos</a>\n            <i class=\"fa fa-chevron-right\"></i>\n            <span>"
-    + container.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
+  return "<section class=\"hosepower-products-detail__container\">\n\n    <div class=\"hosepower-sections-title\">\n        <h2 class=\"hosepower-container\">\n            <a href=\"#/productos\">Productos</a>\n            <i class=\"fa fa-chevron-right\"></i>\n            "
+    + alias4(((helper = (helper = helpers.categoryParent || (depth0 != null ? depth0.categoryParent : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"categoryParent","hash":{},"data":data}) : helper)))
+    + "\n            <i class=\"fa fa-chevron-right\"></i>\n            <span>"
+    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
     + "</span>\n        </h2>\n    </div>\n\n    <div class=\"hosepower-container hosepower-products-detail__content\">\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.products : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "    </div>\n\n</section>\n";
