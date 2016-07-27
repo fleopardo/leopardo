@@ -160,6 +160,68 @@
                     "link": "alimentos-bebidas-food-power-epdm.pdf"
                 }
             ]
+        },
+
+        {
+            "name": "Desobstructora",
+            "id": "desobstructora",
+            "products": [
+                {
+                    "name": "Desobstructora",
+                    "image": "desobstructora.jpg",
+                    "description": "Manguera creada para ser utilizada con agua a elevadas presiones en la desobstrucción de cañerías.",
+                    "link": "desobstructora.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Hidrocarburos / Solventes Aromáticos",
+            "id": "hidrocarburos-solventes",
+            "products": [
+                {
+                    "name": "Aspiroil",
+                    "image": "hidrocarburos-aspiroil.jpg",
+                    "description": "Manguera para succión y descarga de combustibles y aceites minerales. Apta para productos con hasta el 50% de contenidos aromáticos.",
+                    "link": "hidrocarburos-aspiroil.pdf"
+                },
+                {
+                    "name": "Bottom Loading",
+                    "image": "hidrocarburos-bottom-loading.jpg",
+                    "description": "Manguera compuesta recomendada para transferencia de hidrocarburos, en instalaciones Bottom loading. Reforzadas especialmente para mínima elongación.",
+                    "link": "hidrocarburos-bottom-loading.pdf"
+                },
+                {
+                    "name": "Oil Power Press",
+                    "image": "hidrocarburos-oil-power-press.jpg",
+                    "description": "Manguera apta para transferencia de hidrocarburos en general con un contenido máximo de aromáticos del 30%.",
+                    "link": "hidrocarburos-oil-power-press.pdf"
+                },
+                {
+                    "name": "Oil Power SD",
+                    "image": "hidrocarburos-oil-power-sd.jpg",
+                    "description": "Manguera apta para transferencia de hidrocarburos en general con un contenido máximo de aromáticos del 30%.",
+                    "link": "hidrocarburos-oil-power-sd.pdf"
+                },
+                {
+                    "name": "Oil Power Super",
+                    "image": "hidrocarburos-oil-power-super.jpg",
+                    "description": "Manguera apta para transferencia de hidrocarburos en general con un contenido máximo de aromáticos del 30%.",
+                    "link": "hidrocarburos-oil-power-super.pdf"
+                },
+                {
+                    "name": "Trans Marine",
+                    "image": "hidrocarburos-trans-marine.jpg",
+                    "description": "Recomendadas para transferencia de hidrocarburos con un contenido del 100% de aromáticos, en operaciones marinas pesadas (carga y descarga). Cumple con la norma BS 5842 y los códigos IMO, BCH, IBC contenidos en la USCG.",
+                    "link": "hidrocarburos-trans-marine.pdf"
+                },
+                {
+                    "name": "Transoil",
+                    "image": "hidrocarburos-transoil.jpg",
+                    "description": "Manguera compuesta apta para succión, descarga y transferencia de naftas, gasoil, lubricantes, parafina, kerosene y aromáticos 100%.",
+                    "link": "hidrocarburos-transoil.pdf"
+                }
+            ]
         }
     ]
 }
