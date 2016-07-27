@@ -60,10 +60,101 @@
                     "link": "aire-agua-accesorios.pdf"
                 },
                 {
-                    "name": "Caño",
-                    "image": "cano-de-acero.jpg",
-                    "description": "Hola que hace caño",
-                    "link": "acidos-quimicos-solchem.pdf"
+                    "name": "Air Power 10",
+                    "image": "aire-agua-airpower-10.jpg",
+                    "description": "Manguera para transferencia de agua, aire y líquidos no corrosivos en general.",
+                    "link": "aire-agua-airpower-10.pdf"
+                },
+                {
+                    "name": "Air Power 20",
+                    "image": "aire-agua-airpower-20.jpg",
+                    "description": "Manguera para transferencia de agua, aire y líquidos no corrosivos en general.",
+                    "link": "aire-agua-airpower-20.pdf"
+                },
+                {
+                    "name": "Manga Plana Azul",
+                    "image": "aire-agua-manga-plana-azul.jpg",
+                    "description": "Abastecimiento y drenaje de agua. Ideal para riego por goteo y aspersores. Utilizada en emergencia o inundaciones para remover grandes volúmenes de agua.",
+                    "link": "aire-agua-manga-plana-azul.pdf"
+                },
+                {
+                    "name": "Manga Plana Roja",
+                    "image": "aire-agua-manga-plana-roja.jpg",
+                    "description": "Abastecimiento y drenaje de agua, con excelente resistencia a la abrasión. Usualmente usada en la minería a cielo abierto, construcciones civiles, o lugares de montaña donde el agua debe ser transportada a sitios de alturas considerables.",
+                    "link": "aire-agua-manga-plana-roja.pdf"
+                },
+                {
+                    "name": "Rylbrun Profesional",
+                    "image": "aire-agua-rylbrun-profesional.jpg",
+                    "description": "Tubería flexible para la instalación de bombas sumergibles en pozos profundos.",
+                    "link": "aire-agua-rylbrun-profesional.pdf"
+                },
+                {
+                    "name": "Steel Air",
+                    "image": "aire-agua-steel-air.jpg",
+                    "description": "Manguera para transferencia de aire , con capas de acero para servicio pesado. Resistente a los residuos de aceite proveniente de compresores.",
+                    "link": "aire-agua-steel-air.pdf"
+                },
+                {
+                    "name": "Water Power SD",
+                    "image": "aire-agua-water-power-sd.jpg",
+                    "description": "Manguera para transferencia de agua, aire y líquidos no corrosivos en general.",
+                    "link": "aire-agua-water-power-sd.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Alimentos / Bebidas",
+            "id": "alimentos-bebidas",
+            "products": [
+                {
+                    "name": "Food Power UPE",
+                    "image": "alimenos-bebidas-food-power-upe.jpg",
+                    "description": "Manguera especialmente flexible y liviana, apta para succión y descarga de productos químicos, alimentos y solventes en general. De uso habitual en las industrias farmacéutica, química y alimentaria. Para obtener más información, consulte la tabla de resistencia a los productos químicos.",
+                    "link": "alimenos-bebidas-food-power-upe.pdf"
+                },
+                {
+                    "name": "Milkflex FAT",
+                    "image": "alimenos-bebidas-milkflex-fat.jpg",
+                    "description": "Manguera para succión y entrega de productos lácteos, aceites de girasol, maíz, soja y alimentos líquidos grasos. Construcción flexible y liviana, fácil de manipular. De uso habitual como manguera de succión/descarga desde el camión cisterna.",
+                    "link": "alimenos-bebidas-milkflex-fat.pdf"
+                },
+                {
+                    "name": "Milkflex",
+                    "image": "alimenos-bebidas-milkflex.jpg",
+                    "description": "Manguera para succión y entrega apta para leche y productos lácteos, alimentos líquidos no grasos. Construcción flexible y liviana, fácil de manipular. De uso habitual como manguera de succión/descarga desde el camión cisterna.",
+                    "link": "alimenos-bebidas-milkflex.pdf"
+                },
+                {
+                    "name": "Pharma Press",
+                    "image": "alimenos-bebidas-pharma-press.jpg",
+                    "description": "Manguera ideal para transferencia de cosméticos y productos de belleza, alimentos y productos farmacéuticos a altas temperaturas de hasta +135 ° C. Vinos de calidad, jugos de frutas, licores con un máx. 50% de contenido de alcohol, cremas, jabones, fragancias y pigmentos.",
+                    "link": "alimenos-bebidas-pharma-press.pdf"
+                },
+                {
+                    "name": "Pharma Steel Press HT",
+                    "image": "alimenos-bebidas-pharma-steel-press-ht.jpg",
+                    "description": "Manguera ideal para transferencia de cosméticos y productos de belleza, alimentos y productos farmacéuticos a altas temperaturas de hasta +135 ° C. Vinos de calidad, jugos de frutas, licores con un máx. 50% de contenido de alcohol, cremas, jabones, fragancias y pigmentos. No es adecuado para alimentos grasos.",
+                    "link": "alimenos-bebidas-pharma-steel-press-ht.pdf"
+                },
+                {
+                    "name": "Plutone BIO",
+                    "image": "alimenos-bebidas-plutone-bio.jpg",
+                    "description": "Aspiración e impulsión de líquidos industriales y productos químicos.",
+                    "link": "alimenos-bebidas-plutone-bio.pdf"
+                },
+                {
+                    "name": "Alispir Sil Inox",
+                    "image": "alimentos-bebidas-alispir-sil-inox.jpg",
+                    "description": "Aspiración e impulsión de alimentos grasos y no grasos, resistente a alta temperatura. Especialmente diseñada para alimentos y para su uso en la industria farmacéutica.",
+                    "link": "alimentos-bebidas-alispir-sil-inox.pdf"
+                },
+                {
+                    "name": "Food Power EDPM",
+                    "image": "alimentos-bebidas-food-power-epdm.jpg",
+                    "description": "Manguera especialmente flexible y liviana, apta para succión y descarga de leche, vino, cerveza, jugo de frutas, bebidas alcohólicas y alimentos líquidos no grasos.",
+                    "link": "alimentos-bebidas-food-power-epdm.pdf"
                 }
             ]
         }
