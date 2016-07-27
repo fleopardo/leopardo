@@ -602,6 +602,76 @@
         },
 
         {
+            "name": "Banda estampada",
+            "id": "banda-estampada",
+            "categoryParent": "Abrazaderas",
+            "products": [
+                {
+                    "name": "Banda estampada",
+                    "image": "abrazadera-banda-estampada.jpg",
+                    "description": "De una sola pieza sin soldadura.",
+                    "link": "abrazadera-banda-estampada.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Cremallera",
+            "id": "cremallera",
+            "categoryParent": "Abrazaderas",
+            "products": [
+                {
+                    "name": "Cremallera",
+                    "image": "abrazadera-cremallera.jpg",
+                    "description": "Construído en una sola pieza, ancho 12,7 mm.",
+                    "link": "abrazadera-cremallera.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Mordaza deslizante",
+            "id": "mordaza-deslizante",
+            "categoryParent": "Abrazaderas",
+            "products": [
+                {
+                    "name": "Mordaza deslizante",
+                    "image": "abrazadera-mordaza-deslizante.jpg",
+                    "description": "Fundición de acero carbono zincado.",
+                    "link": "abrazadera-mordaza-deslizante.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Super presión acero zincado",
+            "id": "super-presion-acero-zinc",
+            "categoryParent": "Abrazaderas",
+            "products": [
+                {
+                    "name": "Super presión acero zincado",
+                    "image": "abrazadera-super-presion-acero-zinc.jpg",
+                    "description": "Construido en una sola pieza.",
+                    "link": "abrazadera-super-presion-acero-zinc.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Super presión inox",
+            "id": "super-presion-inox",
+            "categoryParent": "Abrazaderas",
+            "products": [
+                {
+                    "name": "Super presión inox",
+                    "image": "abrazadera-super-presion-inox.jpg",
+                    "description": "Abrazadera de gran presión fabricada bajo normas DIN 3017. Tornillo tangencial ajustable. Bordes redondeados.",
+                    "link": "abrazadera-super-presion-inox.pdf"
+                }
+            ]
+        },
+
+        {
             "name": "Hebillas Band it",
             "id": "hebillas-bandit",
             "categoryParent": "Accesorios",
