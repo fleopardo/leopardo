@@ -165,6 +165,7 @@
         {
             "name": "Desobstructora",
             "id": "desobstructora",
+            "categoryParent": "Mangueras industriales",
             "products": [
                 {
                     "name": "Desobstructora",
@@ -178,6 +179,7 @@
         {
             "name": "Hidrocarburos / Solventes Aromáticos",
             "id": "hidrocarburos-solventes",
+            "categoryParent": "Mangueras industriales",
             "products": [
                 {
                     "name": "Aspiroil",
@@ -220,6 +222,194 @@
                     "image": "hidrocarburos-transoil.jpg",
                     "description": "Manguera compuesta apta para succión, descarga y transferencia de naftas, gasoil, lubricantes, parafina, kerosene y aromáticos 100%.",
                     "link": "hidrocarburos-transoil.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Humo y Gases",
+            "id": "humo-gases",
+            "categoryParent": "Mangueras industriales",
+            "products": [
+                {
+                    "name": "Airmetal PU",
+                    "image": "humo-gases-airmetal-pu.jpg",
+                    "description": "Manguera apta para aspiración e impulsión de humos, vapores, gases de aceites e hidrocarburos.",
+                    "link": "humo-gases-airmetal-pu.pdf"
+                },
+                {
+                    "name": "Silduct 2S",
+                    "image": "humo-gases-silducto-2s.jpg",
+                    "description": "Transferencia de aire a alta temperatura, gases, vapores y polvos. Utilizada en las industrias del plástico y automotriz para ventilación y escape de gases.",
+                    "link": "humo-gases-silducto-2s.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Materiales Abrasivos",
+            "id": "materiales-abrasivos",
+            "categoryParent": "Mangueras industriales",
+            "products": [
+                {
+                    "name": "Airmetal PU",
+                    "image": "abrasivos-airmetal-pu.jpg",
+                    "description": "Manguera apta para aspiración e impulsión de polvos, virutas, granos, aserrín y materiales abrasivos en general.",
+                    "link": "abrasivos-airmetal-pu.pdf"
+                },
+                {
+                    "name": "Bulk Power",
+                    "image": "abrasivos-bulk-power.jpg",
+                    "description": "Manguera apta para succión y descarga de materiales abrasivos secos como cal, cemento en polvo, arena, grava, piedras, semillas y polvo de roca.",
+                    "link": "abrasivos-bulk-power.pdf"
+                },
+                {
+                    "name": "Hot Air Power",
+                    "image": "abrasivos-hot-air-power.jpg",
+                    "description": "Manguera apta para succión y descarga de aire caliente hasta 180°C a partir del soplador o compresor al tanque de almacenamiento utilizado en la transferencia de materiales abrasivos secos a granel. También se puede utilizar para la transferencia de productos químicos suaves a temperatura ambiente.",
+                    "link": "abrasivos-hot-air-power.pdf"
+                },
+                {
+                    "name": "Sand Power",
+                    "image": "abrasivos-sand-power.jpg",
+                    "description": "Manguera para equipos de arenado y granallado, paso de cemento en polvo y elaborado, abrasivos en general (no corrosivos).",
+                    "link": "abrasivos-sand-power.pdf"
+                },
+                {
+                    "name": "Shortcrete",
+                    "image": "abrasivos-shotcrete.jpg",
+                    "description": "Manguera especialmente diseñada para el bombeo de hormigón a alta presión.",
+                    "link": "abrasivos-shotcrete.pdf"
+                },
+                {
+                    "name": "Slurry",
+                    "image": "abrasivos-slurry.jpg",
+                    "description": "Succión e impulsión de pulpa mineral , lodos y material abrasivo en general. Especialmente diseñada para ser utilizada en planta de procesos.",
+                    "link": "abrasivos-slurry.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Minería",
+            "id": "mineria",
+            "categoryParent": "Mangueras industriales",
+            "products": [
+                {
+                    "name": "Mineria Accesorios",
+                    "image": "mineria-accesorios.jpg",
+                    "description": "Construídos en acero inoxidable 316",
+                    "link": "mineria-accesorios.pdf"
+                },
+                {
+                    "name": "Air Drill 600 HT",
+                    "image": "mineria-air-drill-600-ht.jpg",
+                    "description": "Manguera especialmente diseñada para la transferencia de aire comprimido a elevadas presiones y alta temperatura en equipos de perforación.",
+                    "link": "mineria-air-drill-600-ht.pdf"
+                },
+                {
+                    "name": "Air Power 20",
+                    "image": "mineria-air-power-20.jpg",
+                    "description": "Manguera para transferencia de agua, aire y líquidos no corrosivos en general.",
+                    "link": "mineria-air-power-20.pdf"
+                },
+                {
+                    "name": "Anfo",
+                    "image": "mineria-anfo.jpg",
+                    "description": "Manguera especialmente diseñada para la carga de ANFO (mezcla de nitrato de amonio y gas-oil) en minas subterráneas o al aire libre.",
+                    "link": "mineria-anfo.pdf"
+                },
+                {
+                    "name": "Bulk Power",
+                    "image": "mineria-bulk-power.jpg",
+                    "description": "Manguera apta para succión y descarga de materiales abrasivos secos como cal, cemento en polvo, arena, grava, piedras, semillas y polvo de roca.",
+                    "link": "mineria-bulk-power.pdf"
+                },
+                {
+                    "name": "Cutting",
+                    "image": "mineria-cutting.jpg",
+                    "description": "Manguera para transferencia de aire con partículas sólidas, arena, piedras y materiales abrasivos en general, en equipos de perforación y exploración.",
+                    "link": "mineria-cutting.pdf"
+                },
+                {
+                    "name": "Manga Plana Azul",
+                    "image": "mineria-manga-plana-azul.jpg",
+                    "description": "Abastecimiento y drenaje de agua. Ideal para riego por goteo y aspersores. Utilizada en emergencia o inundaciones para remover grandes volúmenes de agua.",
+                    "link": "mineria-manga-plana-azul.pdf"
+                },
+                {
+                    "name": "Manga Plana Roja",
+                    "image": "mineria-manga-plana-roja.jpg",
+                    "description": "Abastecimiento y drenaje de agua, con excelente resistencia a la abrasión. Usualmente usada en la minería a cielo abierto, construcciones civiles, o lugares de montaña donde el agua debe ser transportada a sitios de alturas considerables.",
+                    "link": "mineria-manga-plana-roja.pdf"
+                },
+                {
+                    "name": "RC Drill",
+                    "image": "mineria-rc-drill.jpg",
+                    "description": "Manguera apta para succión y descarga de materiales abrasivos secos, especialmente diseñada para ser utilizada en equipos de perforación de aire reverso (circulacion inversa) a elevadas presiones.",
+                    "link": "mineria-rc-drill.pdf"
+                },
+                {
+                    "name": "Rock Dust",
+                    "image": "mineria-rock-dust.jpg",
+                    "description": "Manguera especialmente diseñada para la aspiración de polvo de roca, piedras y materiales abrasivos, en equipos de perforación y exploración.",
+                    "link": "mineria-rock-dust.pdf"
+                },
+                {
+                    "name": "Rylbrun Profesional",
+                    "image": "mineria-rylbrun-profesional.jpg",
+                    "description": "Tubería flexible para la instalación de bombas sumergibles en pozos profundos.",
+                    "link": "mineria-rylbrun-profesional.pdf"
+                },
+                {
+                    "name": "Shortcrete",
+                    "image": "mineria-shotcrete.jpg",
+                    "description": "Manguera especialmente diseñada para el bombeo de hormigón a alta presión.",
+                    "link": "mineria-shotcrete.pdf"
+                },
+                {
+                    "name": "Slurry",
+                    "image": "mineria-slurry.jpg",
+                    "description": "Succión e impulsión de pulpa mineral , lodos y material abrasivo en general. Especialmente diseñada para ser utilizada en planta de procesos.",
+                    "link": "mineria-slurry.pdf"
+                },
+                {
+                    "name": "Steel Air",
+                    "image": "mineria-steel-air.jpg",
+                    "description": "Manguera para transferencia de aire , con capas de acero para servicio pesado. Resistente a los residuos de aceite proveniente de compresores..",
+                    "link": "mineria-steel-air.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Vapor - Agua Caliente",
+            "id": "vapor-agua-caliente",
+            "categoryParent": "Mangueras industriales",
+            "products": [
+                {
+                    "name": "Black Steam",
+                    "image": "vapor-black-steam.jpg",
+                    "description": "Manguera apta para transferencia de vapor para lavado de playas, camiones y maquinarias.",
+                    "link": "vapor-black-steam.pdf"
+                },
+                {
+                    "name": "Steam Power",
+                    "image": "vapor-steam-power.jpg",
+                    "description": "Manguera apta para transferencia de vapor y agua caliente para la limpieza en el procesamiento de la carne, fábrica de papel y en las industrias alimenticias.",
+                    "link": "vapor-steam-power.pdf"
+                },
+                {
+                    "name": "Super Steam",
+                    "image": "vapor-super-steam.jpg",
+                    "description": "Manguera apta para transferencia de vapor para procesamiento de productos y equipos de limpieza, fundir gomas, ceras y procesamiento de pulpa de papel y cartón.",
+                    "link": "vapor-super-steam.pdf"
+                },
+                {
+                    "name": "Washdown Power",
+                    "image": "vapor-washdown-power.jpg",
+                    "description": "Manguera apta para transferencia de agua caliente, especialmente utilizada para la limpieza en la industria alimenticia.",
+                    "link": "vapor-washdown-power.pdf"
                 }
             ]
         }
