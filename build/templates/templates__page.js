@@ -27,25 +27,25 @@ this["App"]["templates"]["products"] = Handlebars.template({"compiler":[7,">= 4.
 this["App"]["templates"]["productsDetail"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "    <div class=\"hosepower-container hosepower-products-detail__content\">\n        <article class=\"hosepower-products-detail__category\">\n            <div class=\"hosepower-products-detail__category-container clearfix\">\n                <img src=\"./build/images/product-details/"
+  return "            <article class=\"hosepower-products-detail__category\">\n                <div class=\"hosepower-products-detail__category-container clearfix\">\n                    <img src=\"./build/images/product-details/"
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data}) : helper)))
-    + "\" width=\"168\" height=\"157\" class=\"hosepower-products-detail__category-image\" />\n                \n                <div class=\"hosepower-products-detail__category-list\">\n	                <p>Nombre: "
+    + "\" width=\"168\" height=\"157\" class=\"hosepower-products-detail__category-image\" />\n\n                    <div class=\"hosepower-products-detail__category-list\">\n    	                <p class=\"hosepower-products-detail__category-name\">"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</p>\n			        <p>Descripcion: "
+    + "</p>\n    			        <p class=\"hosepower-products-detail__category-description\">Descripcion: "
     + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper)))
-    + "</p>\n			        <a href=\"./pdf/"
+    + "</p>\n    			        <a class=\"hosepower-products-detail__category-download\" href=\"./pdf/"
     + alias4(((helper = (helper = helpers.link || (depth0 != null ? depth0.link : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"link","hash":{},"data":data}) : helper)))
     + "\" title=\""
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
-    + "\" target=\"_blank\">descarga</a>\n			    </div>\n            </div>\n    	</article>\n	</div>\n";
+    + "\" target=\"_blank\"><i class=\"fa fa-cloud-download\" aria-hidden=\"true\"></i> Descargar PDF</a>\n    			    </div>\n                </div>\n        	</article>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {};
 
-  return "<section class=\"hosepower-products-detail__container\">\n\n    <div class=\"hosepower-sections-title\">\n        <h2 class=\"hosepower-container\">Detalle de producto</h2>\n    </div>\n\n    <h3 class=\"hosepower-products-detail__category-title\"><i class=\"fa fa-chevron-right\"></i> "
+  return "<section class=\"hosepower-products-detail__container\">\n\n    <div class=\"hosepower-sections-title\">\n        <h2 class=\"hosepower-container\">\n            <a href=\"#/productos\">Productos</a>\n            <i class=\"fa fa-chevron-right\"></i>\n            <span>"
     + container.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</h3>\n\n"
+    + "</span>\n        </h2>\n    </div>\n\n    <div class=\"hosepower-container hosepower-products-detail__content\">\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.products : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n</section>\n";
+    + "    </div>\n\n</section>\n";
 },"useData":true});
 this["App"]["templates"]["services"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<section class=\"hosepower-services__container\">\n\n    <div class=\"hosepower-sections-title\">\n        <h2 class=\"hosepower-container\">Servicios</h2>\n    </div>\n\n    <div class=\"hosepower-container\">\n        <div class=\"hosepower-container hosepower-services__content\">\n            <div class=\"hosepower-services__col\">\n                <ul>\n                    <li><i class=\"fa fa-check-square-o\"></i> Asesoramiento técnico personalizado en la selección e instalación de conductores de fluidos.</li>\n                    <li><i class=\"fa fa-check-square-o\"></i> Relevamiento en plantas de todo el país.</li>\n                    <li><i class=\"fa fa-check-square-o\"></i> Diagnóstico de fallas, identificación de problemas y desarrollo de soluciones.</li>\n                    <li><i class=\"fa fa-check-square-o\"></i> Armado de Mangueras Industriales, Composite e Hidráulicas.</li>\n                    <li><i class=\"fa fa-check-square-o\"></i> Ensayos según normas internacionales (BS, API, FDA, CE, etc.), certificados de prueba hidráulica, elongación, curvatura y conductividad eléctrica.</li>\n                    <li><i class=\"fa fa-check-square-o\"></i> Entregas a cualquier punto del país.</li>\n                    <li><i class=\"fa fa-check-square-o\"></i> Análisis de rendimiento y satisfacción del usuario.</li>\n                </ul>\n            </div>\n\n            <div class=\"hosepower-services__col hosepower-services__col-photo\"></div>\n        </div>\n    </div>\n\n</section>\n";
