@@ -452,37 +452,6 @@
                 }
             ]
         },
-        {
-            "name": "Mangueras hidráulicas",
-            "id": "mangueras-hidraulicas",
-            "categoryParent": "Mangueras hidráulicas",
-            "products": [
-                {
-                    "name": "EFG4K/3K - SAE 100 R12",
-                    "image": "hidraulicas-efg4k3k_SAE100.jpg",
-                    "description": "Recomendada para aplicaciones de presión extremadamente alta y con altos impulsos. Supera los requerimientos de desempeño para SAE 100R12, EN 856 R12 e ISO 3862 Tipo R12. Compatible con fluidos hidráulicos biodegradables como polioléster, poliglicol y aceite vegetal, así como fluidos estándar derivados del petróleo.",
-                    "link": "hidraulicas-efg4k3k_SAE100.pdf"
-                },
-                {
-                    "name": "EFG5K/3K - SAE 100 R13",
-                    "image": "hidraulicas-efg5k_SAE100.jpg",
-                    "description": "Recomendada para aplicaciones hidráulicas de presión extremadamente alta, así como transmisiones hidrostáticas. EFG5K está diseñada para cumplir o exceder todos los requerimientos de las especificaciones SAE 100R13 y requerimientos de desempeño de EN 856 4SH (-12, -16 y -20), EN 856 4SP (-6, -8, -10 y -12) e ISO 3862 Tipo R13. Compatible con fluidos hidráulicos biodegradables como polioléster, poliglicol y aceite vegetal, así como fluidos estándar derivados del petróleo.",
-                    "link": "hidraulicas-efg5k_SAE100.pdf"
-                },
-                {
-                    "name": "EFG6K/3K - SAE 100 R15",
-                    "image": "hidraulicas-efg6k_SAE100.jpg",
-                    "description": "Recomendada para aplicaciones de extrema presión y con altos impulsos hidráulicos, así como transmisiones hidrostáticas. EFG6K está diseñada para cumplir con todos los requerimientos de las especificaciones SAE 100R15 y EN 856 4SP (-6, -8, -10 y -12), EN 856 4SH (-12, -16 y -20), e ISO 3862 Tipo R15 (-6, -8, -10, -12, -16, -24). Compatible con fluidos hidráulicos biodegradables como polioléster, poliglicol y aceite vegetal, así como fluidos estándar derivados de petróleo.",
-                    "link": "hidraulicas-efg6k_SAE100.pdf"
-                },
-                {
-                    "name": "G2 - SAE 100 R2",
-                    "image": "hidraulicas-g2_SAE100.jpg",
-                    "description": "Recomendada para aplicaciones en líneas hidráulicas de alta presión con aceite. Cumple o supera los requerimientos SAE 100R2, ISO 1436 2SN R2 y EN 853 2SN.",
-                    "link": "hidraulicas-g2_SAE100.pdf"
-                }
-            ]
-        },
 
         {
             "name": "EFG4K/3K - SAE 100 R12",
