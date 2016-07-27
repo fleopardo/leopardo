@@ -1,25 +1,27 @@
 <section class="hosepower-products-detail__container">
 
     <div class="hosepower-sections-title">
-        <h2 class="hosepower-container">Detalle de producto</h2>
+        <h2 class="hosepower-container">
+            <a href="#/productos">Productos</a>
+            <i class="fa fa-chevron-right"></i>
+            <span>{{name}}</span>
+        </h2>
     </div>
 
-    <h3 class="hosepower-products-detail__category-title"><i class="fa fa-chevron-right"></i> {{name}}</h3>
-
-    {{#each products}}
     <div class="hosepower-container hosepower-products-detail__content">
-        <article class="hosepower-products-detail__category">
-            <div class="hosepower-products-detail__category-container clearfix">
-                <img src="./build/images/product-details/{{image}}" width="168" height="157" class="hosepower-products-detail__category-image" />
-                
-                <div class="hosepower-products-detail__category-list">
-	                <p>Nombre: {{name}}</p>
-			        <p>Descripcion: {{description}}</p>
-			        <a href="./pdf/{{link}}" title="{{name}}" target="_blank">descarga</a>
-			    </div>
-            </div>
-    	</article>
-	</div>
-	{{/each}}
+        {{#each products}}
+            <article class="hosepower-products-detail__category">
+                <div class="hosepower-products-detail__category-container clearfix">
+                    <img src="./build/images/product-details/{{image}}" width="168" height="157" class="hosepower-products-detail__category-image" />
+
+                    <div class="hosepower-products-detail__category-list">
+    	                <p class="hosepower-products-detail__category-name">{{name}}</p>
+    			        <p class="hosepower-products-detail__category-description">Descripcion: {{description}}</p>
+    			        <a class="hosepower-products-detail__category-download" href="./pdf/{{link}}" title="{{name}}" target="_blank"><i class="fa fa-cloud-download" aria-hidden="true"></i> Descargar PDF</a>
+    			    </div>
+                </div>
+        	</article>
+    	{{/each}}
+    </div>
 
 </section>
