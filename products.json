@@ -541,17 +541,188 @@
         },
 
         {
-            "name": "Acoples rápidos",
-            "id": "acoples-rapidos",
+            "name": "Acoples rápidos - Accesorios",
+            "id": "acoples-accesorios",
             "categoryParent": "Acoples rápidos",
             "products": [
                 {
-                    "name": "",
-                    "image": ".jpg",
+                    "name": "Acoples Accesorios",
+                    "image": "acoples-accesorios.jpg",
                     "description": "",
-                    "link": ".pdf"
+                    "link": "acoples-accesorios.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Cierre en Seco",
+            "id": "cierre-en-seco",
+            "categoryParent": "Acoples rápidos",
+            "products": [
+                {
+                    "name": "Cierre en Seco",
+                    "image": "acoples-cierre-en-seco.jpg",
+                    "description": "Su exclusivo sistema de palancas con doble seguridad de cierre automático en ambas direcciones, elimina cualquier fuga de productos luego de la desconexión de la línea. Recomendados para aquellos trasvases donde no es aceptable ninguna pérdida de producto.",
+                    "link": "acoples-cierre-en-seco.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Media vuelta américano",
+            "id": "acoples-media-vuelta-americano",
+            "categoryParent": "Acoples rápidos",
+            "products": [
+                {
+                    "name": "Media vuelta américano",
+                    "image": "acoples-media-vuelta-americano.jpg",
+                    "description": "",
+                    "link": "acoples-media-vuelta-americano.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Media vuelta arenado",
+            "id": "media-vuelta-arenado",
+            "categoryParent": "Acoples rápidos",
+            "products": [
+                {
+                    "name": "Media vuelta arenado",
+                    "image": "acoples-media-vuelta-arenado.jpg",
+                    "description": "",
+                    "link": "acoples-media-vuelta-arenado.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Media vuelta europeo",
+            "id": "media-vuelta-europeo",
+            "categoryParent": "Acoples rápidos",
+            "products": [
+                {
+                    "name": "Media vuelta europeo",
+                    "image": "acoples-media-vuelta-europeo.jpg",
+                    "description": "",
+                    "link": "acoples-media-vuelta-europeo.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Sistema a levas",
+            "id": "sistema-a-levas",
+            "categoryParent": "Acoples rápidos",
+            "products": [
+                {
+                    "name": "Sistema a levas",
+                    "image": "acoples-sistema-levas.jpg",
+                    "description": "",
+                    "link": "acoples-sistema-levas.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Split Fast",
+            "id": "split-fast",
+            "categoryParent": "Acoples rápidos",
+            "products": [
+                {
+                    "name": "Split Fast",
+                    "image": "acoples-split-fast.jpg",
+                    "description": "",
+                    "link": "acoples-split-fast.pdf"
+                }
+            ]
+        },
+
+        {
+            "name": "Hebillas Band it",
+            "id": "hebillas-bandit",
+            "categoryParent": "Accesorios",
+            "products": [
+                {
+                    "name": "Hebillas Band it",
+                    "image": "hebillas-bandit.jpg",
+                    "description": "Acero inoxidable 201/304/316.",
+                    "link": "hebillas-bandit.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Maquina sunchadora BAND IT",
+            "id": "maquina-sunchadora-bandit",
+            "categoryParent": "Accesorios",
+            "products": [
+                {
+                    "name": "Maquina sunchadora BAND IT",
+                    "image": "maquina-sunchadora.jpg",
+                    "description": "Fuerte y de fácil manejo, con acabado resistente a la corrosión. Posee un rulemán entre la manija y el cuerpo de la herramienta, cuya función, es reducir la fricción entre ambas cuando se tensiona el fleje.",
+                    "link": "maquina-sunchadora.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Porta mangueras safety bump",
+            "id": "portamangueras-safety-bump",
+            "categoryParent": "Accesorios",
+            "products": [
+                {
+                    "name": "Porta mangueras safety bump",
+                    "image": "portamangueras-safety-bump.jpg",
+                    "description": "Especialmente diseñada para acoples a levas, ideales para ser utilizados en mangueras de camión. Reemplazan los tapones tradicionales, porporcionando una forma segura de manipular las mangueras. También evitan que los acoples golpeen el suelo y se arrastren las levas, prolongando la vida útil del conjunto. Con este accesorio el operador obtiene un control total sobre la manguera.",
+                    "link": "portamangueras-safety-bump.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Protector HDPE",
+            "id": "protector-hdpe",
+            "categoryParent": "Accesorios",
+            "products": [
+                {
+                    "name": "Protector HDPE",
+                    "image": "protector-hdpe.jpg",
+                    "description": "Fabricado en polietileno de alta densidad (HDPE). Permite proteger una o más mangueras de los cortes, golpes y la abrasión. De fácil y rápida instalación.",
+                    "link": "protector-hdpe.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Soporte para mangueras",
+            "id": "soporte-mangueras-hose-buns",
+            "categoryParent": "Accesorios",
+            "products": [
+                {
+                    "name": "Soporte para mangueras",
+                    "image": "soporte-mangueras-hose-buns.jpg",
+                    "description": "Hosebun es una montura de Poliuretano que se utiliza para suspender las mangueras. Cada modelo es provisto con su correspondiente eslinga de naylon, diseñada para proteger a la manguera del estrangulamiento y prolongar la vida útil de la misma.",
+                    "link": "soporte-mangueras-hose-buns.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Traba palancas",
+            "id": "traba-palancas-safety-lock",
+            "categoryParent": "Accesorios",
+            "products": [
+                {
+                    "name": "Traba palancas",
+                    "image": "traba-palancas-safety-lock.jpg",
+                    "description": "Especialmente diseñado para acoples a levas HEMBRA. Eliminan la posibilidad de que las levas puedan abrirse cuando la manguera está en operación debido a la pulsación o vibración, evitando derrames.",
+                    "link": "traba-palancas-safety-lock.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Whipcheck",
+            "id": "whipcheck",
+            "categoryParent": "Accesorios",
+            "products": [
+                {
+                    "name": "Whipcheck",
+                    "image": "whipcheck.jpg",
+                    "description": "Utilizados comunmente en las mangueras para aire, agua, perforación, vapor, chorro de arena o en aplicaciones de alta presión, para ayudar a prevenir accidentes o lesiones resultantes de “azotes” o “latigazos”, producidos por fallas en las mangueras o desprendimiento de acoples.",
+                    "link": "whipcheck.pdf"
                 }
             ]
         }
+        
     ]
 }
