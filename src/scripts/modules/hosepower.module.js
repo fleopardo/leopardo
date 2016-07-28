@@ -2,13 +2,6 @@ App.module('Hosepower', function(Hosepower, App, Backbone, Marionette, $, _) {
 
     Hosepower.Products = null;
 
-    Hosepower.getProducts = function() {
-        return $.ajax({
-            'dataType': 'json',
-            'url': 'products.json'
-        });
-    };
-
     Hosepower.addInitializer(function(){
 
         var headerView = new App.Hosepower.Views.Header();

@@ -5,5 +5,6 @@ exports.build = {
     'images': 'build/images/',
     'fonts': 'build/fonts/',
     'assets': 'build/assets/',
-    'templates': 'build/templates/'
+    'templates': 'build/templates/',
+    'temporal': 'build/temporal/'
 };

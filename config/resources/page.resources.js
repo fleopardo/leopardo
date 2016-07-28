@@ -14,6 +14,7 @@ exports.scripts = [
     // Application and Configs
     'src/scripts/app.js',
     'build/templates/templates__page.js',
+    'build/temporal/productsJson.js',
     // Modules
     'src/scripts/modules/handlebars-helpers.module.js',
     'src/scripts/modules/utils.module.js',

@@ -1,4 +1,4 @@
-{
+this["__products"] = {
     "categories": [
         {
             "name": "Mangueras industriales",
@@ -765,3 +765,4 @@
         
     ]
 }
+;

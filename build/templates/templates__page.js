@@ -31,7 +31,7 @@ this["App"]["templates"]["productsDetail"] = Handlebars.template({"1":function(c
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data}) : helper)))
     + "\" width=\"168\" height=\"157\" class=\"hosepower-products-detail__category-image\" />\n\n                    <div class=\"hosepower-products-detail__category-list\">\n    	                <p class=\"hosepower-products-detail__category-name\">"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</p>\n    			        <p class=\"hosepower-products-detail__category-description\">Descripcion: "
+    + "</p>\n    			        <p class=\"hosepower-products-detail__category-description\">"
     + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper)))
     + "</p>\n    			        <a class=\"hosepower-products-detail__category-download\" href=\"./pdf/"
     + alias4(((helper = (helper = helpers.link || (depth0 != null ? depth0.link : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"link","hash":{},"data":data}) : helper)))
@@ -41,7 +41,7 @@ this["App"]["templates"]["productsDetail"] = Handlebars.template({"1":function(c
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<section class=\"hosepower-products-detail__container\">\n\n    <div class=\"hosepower-sections-title\">\n        <h2 class=\"hosepower-container\">\n            Productos\n            <i class=\"fa fa-chevron-right\"></i>\n            <a href=\"#/productos\">"
+  return "<section class=\"hosepower-products-detail__container\">\n\n    <div class=\"hosepower-sections-title\">\n        <h2 class=\"hosepower-container\">\n            <a href=\"#/productos\">Productos</a>\n            <i class=\"fa fa-chevron-right\"></i>\n            <a href=\"#/productos\">"
     + alias4(((helper = (helper = helpers.categoryParent || (depth0 != null ? depth0.categoryParent : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"categoryParent","hash":{},"data":data}) : helper)))
     + "</a>\n            <i class=\"fa fa-chevron-right\"></i>\n            <span>"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))

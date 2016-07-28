@@ -9,6 +9,7 @@ var mergeStream = require('merge-stream');
 var objectAssign = require('object-assign');
 var handlebars = require('handlebars');
 var autoprefixer = require('autoprefixer');
+var path = require('path');
 //var ftp = require('vinyl-ftp');
 var $ = require('gulp-load-plugins')();
 var paths = require('./config/paths');
@@ -20,6 +21,25 @@ gulp.task('clean', function() {
     return del.sync([paths.build.root + '*'], {
         'force': true
     });
+});
+
+
+
+gulp.task('productsJson', function(){
+    mkdirp(paths.build.temporal);
+
+    var config = {
+        processName: function(fileName) {
+            return '__' + path.basename(fileName, '.json');
+        },
+        noRedeclare: true // Avoid duplicate declarations
+    };
+
+    gulp.src('./products.json')
+        .pipe($.declare(config))
+        .pipe($.concat('productsJson.js'))
+        .pipe(gulp.dest(paths.build.temporal));
+
 });
 
 
@@ -142,9 +162,15 @@ gulp.task('templatesWatch', $.sync(gulp).sync([
     'scripts'
 ]));
 
+gulp.task('productsWatch', $.sync(gulp).sync([
+    'productsJson',
+    'scripts'
+]));
+
 gulp.task('default', $.sync(gulp).sync([
     'clean',
-    'templates', ['styles', 'scripts', 'fonts', 'images']
+    ['templates', 'productsJson'],
+    ['styles', 'scripts', 'fonts', 'images']
 ]));
 
 gulp.task('watch', function() {
@@ -152,6 +178,7 @@ gulp.task('watch', function() {
     gulp.watch('./src/styles/**/*.scss', ['styles']);
     gulp.watch('./src/templates/*.hbs', ['templatesWatch']);
     gulp.watch('./src/scripts/**/*.js', ['scripts']);
+    gulp.watch('./products.json', ['productsWatch']);
     gulp.watch('./src/images/**/*.{png,gif,jpg,webp,jpeg,ico}', ['images']);
     gulp.watch('./src/fonts/*.{eot,otf,svg,ttf,woff,woff2}', ['fonts']);
 });
