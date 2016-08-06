@@ -1,7 +1,7 @@
 {
     "categories": [
         {
-            "name": "Mangueras industriales",
+            "name": "Acidos / Químicos",
             "id": "acidos-quimicos",
             "categoryParent": "Mangueras industriales",
             "products": [
@@ -51,16 +51,10 @@
         },
 
         {
-            "name": "Aire Agua",
+            "name": "Aire / Agua",
             "id": "aire-agua",
             "categoryParent": "Mangueras industriales",
             "products": [
-                {
-                    "name": "Accesorios",
-                    "image": "aire-agua-accesorios.jpg",
-                    "description": "Construídos en acero inoxidable 316",
-                    "link": "aire-agua-accesorios.pdf"
-                },
                 {
                     "name": "Air Power 10",
                     "image": "aire-agua-airpower-10.jpg",
@@ -113,39 +107,39 @@
             "products": [
                 {
                     "name": "Food Power UPE",
-                    "image": "alimenos-bebidas-food-power-upe.jpg",
+                    "image": "alimentos-bebidas-food-power-upe.jpg",
                     "description": "Manguera especialmente flexible y liviana, apta para succión y descarga de productos químicos, alimentos y solventes en general. De uso habitual en las industrias farmacéutica, química y alimentaria. Para obtener más información, consulte la tabla de resistencia a los productos químicos.",
-                    "link": "alimenos-bebidas-food-power-upe.pdf"
+                    "link": "alimentos-bebidas-food-power-upe.pdf"
                 },
                 {
                     "name": "Milkflex FAT",
-                    "image": "alimenos-bebidas-milkflex-fat.jpg",
+                    "image": "alimentos-bebidas-milkflex-fat.jpg",
                     "description": "Manguera para succión y entrega de productos lácteos, aceites de girasol, maíz, soja y alimentos líquidos grasos. Construcción flexible y liviana, fácil de manipular. De uso habitual como manguera de succión/descarga desde el camión cisterna.",
-                    "link": "alimenos-bebidas-milkflex-fat.pdf"
+                    "link": "alimentos-bebidas-milkflex-fat.pdf"
                 },
                 {
                     "name": "Milkflex",
-                    "image": "alimenos-bebidas-milkflex.jpg",
+                    "image": "alimentos-bebidas-milkflex.jpg",
                     "description": "Manguera para succión y entrega apta para leche y productos lácteos, alimentos líquidos no grasos. Construcción flexible y liviana, fácil de manipular. De uso habitual como manguera de succión/descarga desde el camión cisterna.",
-                    "link": "alimenos-bebidas-milkflex.pdf"
+                    "link": "alimentos-bebidas-milkflex.pdf"
                 },
                 {
                     "name": "Pharma Press",
-                    "image": "alimenos-bebidas-pharma-press.jpg",
+                    "image": "alimentos-bebidas-pharma-press.jpg",
                     "description": "Manguera ideal para transferencia de cosméticos y productos de belleza, alimentos y productos farmacéuticos a altas temperaturas de hasta +135 ° C. Vinos de calidad, jugos de frutas, licores con un máx. 50% de contenido de alcohol, cremas, jabones, fragancias y pigmentos.",
-                    "link": "alimenos-bebidas-pharma-press.pdf"
+                    "link": "alimentos-bebidas-pharma-press.pdf"
                 },
                 {
                     "name": "Pharma Steel Press HT",
-                    "image": "alimenos-bebidas-pharma-steel-press-ht.jpg",
+                    "image": "alimentos-bebidas-pharma-steel-press-ht.jpg",
                     "description": "Manguera ideal para transferencia de cosméticos y productos de belleza, alimentos y productos farmacéuticos a altas temperaturas de hasta +135 ° C. Vinos de calidad, jugos de frutas, licores con un máx. 50% de contenido de alcohol, cremas, jabones, fragancias y pigmentos. No es adecuado para alimentos grasos.",
-                    "link": "alimenos-bebidas-pharma-steel-press-ht.pdf"
+                    "link": "alimentos-bebidas-pharma-steel-press-ht.pdf"
                 },
                 {
                     "name": "Plutone BIO",
-                    "image": "alimenos-bebidas-plutone-bio.jpg",
-                    "description": "Aspiración e impulsión de líquidos industriales y productos químicos.",
-                    "link": "alimenos-bebidas-plutone-bio.pdf"
+                    "image": "alimentos-bebidas-plutone-bio.jpg",
+                    "description": "Aspiración e impulsión de productos alimenticios. Color translúcido con paredes interior y exterior lisa. Atóxica (FDA) y de uso alimentario, (directiva europea 2002/72CE para simulantes A, B y C).",
+                    "link": "alimentos-bebidas-plutone-bio.pdf"
                 },
                 {
                     "name": "Alispir Sil Inox",
@@ -295,12 +289,6 @@
             "id": "mineria",
             "categoryParent": "Mangueras industriales",
             "products": [
-                {
-                    "name": "Mineria Accesorios",
-                    "image": "mineria-accesorios.jpg",
-                    "description": "Construídos en acero inoxidable 316",
-                    "link": "mineria-accesorios.pdf"
-                },
                 {
                     "name": "Air Drill 600 HT",
                     "image": "mineria-air-drill-600-ht.jpg",
@@ -468,12 +456,12 @@
         },
 
         {
-            "name": "EFG5K/3K - SAE 100 R13",
+            "name": "EFG5K - SAE 100 R13",
             "id": "efg5k_SAE100",
             "categoryParent": "Mangueras hidráulicas",
             "products": [
                 {
-                    "name": "EFG5K/3K - SAE 100 R13",
+                    "name": "EFG5K - SAE 100 R13",
                     "image": "hidraulicas-efg5k_SAE100.jpg",
                     "description": "Recomendada para aplicaciones hidráulicas de presión extremadamente alta, así como transmisiones hidrostáticas. EFG5K está diseñada para cumplir o exceder todos los requerimientos de las especificaciones SAE 100R13 y requerimientos de desempeño de EN 856 4SH (-12, -16 y -20), EN 856 4SP (-6, -8, -10 y -12) e ISO 3862 Tipo R13. Compatible con fluidos hidráulicos biodegradables como polioléster, poliglicol y aceite vegetal, así como fluidos estándar derivados del petróleo.",
                     "link": "hidraulicas-efg5k_SAE100.pdf"
@@ -482,12 +470,12 @@
         },
 
         {
-            "name": "EFG6K/3K - SAE 100 R15",
+            "name": "EFG6K - SAE 100 R15",
             "id": "efg6k_SAE100",
             "categoryParent": "Mangueras hidráulicas",
             "products": [
                 {
-                    "name": "EFG6K/3K - SAE 100 R15",
+                    "name": "EFG6K - SAE 100 R15",
                     "image": "hidraulicas-efg6k_SAE100.jpg",
                     "description": "Recomendada para aplicaciones de extrema presión y con altos impulsos hidráulicos, así como transmisiones hidrostáticas. EFG6K está diseñada para cumplir con todos los requerimientos de las especificaciones SAE 100R15 y EN 856 4SP (-6, -8, -10 y -12), EN 856 4SH (-12, -16 y -20), e ISO 3862 Tipo R15 (-6, -8, -10, -12, -16, -24). Compatible con fluidos hidráulicos biodegradables como polioléster, poliglicol y aceite vegetal, así como fluidos estándar derivados de petróleo.",
                     "link": "hidraulicas-efg6k_SAE100.pdf"
@@ -509,19 +497,6 @@
             ]
         },
 
-        {
-            "name": "Acoples rápidos - Accesorios",
-            "id": "acoples-accesorios",
-            "categoryParent": "Acoples rápidos",
-            "products": [
-                {
-                    "name": "Acoples Accesorios",
-                    "image": "acoples-accesorios.jpg",
-                    "description": "Sistema a levas y Split Flange",
-                    "link": "acoples-accesorios.pdf"
-                }
-            ]
-        },
         {
             "name": "Cierre en Seco",
             "id": "cierre-en-seco",
@@ -600,7 +575,38 @@
                 }
             ]
         },
-
+        {
+            "name": "Accesorios",
+            "id": "acoples-accesorios",
+            "categoryParent": "Acoples rápidos",
+            "products": [
+                {
+                    "name": "Acoples Accesorios",
+                    "image": "acoples-accesorios.jpg",
+                    "description": "Sistema a levas y Split Flange",
+                    "link": "acoples-accesorios.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Accesorios Rylbrun",
+            "id": "acoples-accesorios-rylbrun",
+            "categoryParent": "Acoples rápidos",
+            "products": [
+                {
+                    "name": "Racord cónico",
+                    "image": "acoples-rylbrun-racord-conico.jpg",
+                    "description": "Construídos en acero inoxidable 316",
+                    "link": "acoples-accesorios-rylbrun.pdf"
+                },
+                {
+                    "name": "Terminal doble",
+                    "image": "acoples-rylbrun-terminal-doble.jpg",
+                    "description": "Construídos en acero inoxidable 316",
+                    "link": "acoples-accesorios-rylbrun.pdf"
+                }
+            ]
+        },
         {
             "name": "Banda estampada",
             "id": "banda-estampada",
@@ -670,7 +676,19 @@
                 }
             ]
         },
-
+        {
+            "name": "Flejes Band it",
+            "id": "flejes-bandit",
+            "categoryParent": "Accesorios",
+            "products": [
+                {
+                    "name": "Flejes Band it",
+                    "image": "flejes-bandit.jpg",
+                    "description": "Hoja de acero inoxidable 201/304/316.<br>Rollo de 30mts.",
+                    "link": "flejes-bandit.pdf"
+                }
+            ]
+        },
         {
             "name": "Hebillas Band it",
             "id": "hebillas-bandit",
@@ -762,6 +780,6 @@
                 }
             ]
         }
-        
+
     ]
 }
