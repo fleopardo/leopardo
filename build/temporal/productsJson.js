@@ -555,10 +555,58 @@ this["__products"] = {
             "categoryParent": "Acoples rápidos",
             "products": [
                 {
-                    "name": "Sistema a levas",
-                    "image": "acoples-sistema-levas.jpg",
-                    "description": "Cuerpo manguera (modelo DCE), Adaptador manguera (modelo DNE), Cuerpo rosca hembra NPT/BSP (modelo DCH), Cuerpo rosca macho (modelo DCM), Adaptador rosca macho (modelo DNM), Adaptador rosca hembra NPT/BSP (modelo DNH), Tapón macho (modelo DTM), Tapa hembra (modelo DTH), Adaptador Doble (modelo DAD), Cuerpo Doble (modelo DCC), Cuerpo Niple (modelo DCN), Recuperador de Gases (modelo DRG).",
-                    "link": "acoples-sistema-levas.pdf"
+                    "name": "cuerpo manguera",
+                    "image": "acoples-sistema-levas-cuerpo-manguera.jpg",
+                    "description": "Modelo:CE<br> Materiales: Aluminio, Bronce, Acero inox., AISI 316, Polipropileno <br> Medidas: 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\”, 4\” y 6\""
+                },
+
+                {
+                    "name": "Cuerpo Rosca hembra",
+                    "image": "acoples-sistema-a-levas-cuerpo-rosca-hembra.jpg",
+                    "description": "Modelo:CH<br> Materiales: Aluminio, Bronce, Acero inox., AISI 316, Polipropileno <br> Medidas: 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\”, 4\” y 6\""
+                },
+                {
+                    "name": "Cuerpo rosca macho",
+                    "image": "acoples-sistema-a-levas-cuerpo-rosca-macho.jpg",
+                    "description": "Modelo:CM<br> Materiales: Aluminio, Bronce, Acero inox., AISI 316, Polipropileno <br> Medidas: 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\”, 4\” y 6\""
+                },
+
+                {
+                    "name": "Adaptador manguera",
+                    "image": "acoples-sistema-a-levas-adaptador-manguera.jpg",
+                    "description": "Modelo:NE<br> Materiales: Aluminio, Bronce, Acero inox., AISI 316, Polipropileno <br> Medidas: 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\”, 4\” y 6\""
+                },
+                {
+                    "name": "Adaptador rosca hembra",
+                    "image": "acoples-sistema-a-levas-adaptador-rosca-hembra.jpg",
+                    "description": "Modelo:NH<br> Materiales: Aluminio, Bronce, Acero inox., AISI 316, Polipropileno <br> Medidas: 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\”, 4\” y 6\""
+                },
+
+                {
+                    "name": "Adaptador rosca macho",
+                    "image": "acoples-sistema-a-levas-adaptador-rosca-macho.jpg",
+                    "description": "Modelo:NM<br> Materiales: Aluminio, Bronce, Acero inox., AISI 316, Polipropileno <br> Medidas: 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\”, 4\” y 6\""
+                },
+                {
+                    "name": "Tapa hembra",
+                    "image": "acoples-sistema-a-levas-tapa-hembra.jpg",
+                    "description": "Modelo:TH<br> Materiales: Aluminio, Bronce, Acero inox., AISI 316, Polipropileno <br> Medidas: 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\”, 4\” y 6\""
+                },
+
+                {
+                    "name": "Tapón macho",
+                    "image": "acoples-sistema-a-levas-tapon-macho.jpg",
+                    "description": "Modelo:TM<br> Materiales: Aluminio, Bronce, Acero inox., AISI 316, Polipropileno <br> Medidas: 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\”, 4\” y 6\""
+                },
+                {
+                    "name": "Cuerpo niple",
+                    "image": "acoples-sistema-a-levas-cuerpo-niple.jpg",
+                    "description": "Modelo: CN<br> Materiales: Aluminio <br> Medidas: 2\” a 3\”, 3\” a 2\”, 3\” a 4\”, y 4\” a 3\""
+                },
+                {
+                    "name": "Recuperador de gases",
+                    "image": "acoples-sistema-a-levas-recuperador-gases.jpg",
+                    "description": "Modelo: RG<br> Materiales: Aluminio <br> Medidas: 3\”, 4\” a 3”"
                 }
             ]
         },
