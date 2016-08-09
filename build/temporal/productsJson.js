@@ -670,7 +670,7 @@ this["__products"] = {
                 {
                     "name": "Levas",
                     "image": "acoples-accesorios-levas.jpg",
-                    "description": "Materiales: Nitrilo, Epdm, Viton, Encapsulado En Ptfe<br>Medidas: 3/4\" 1\" 1 1/4\" 1 1/2\" 2\" 2 1/2\" 3\" 4\" 6\""
+                    "description": "Materiales: Bronce, Acero, Inoxidable, AISI 316, Polipropileno<br>Medidas: 3/4\" 1\" 1 1/4\" 1 1/2\" 2\" 2 1/2\" 3\" 4\" 6\""
                 }
             ]
         },
