@@ -659,13 +659,18 @@ this["__products"] = {
         {
             "name": "Accesorios",
             "id": "acoples-accesorios",
+            "link": "acoples-accesorios.pdf",
             "categoryParent": "Acoples rápidos",
             "products": [
                 {
-                    "name": "Acoples Accesorios",
-                    "image": "acoples-accesorios.jpg",
-                    "description": "Sistema a levas y Split Flange",
-                    "link": "acoples-accesorios.pdf"
+                    "name": "Juntas",
+                    "image": "acoples-accesorios-juntas.jpg",
+                    "description": "Materiales: Nitrilo, Epdm, Viton, Encapsulado En Ptfe<br>Medidas: 3/4\" 1\" 1 1/4\" 1 1/2\" 2\" 2 1/2\" 3\" 4\" 6\""
+                },
+                {
+                    "name": "Levas",
+                    "image": "acoples-accesorios-levas.jpg",
+                    "description": "Materiales: Nitrilo, Epdm, Viton, Encapsulado En Ptfe<br>Medidas: 3/4\" 1\" 1 1/4\" 1 1/2\" 2\" 2 1/2\" 3\" 4\" 6\""
                 }
             ]
         },
