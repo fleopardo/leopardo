@@ -513,26 +513,41 @@ this["__products"] = {
         {
             "name": "Media vuelta américano",
             "id": "acoples-media-vuelta-americano",
+            "link": "acoples-media-vuelta-americano.pdf",
             "categoryParent": "Acoples rápidos",
             "products": [
                 {
-                    "name": "Media vuelta américano",
-                    "image": "acoples-media-vuelta-americano.jpg",
-                    "description": "Acoples para mangueras, rosca hembra y rosca macho. Material: Fundición de Acero",
-                    "link": "acoples-media-vuelta-americano.pdf"
+                    "name": "Para Manguera",
+                    "image": "acoples-media-vuelta-americano-para-manguera.jpg",
+                    "description": "Modelo: HAR<br> Materiales: Fundición de acero<br> Medidas: 1/2\" 3/4\" 1\" 1\" 1/2 2\""
+                },
+                {
+                    "name": "Rosca hembra",
+                    "image": "acoples-media-vuelta-americano-rosca-hembra.jpg",
+                    "description": "Modelo: HAH<br> Materiales: Fundición de acero<br> Medidas: 1/2\" 3/4\" 1\" 1\" 1/2 2\""
+                },
+                {
+                    "name": "Rosca Macho",
+                    "image": "acoples-media-vuelta-americano-rosca-macho.jpg",
+                    "description": "Modelo: HAM<br> Materiales: Fundición de acero<br> Medidas: 1/2\" 3/4\" 1\""
                 }
             ]
         },
         {
             "name": "Media vuelta arenado",
             "id": "media-vuelta-arenado",
+            "link": "acoples-media-vuelta-arenado.pdf",
             "categoryParent": "Acoples rápidos",
             "products": [
                 {
-                    "name": "Media vuelta arenado",
-                    "image": "acoples-media-vuelta-arenado.jpg",
-                    "description": "Acoples para mangueras de arenado y Tolva y Portapico. Material: Fundición de acero y fundición aluminio",
-                    "link": "acoples-media-vuelta-arenado.pdf"
+                    "name": "Manguera de arenado",
+                    "image": "acoples-media-vuelta-arenado-manguera-de-arenado.jpg",
+                    "description": "Materiales: Acero, Aluminio, Bronce<br> Modelo: HC1938<br>Diámetro interno: 19mm<br> Diámetro externo: 38mm<br><br>Modelo: HC2546<br>Diámetro interno: 25mm<br>Diámetro externo: 46mm<br><br>Modelo: HC3253<br>Diámetro interno: 32mm<br>Diámetro externo: 53mm" 
+                },
+                {
+                    "name": "Tolva y portapico",
+                    "image": "acoples-media-vuelta-arenado-tolva-y-portapico.jpg",
+                    "description": "Materiales: Acero, aluminio, bronce<br> Modelo: HC3200 con rosca hembra 1 1/4\" BSP"
                 }
             ]
         },
@@ -540,18 +555,29 @@ this["__products"] = {
             "name": "Media vuelta europeo",
             "id": "media-vuelta-europeo",
             "categoryParent": "Acoples rápidos",
+            "link": "acoples-media-vuelta-europeo.pdf",
             "products": [
                 {
-                    "name": "Media vuelta europeo",
-                    "image": "acoples-media-vuelta-europeo.jpg",
-                    "description": "Acoples para manguera, rosca macho y rosca hembra. Material: Fundicion de Acero.",
-                    "link": "acoples-media-vuelta-europeo.pdf"
+                    "name": "Para manguera",
+                    "image": "acoples-media-vuelta-europeo-para-manguera.jpg",
+                    "description": "Modelo: HER<br> Materiales: Fundición de acero<br> Medidas: 1/2\", 3/4\", 1\""
+                },
+                {
+                    "name": "Con rosca hembra",
+                    "image": "acoples-media-vuelta-europeo-con-rosca-hembra.jpg",
+                    "description": "Modelo: HEH<br> Materiales: Fundición de acero<br> Medidas: 1/2\", 3/4\", 1\""
+                },
+                {
+                    "name": "Con rosca macho",
+                    "image": "acoples-media-vuelta-europeo-con-rosca-macho.jpg",
+                    "description": "Modelo: HEM <br> Materiales: Fundición de acero<br> Medidas: 1/2\", 3/4\", 1\""
                 }
             ]
         },
         {
             "name": "Sistema a levas",
             "id": "sistema-a-levas",
+            "link": "acoples-sistema-levas.pdf",
             "categoryParent": "Acoples rápidos",
             "products": [
                 {
