@@ -500,13 +500,20 @@ this["__products"] = {
         {
             "name": "Cierre en Seco",
             "id": "cierre-en-seco",
+            "link": "acoples-cierre-en-seco.pdf",
             "categoryParent": "Acoples rápidos",
             "products": [
                 {
-                    "name": "Cierre en Seco",
-                    "image": "acoples-cierre-en-seco.jpg",
-                    "description": "Su exclusivo sistema de palancas con doble seguridad de cierre automático en ambas direcciones, elimina cualquier fuga de productos luego de la desconexión de la línea. Recomendados para aquellos trasvases donde no es aceptable ninguna pérdida de producto.",
-                    "link": "acoples-cierre-en-seco.pdf"
+                    "name": "Adaptador rosca hembra",
+                    "image": "acoples-cierre-seco-adaptador-rosca-hembra.jpg",
+                    "description": "Aplicaciones: Pinturas, lacas, tintas, adhesivos, ácidos grasos, farmacéuticos, jabones, productos petrolíferos, disolventes, químicos, aceites vegetales, detergentes.<br>Características: Su exclusivo sistema de palancas con doble seguridad de cierre automático en ambas direcciones, elimina cualquier fuga de productos luego de la desconexión de la línea. Recomendados para aquellos trasvases donde no es aceptable ninguna pérdida de producto."
+                    
+                },
+                {
+                    "name": "Acople rosca hembra",
+                    "image": "acoples-cierre-seco-acople-rosca-hembra.jpg",
+                    "description": "Materiales: Aluminio, acero inox.<br>Medidas: 1 1/2\", 2\", 3\"<br>Juntas: Buna, Vitón, teflón, EPDM<br>Presión de trabajo: 10 bar<br>Extremos rosca hembra NPT"
+                    
                 }
             ]
         },
@@ -665,19 +672,19 @@ this["__products"] = {
         {
             "name": "Accesorios Rylbrun",
             "id": "acoples-accesorios-rylbrun",
+            "link": "acoples-accesorios-rylbrun.pdf",
             "categoryParent": "Acoples rápidos",
             "products": [
                 {
                     "name": "Racord cónico",
                     "image": "acoples-rylbrun-racord-conico.jpg",
-                    "description": "Construídos en acero inoxidable 316",
-                    "link": "acoples-accesorios-rylbrun.pdf"
+                    "description": "Construídos en acero inoxidable 316"
+                    
                 },
                 {
                     "name": "Terminal doble",
                     "image": "acoples-rylbrun-terminal-doble.jpg",
-                    "description": "Construídos en acero inoxidable 316",
-                    "link": "acoples-accesorios-rylbrun.pdf"
+                    "description": "Construídos en acero inoxidable 316"
                 }
             ]
         },
