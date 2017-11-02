@@ -140,7 +140,7 @@ gulp.task('images', function() {
     var tasks = [];
     Object.keys(bundles.images).forEach(function(bundle) {
         tasks.push(gulp.src(bundles.images[bundle])
-            .pipe($.imageOptimization())
+            .pipe($.imagemin())
             .pipe($.size({
                 'title': 'Images size (build):'
             }))
