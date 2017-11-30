@@ -714,12 +714,12 @@ this["__products"] = {
             "products": [
                 {
                     "name": "Hembra para manguera",
-                    "image": "acoples-sistema-levas-cuerpo-manguera.jpg",
+                    "image": "acoples-perrot-hembra.jpg",
                     "description": "Modelo: PH<br> Materiales: Acero galvanizado <br> Medidas: 2\”, 3\”, 3.5\”, 4\” y 6\""
                 },
                 {
                     "name": "Macho para manguera",
-                    "image": "acoples-sistema-levas-cuerpo-manguera.jpg",
+                    "image": "acoples-perrot-macho.jpg",
                     "description": "Modelo: PM<br> Materiales: Acero galvanizado <br> Medidas: 2\”, 3\”, 3.5\”, 4\” y 6\""
                 }
             ]
