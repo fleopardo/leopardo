@@ -107,7 +107,7 @@ this["__products"] = {
             "products": [
                 {
                     "name": "Tualcomaster",
-                    "image": "alimentos-bebidas-food-power-upe.jpg",
+                    "image": "alimentos-bebidas-tualcomaster.jpg",
                     "description": "Manguera especialmente flexible y liviana, apta para succión y descarga de productos químicos, alimentos y solventes en general.",
                     "link": "alimentos-bebidas-tualcomaster.pdf"
                 },
@@ -149,25 +149,25 @@ this["__products"] = {
                 },
                 {
                     "name": "Milkflex EDPM",
-                    "image": "alimentos-bebidas-food-power-epdm.jpg",
+                    "image": "alimentos-bebidas-milkflex-epdm.jpg",
                     "description": "Manguera especialmente flexible y liviana, apta para succión y descarga de leche, vino, cerveza, jugo de frutas, bebidas alcohólicas y alimentos líquidos no grasos.",
                     "link": "alimentos-bebidas-milkflex-epdm.pdf"
                 },
                 {
                     "name": "Brewery Power",
-                    "image": "alimentos-bebidas-food-power-epdm.jpg",
+                    "image": "alimentos-bebidas-brewery-power.jpg",
                     "description": "Manguera especialmente diseñada para el suministro de cerveza y una amplia gama de alimentos no grasos con resistencia mejorada a altas presiones y temperaturas.",
                     "link": "alimentos-bebidas-brewery-power.pdf"
                 },
                 {
                     "name": "Steam Power",
-                    "image": "alimentos-bebidas-food-power-epdm.jpg",
+                    "image": "alimentos-bebidas-steam-power.jpg",
                     "description": "Manguera apta para transferencia de vapor y agua caliente para la limpieza en el procesamiento de la carne, fábrica de papel y en las industrias alimenticias.",
                     "link": "alimentos-bebidas-steam-power.pdf"
                 },
                 {
                     "name": "Washdown Power",
-                    "image": "alimentos-bebidas-food-power-epdm.jpg",
+                    "image": "alimentos-bebidas-washdown-power.jpg",
                     "description": "Manguera apta para transferencia de agua caliente, especialmente utilizada para la limpieza en la industria alimenticia.",
                     "link": "alimentos-bebidas-washdown-power.pdf"
                 }
@@ -187,21 +187,21 @@ this["__products"] = {
                 },
                 {
                     "name": "Tuflour Evolution",
-                    "image": "alimentos-bebidas-milkflex-fat.jpg",
+                    "image": "cosmeticos-farmaceuticos-tuflour-evolution.jpg",
                     "description": "Manguera de succión y suministro para transporte de productos químicos y disolventes, excepto trifloruro de cloro, cloro, fluor, oxígeno difloro, fosgeno y álcalis fundidos (por ejemplo sodio).",
-                    "link": "cosmeticos-farmaceuticos-tuflour-evolution.pdf.pdf"
+                    "link": "cosmeticos-farmaceuticos-tuflour-evolution.pdf"
                 },
                 {
                     "name": "Tusil Bright",
-                    "image": "alimentos-bebidas-milkflex.jpg",
+                    "image": "cosmeticos-farmaceuticos-tusil-bright.jpg",
                     "description": "Manguera de succión y suministro adecuada para productos cosméticos, farmacéuticos y alimentos.Tubo libre de ftalatos, comprobado según el estándar 1907/2006/CE (REACH).",
                     "link": "cosmeticos-farmaceuticos-tusil-bright.pdf"
                 },
                 {
-                    "name": "Tusil Exto",
-                    "image": "alimentos-bebidas-pharma-press.jpg",
+                    "name": "Tusil EXT D",
+                    "image": "cosmeticos-farmaceuticos-tusil-extd.jpg",
                     "description": "Manguera de suministro adecuada para produco cosméticos, farmacéuticos y alimentos. Tubo libre de ftalatos, comprobado según el estándar 1907/2006/CE (REACH).",
-                    "link": "cosmeticos-farmaceuticos-tusil-exto.pdf"
+                    "link": "cosmeticos-farmaceuticos-tusil-extd.pdf"
                 }
             ]
         },
@@ -732,46 +732,46 @@ this["__products"] = {
             "products": [
                 {
                     "name": "Clamp",
-                    "image": "acoples-sistema-levas-cuerpo-manguera.jpg",
+                    "image": "acoples-sanitarios-clamp.jpg",
                     "description": "Modelo: Clamp<br> Materiales: AISI 316L <br> Medidas: 1/2\”, 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\” y 4\""
                 },
 
                 {
                     "name": "Hembra giratoria danesa",
-                    "image": "acoples-sistema-levas-cuerpo-rosca-hembra.jpg",
+                    "image": "acoples-sanitarios-hembra-giratoria-danesa.jpg",
                     "description": "Modelo: HGDAN<br> Materiales: AISI 316L <br> Medidas: 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\” y 4\""
                 },
                 {
                     "name": "Hembra giratoria DIN",
-                    "image": "acoples-sistema-levas-cuerpo-rosca-macho.jpg",
+                    "image": "acoples-sanitarios-hembra-giratoria-din.jpg",
                     "description": "Modelo: HGDIN<br> Materiales: AISI 316L <br> Medidas: 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\” y 4\""
                 },
 
                 {
                     "name": "Hembra giratoria SMS",
-                    "image": "acoples-sistema-levas-adaptador-manguera.jpg",
+                    "image": "acoples-sanitarios-hembra-giratoria-sms.jpg",
                     "description": "Modelo: HGSMS<br> Materiales: AISI 316L <br> Medidas: 1\”, 1 1/2\”, 2\”, 2 1/2\”, 3\” y 4\""
                 },
                 {
                     "name": "Macho fijo danesa",
-                    "image": "acoples-sistema-levas-adaptador-rosca-hembra.jpg",
+                    "image": "acoples-sanitarios-macho-fijo-danesa.jpg",
                     "description": "Modelo: MFDAN<br> Materiales: AISI 316L <br> Medidas: 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\” y 4\""
                 },
 
                 {
                     "name": "Macho fijo DIN",
-                    "image": "acoples-sistema-levas-adaptador-rosca-macho.jpg",
+                    "image": "acoples-sanitarios-macho-fijo-din.jpg",
                     "description": "Modelo: MFDIN<br> Materiales: AISI 316L <br> Medidas: 3/4\”, 1\”, 1 1/4\”, 1 1/2\”, 2\”, 2 1/2\”, 3\” y 4\""
                 },
                 {
                     "name": "Macho fijo SMS",
-                    "image": "acoples-sistema-levas-tapa-hembra.jpg",
+                    "image": "acoples-sanitarios-macho-fijo-sms.jpg",
                     "description": "Modelo: MFSMS<br> Materiales: AISI 316L <br> Medidas: 1\”, 1 1/2\”, 2\”, 2 1/2\”, 3\” y 4\""
                 },
 
                 {
                     "name": "Mini Clamp",
-                    "image": "acoples-sistema-levas-tapon-macho.jpg",
+                    "image": "acoples-sanitarios-mini-clamp.jpg",
                     "description": "Modelo: MCLAM<br> Materiales: AISI 316L <br> Medidas: 1/2\” y 3/4\""
                 }
             ]
@@ -784,13 +784,13 @@ this["__products"] = {
             "products": [
                 {
                     "name": "Heavy Duty",
-                    "image": "acoples-sistema-levas-cuerpo-manguera.jpg",
+                    "image": "acoples-shotcrete-heavy-duty.jpg",
                     "description": "Modelo: HD<br> Materiales: Acero Cementado <br> Medidas: 2\”, 2 1/2\”, 3\”, 4\", 5\" y 6\""
                 },
 
                 {
                     "name": "Victaulic",
-                    "image": "acoples-sistema-levas-cuerpo-rosca-hembra.jpg",
+                    "image": "acoples-shotcrete-victaulic.jpg",
                     "description": "Modelo: HGDAN<br> Materiales: Acero Cementado <br> Medidas: 2\”, 2 1/2\”, 3\”, 4\", 5\" y 6\""
                 }
             ]
@@ -909,7 +909,7 @@ this["__products"] = {
             "products": [
                 {
                     "name": "Dixon Boss",
-                    "image": "abrazadera-super-presion-inox.jpg",
+                    "image": "abrazadera-dixon-boss.jpg",
                     "description": "Materiales: Fundición de acero carbono zincado <br><br>Modelo: BU14<br>Descripción: Rango de 39.00 a 44.00mm<br><br>Modelo: BU29<br>Descripción: Rango de 63.50 a 70.60mm<br><br>Modelo: B35<br>Descripción: Rango de 96.80 a 103.2mm",
                     "link": "abrazadera-dixon-boss.pdf"
                 }
@@ -922,10 +922,10 @@ this["__products"] = {
             "categoryParent": "Abrazaderas",
             "products": [
                 {
-                    "name": "Gunitado / Shortcret Victaulic",
-                    "image": "abrazadera-super-presion-inox.jpg",
+                    "name": "Gunitado / Shotcret Victaulic",
+                    "image": "abrazadera-gunitado-shotcret-victaulic.jpg",
                     "description": "Materiales: Fundición de acero carbono<br>Modelo: AGVIC<br>Medidas: 2\", 2 1/2\", 3\", 4\", 5\" y 6\"",
-                    "link": "abrazadera-gunitado-shortcret-victaulic.pdf"
+                    "link": "abrazadera-gunitado-shotcret-victaulic.pdf"
                 }
             ]
         },
@@ -937,9 +937,9 @@ this["__products"] = {
             "products": [
                 {
                     "name": "Gunitado / Shortcret Heavy Duty",
-                    "image": "abrazadera-super-presion-inox.jpg",
+                    "image": "abrazadera-gunitado-shotcret-heavy-duty.jpg",
                     "description": "Materiales: Fundición de acero carbono<br>Modelo: AGHD<br>Medidas: 2\", 2 1/2\", 3\", 4\", 5\" y 6\"",
-                    "link": "abrazadera-gunitado-shortcret-heavy-duty.pdf"
+                    "link": "abrazadera-gunitado-shotcret-heavy-duty.pdf"
                 }
             ]
         },
@@ -1055,7 +1055,7 @@ this["__products"] = {
             "products": [
                 {
                     "name": "Malla whip stop",
-                    "image": "whipcheck.jpg",
+                    "image": "malla-whip-stop.jpg",
                     "description": "Este es el mejor sistema de retención para mangueras de alta presión debido a que el estilo de almacenamiento de acero tejido sujeta la manguera de manera más segura en un área más grande. La abrasión y el desgaste suelen ocurrir cerca de los accesorios, lo que puede provocar una ruptura. Si esto ocurre dentro del área cubierta, se produce una seguridad adicional que nunca ocurriría con un anti látigo estándar. El acero tejido puede también ayudar a prevenir la abrasión a la manguera debajo.",
                     "link": "malla-whip-stop.pdf"
                 }
