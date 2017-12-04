@@ -320,7 +320,7 @@
                     "link": "abrasivos-sand-power.pdf"
                 },
                 {
-                    "name": "Shortcrete",
+                    "name": "Shotcrete",
                     "image": "abrasivos-shotcrete.jpg",
                     "description": "Manguera especialmente diseñada para el bombeo de hormigón a alta presión.",
                     "link": "abrasivos-shotcrete.pdf"
@@ -400,7 +400,7 @@
                     "link": "mineria-rylbrun-profesional.pdf"
                 },
                 {
-                    "name": "Shortcrete",
+                    "name": "Shotcrete",
                     "image": "mineria-shotcrete.jpg",
                     "description": "Manguera especialmente diseñada para el bombeo de hormigón a alta presión.",
                     "link": "mineria-shotcrete.pdf"
@@ -917,8 +917,8 @@
         },
 
         {
-            "name": "Gunitado / Shortcret Victaulic",
-            "id": "gunitado-shortcret-victaulic",
+            "name": "Gunitado / Shotcret Victaulic",
+            "id": "gunitado-shotcret-victaulic",
             "categoryParent": "Abrazaderas",
             "products": [
                 {
@@ -931,12 +931,12 @@
         },
 
         {
-            "name": "Gunitado / Shortcret Heavy Duty",
-            "id": "gunitado-shortcret-heavy-duty",
+            "name": "Gunitado / Shotcret Heavy Duty",
+            "id": "gunitado-shotcret-heavy-duty",
             "categoryParent": "Abrazaderas",
             "products": [
                 {
-                    "name": "Gunitado / Shortcret Heavy Duty",
+                    "name": "Gunitado / Shotcret Heavy Duty",
                     "image": "abrazadera-gunitado-shotcret-heavy-duty.jpg",
                     "description": "Materiales: Fundición de acero carbono<br>Modelo: AGHD<br>Medidas: 2\", 2 1/2\", 3\", 4\", 5\" y 6\"",
                     "link": "abrazadera-gunitado-shotcret-heavy-duty.pdf"
