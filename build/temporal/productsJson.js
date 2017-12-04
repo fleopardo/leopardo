@@ -181,7 +181,7 @@ this["__products"] = {
             "products": [
                 {
                     "name": "Tuchem UPE Full Conductive",
-                    "image": "alimentos-bebidas-food-power-upe.jpg",
+                    "image": "cosmeticos-farmaceuticos-tuchem-upe-full.jpg",
                     "description": "Manguera de succión y suministro diseñada para cumplir con la norma EN12115 adecuada para productos químicos en la industria alimenticia.",
                     "link": "cosmeticos-farmaceuticos-tuchem-upe-full.pdf"
                 },
