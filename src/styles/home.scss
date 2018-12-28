@@ -226,7 +226,37 @@
 			width: 100%;
 			display: block;
 		}
-
+		.close {
+			position: absolute;
+			right: -16px;
+			top: -16px;
+			width: 32px;
+			height: 32px;
+			/*opacity: 0.3;*/
+			background: #fff;
+		}
+		.close:hover {
+			&.close:before,
+			&.close:after {
+				opacity: 1;
+			}
+		}
+		.close:before, .close:after {
+			position: absolute;
+			left: 15px;
+			top: 6px;
+			content: ' ';
+			height: 20px;
+			width: 2px;
+			background-color: #333;
+			opacity: 0.3;
+		}
+		.close:before {
+			transform: rotate(45deg);
+		}
+		.close:after {
+			transform: rotate(-45deg);
+		} 
 	}
 }
 

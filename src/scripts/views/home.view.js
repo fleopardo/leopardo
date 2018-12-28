@@ -11,11 +11,13 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
     		'telefono': '[data-js="telefono"]',
     		'consulta': '[data-js="consulta"]',
             'contentError': '[data-js="contentError"]',
-            'modalNuevaUbicacion' : '[data-js="modalNuevaUbicacion"]'
+            'modalNuevaUbicacion' : '[data-js="modalNuevaUbicacion"]',
+            'closeModal' : '[data-js="closeModal"]'
         },
 
         events: {
-            'click @ui.btnSubmit': 'contact'
+            'click @ui.btnSubmit': 'contact',
+            'click @ui.closeModal' : 'closeModal'
         },
 
         onShow: function() {
@@ -43,6 +45,14 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
             });
 
             this.ui.modalNuevaUbicacion.addClass('show');
+        },
+
+        closeModal: function(event) {
+            event.preventDefault();
+
+            if(event.target.className == 'close') {
+                this.ui.modalNuevaUbicacion.removeClass('show');
+            }
         },
 
         contact: function(event) {
