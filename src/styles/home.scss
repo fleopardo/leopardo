@@ -215,7 +215,7 @@
 		display: block;
 	}
 	.img-container {
-		width: 420px;
+		width: 450px;
 		position: fixed;
 		left: 50%;
 		top:50%;
@@ -228,28 +228,20 @@
 		}
 		.close {
 			position: absolute;
-			right: -16px;
-			top: -16px;
+			right: 0;
+			top: 0;
 			width: 32px;
 			height: 32px;
-			/*opacity: 0.3;*/
 			background: #fff;
-		}
-		.close:hover {
-			&.close:before,
-			&.close:after {
-				opacity: 1;
-			}
 		}
 		.close:before, .close:after {
 			position: absolute;
-			left: 15px;
-			top: 6px;
+			left: 14px;
+			top: 10px;
 			content: ' ';
-			height: 20px;
+			height: 16px;
 			width: 2px;
 			background-color: #333;
-			opacity: 0.3;
 		}
 		.close:before {
 			transform: rotate(45deg);
@@ -290,5 +282,19 @@
 
 	.hosepower-home__catalogo-product-info {
 		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+	.hosepower-home__modal-nueva-ubicacion {
+		.img-container {
+			width: 90%;
+		}
+	}
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+	.hosepower-home__modal-nueva-ubicacion {
+		display: none !important;
 	}
 }
