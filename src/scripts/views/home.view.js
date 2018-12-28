@@ -10,7 +10,8 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
     		'email': '[data-js="email"]',
     		'telefono': '[data-js="telefono"]',
     		'consulta': '[data-js="consulta"]',
-            'contentError': '[data-js="contentError"]'
+            'contentError': '[data-js="contentError"]',
+            'modalNuevaUbicacion' : '[data-js="modalNuevaUbicacion"]'
         },
 
         events: {
@@ -40,6 +41,8 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
                 }
 
             });
+
+            this.ui.modalNuevaUbicacion.addClass('show');
         },
 
         contact: function(event) {
