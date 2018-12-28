@@ -21,10 +21,10 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
         },
 
         onShow: function() {
-            this.showMap();
+            //this.showMap();
             this.ui.contentError.hide();
         },
-
+		/*
         showMap: function() {
             //GOOGLE MAPS
         	if( typeof(google) != "undefined"){
@@ -47,7 +47,8 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
         			, draggable: true
 				});
         	}
-        },
+		},
+		*/
 
         contact: function(event) {
 
