@@ -41,15 +41,16 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
                         items:1
                     }
                 }
-
             });
 
-            this.ui.modalNuevaUbicacion.addClass('show');
+            if (sessionStorage && !sessionStorage.getItem('modalNuevaUbicacionStorage')) {
+                sessionStorage.setItem('modalNuevaUbicacionStorage',true);
+                this.ui.modalNuevaUbicacion.addClass('show');
+            }
         },
 
         closeModal: function(event) {
             event.preventDefault();
-
             if(event.target.className == 'close') {
                 this.ui.modalNuevaUbicacion.removeClass('show');
             }
