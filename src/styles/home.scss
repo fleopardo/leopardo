@@ -202,57 +202,6 @@
 	opacity: 1;
 }
 
-/*
-.hosepower-home__modal-nueva-ubicacion {
-	display: none;
-	position: fixed;
-	background: rgba(0,0,0,0.6);
-	top: 0;
-	bottom:0;
-	right: 0;
-	left: 0;
-	z-index: 100;
-	&.show {
-		display: block;
-	}
-	.img-container {
-		width: 450px;
-		position: fixed;
-		left: 50%;
-		top:50%;
-		transform: translate(-50%, -50%);
-		background: #fff;
-		padding: 10px;
-		img {
-			width: 100%;
-			display: block;
-		}
-		.close {
-			position: absolute;
-			right: 0;
-			top: 0;
-			width: 32px;
-			height: 32px;
-			background: #fff;
-		}
-		.close:before, .close:after {
-			position: absolute;
-			left: 14px;
-			top: 10px;
-			content: ' ';
-			height: 16px;
-			width: 2px;
-			background-color: #333;
-		}
-		.close:before {
-			transform: rotate(45deg);
-		}
-		.close:after {
-			transform: rotate(-45deg);
-		} 
-	}
-}*/
-
 @media screen and (max-width: 768px) {
 	.hosepower-home__container-article {
 		width: 100%;
@@ -285,18 +234,3 @@
 		opacity: 1;
 	}
 }
-
-/*
-@media screen and (max-width: 500px) and (orientation: portrait) {
-	.hosepower-home__modal-nueva-ubicacion {
-		.img-container {
-			width: 90%;
-		}
-	}
-}
-
-@media (max-width: 700px) and (orientation: landscape) {
-	.hosepower-home__modal-nueva-ubicacion {
-		display: none !important;
-	}
-}*/
