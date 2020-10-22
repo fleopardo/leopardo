@@ -10,14 +10,14 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
     		'email': '[data-js="email"]',
     		'telefono': '[data-js="telefono"]',
     		'consulta': '[data-js="consulta"]',
-            'contentError': '[data-js="contentError"]',
-            'modalNuevaUbicacion' : '[data-js="modalNuevaUbicacion"]',
-            'closeModal' : '[data-js="closeModal"]'
+            'contentError': '[data-js="contentError"]'
+            // 'modalNuevaUbicacion' : '[data-js="modalNuevaUbicacion"]',
+            // 'closeModal' : '[data-js="closeModal"]'
         },
 
         events: {
-            'click @ui.btnSubmit': 'contact',
-            'click @ui.closeModal' : 'closeModal'
+            'click @ui.btnSubmit': 'contact'
+            // 'click @ui.closeModal' : 'closeModal'
         },
 
         onShow: function() {
@@ -43,18 +43,18 @@ App.module('Hosepower.Views', function (Views, App, Backbone, Marionette, $, _) 
                 }
             });
 
-            if (sessionStorage && !sessionStorage.getItem('modalNuevaUbicacionStorage')) {
-                sessionStorage.setItem('modalNuevaUbicacionStorage',true);
-                this.ui.modalNuevaUbicacion.addClass('show');
-            }
+            // if (sessionStorage && !sessionStorage.getItem('modalNuevaUbicacionStorage')) {
+            //     sessionStorage.setItem('modalNuevaUbicacionStorage',true);
+            //     this.ui.modalNuevaUbicacion.addClass('show');
+            // }
         },
 
-        closeModal: function(event) {
-            event.preventDefault();
-            if(event.target.className == 'close') {
-                this.ui.modalNuevaUbicacion.removeClass('show');
-            }
-        },
+        // closeModal: function(event) {
+        //     event.preventDefault();
+        //     if(event.target.className == 'close') {
+        //         this.ui.modalNuevaUbicacion.removeClass('show');
+        //     }
+        // },
 
         contact: function(event) {
 

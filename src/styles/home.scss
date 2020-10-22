@@ -202,6 +202,7 @@
 	opacity: 1;
 }
 
+/*
 .hosepower-home__modal-nueva-ubicacion {
 	display: none;
 	position: fixed;
@@ -250,7 +251,7 @@
 			transform: rotate(-45deg);
 		} 
 	}
-}
+}*/
 
 @media screen and (max-width: 768px) {
 	.hosepower-home__container-article {
@@ -285,6 +286,7 @@
 	}
 }
 
+/*
 @media screen and (max-width: 500px) and (orientation: portrait) {
 	.hosepower-home__modal-nueva-ubicacion {
 		.img-container {
@@ -297,4 +299,4 @@
 	.hosepower-home__modal-nueva-ubicacion {
 		display: none !important;
 	}
-}
+}*/
