@@ -1,0 +1,67 @@
+.hosepower-quality__container {
+	margin-top: -35px;
+	margin-bottom: 40px;
+}
+
+.hosepower-quality__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hosepower-quality__col {
+	width: 45%;
+	margin-right: 5%;
+	background: $white;
+	padding: 35px;
+	position: relative;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	ul {
+		list-style: none;
+		margin: 15px 0;
+	}
+
+	li {
+		font-size: 13px;
+		margin-bottom: 12px;
+		position: relative;
+		padding-left: 25px;
+	}
+
+	li:last-child {
+		margin-bottom: 0px;
+	}
+
+	.fa {
+		position: absolute;
+		left: 0;
+		font-size: 18px;
+		color: $lightBlue;
+		top: 2px;
+	}
+	p{
+		margin-bottom: 12px;
+	}
+}
+
+.hosepower-quality__col-photo {
+	background-image: url('../images/quality/destacada.png');
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+	.hosepower-quality__col {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.hosepower-quality__col-photo {
+		display: none;
+	}
+}

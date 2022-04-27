@@ -35,7 +35,8 @@ exports.scripts = [
     'src/scripts/views/services.view.js',
     'src/scripts/views/products.view.js',
     'src/scripts/views/productsDetail.view.js',
-    'src/scripts/views/contact.view.js'
+    'src/scripts/views/contact.view.js',
+    'src/scripts/views/quality.view.js',
 ];
 
 exports.styles = [

@@ -49,6 +49,11 @@ App.module('Hosepower.Router', function (Router, App, Backbone, Marionette, $, _
         App.getRegion('main').show(page);
     };
 
+    controller.quality = function () {
+        var page = new App.Hosepower.Views.Quality();
+        App.getRegion('main').show(page);
+    };
+
     controller.notFound = function () {
         // var page = new App.Hosepower.Views.notFound();
         App.getRegion('main').$el.html(App.templates.notFound());
@@ -63,6 +68,7 @@ App.module('Hosepower.Router', function (Router, App, Backbone, Marionette, $, _
      routes['productos/:id'] = 'productsDetail';
      routes['servicios'] = 'services';
      routes['contacto'] = 'contact';
+     routes['calidad'] = 'quality';
      routes['*any'] = 'notFound';
 
     /**
